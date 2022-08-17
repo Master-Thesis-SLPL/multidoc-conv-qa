@@ -1,0 +1,167 @@
+{
+    "dial_data": {
+        "studentaid": [
+            {
+                "dial_id": "40dffec1f37241d6ba631901f00aedd7",
+                "turns": [
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "1",
+                                "doc_id": "FAFSA\u00ae Help | Federal Student Aid#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 1,
+                        "utterance": "Hello, I need some help with my application for student aid, please."
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "2",
+                                "doc_id": "FAFSA\u00ae Help | Federal Student Aid#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 2,
+                        "utterance": "a"
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "4",
+                                "doc_id": "FAFSA\u00ae Help | Federal Student Aid#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 3,
+                        "utterance": "a"
+                    },
+                    {
+                        "da": "response_negative",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "4",
+                                "doc_id": "FAFSA\u00ae Help | Federal Student Aid#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 4,
+                        "utterance": "a"
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "48",
+                                "doc_id": "FAFSA\u00ae Help | Federal Student Aid#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 5,
+                        "utterance": "a"
+                    },
+                    {
+                        "da": "response_positive",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "48",
+                                "doc_id": "FAFSA\u00ae Help | Federal Student Aid#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 6,
+                        "utterance": "a"
+                    },
+                    {
+                        "da": "query_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "30",
+                                "doc_id": "FAFSA\u00ae Help | Federal Student Aid#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 7,
+                        "utterance": "a"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "30",
+                                "doc_id": "FAFSA\u00ae Help | Federal Student Aid#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 8,
+                        "utterance": "a"
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "86",
+                                "doc_id": "Reporting Parent Information | Federal Student Aid#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 9,
+                        "utterance": "What if my parents are unwilling to provide their information on my FAFSA form?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "87",
+                                "doc_id": "Reporting Parent Information | Federal Student Aid#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 10,
+                        "utterance": "You would have to choose the one that says I am unable to provide info about my parent."
+                    },
+                    {
+                        "da": "query_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "43",
+                                "doc_id": "Reporting Parent Information | Federal Student Aid#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 11,
+                        "utterance": "Why would I use my stepparents info?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "43",
+                                "doc_id": "Reporting Parent Information | Federal Student Aid#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 12,
+                        "utterance": "Using your stepparents info on the FAFSA form gives an accurate picture of your family's financial ability."
+                    }
+                ]
+            }
+        ]
+    }
+}
