@@ -1,0 +1,1197 @@
+{
+    "dial_data": {
+        "dmv": [
+            {
+                "dial_id": "8df07b7a98990db27c395cb1f68a962e",
+                "turns": [
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "4",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 1,
+                        "utterance": "Hello, I forgot o update my address, can you help me with that?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "6",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "7",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 2,
+                        "utterance": "hi, you have to report any change of address to DMV within 10 days after moving. You should do this both for the address associated with your license and all the addresses associated with all your vehicles."
+                    },
+                    {
+                        "da": "query_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "56",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 3,
+                        "utterance": "Can I do my DMV transactions online?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "56",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 4,
+                        "utterance": "Yes, you can sign up for MyDMV for all the online transactions needed."
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "11",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 5,
+                        "utterance": "You've got it. Another query about DMV. What happens if you seek a hearing with the DMV?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "12",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 6,
+                        "utterance": "the suspension is placed on hold pending the outcome of the hearing"
+                    },
+                    {
+                        "da": "query_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "8",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "9",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "10",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 7,
+                        "utterance": "Besides that, will I receive a notice?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "8",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "9",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "10",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 8,
+                        "utterance": " the NYS Department of Motor Vehicles , \" DMV \" may send you a Notice of Registration Suspension"
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "22",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 9,
+                        "utterance": "If you submit the affidavit?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "23",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 10,
+                        "utterance": "you will not have to appear at a DMV hearing"
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "28",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 11,
+                        "utterance": "How can I respond to a tolling authority about a non-payment of tolls?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "29",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "30",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 12,
+                        "utterance": "DO NOT contact the New York State DMV to dispute whether you violated a toll regulation or failed to pay the toll , fees or other charges"
+                    }
+                ]
+            },
+            {
+                "dial_id": "40624f26295868cf5ccd15dbbbd2ba48",
+                "turns": [
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "23",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 1,
+                        "utterance": "Will you keep me informed about when my insurance is about to lapse?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "24",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "25",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "26",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 2,
+                        "utterance": "Yes. The New York State requires every motorist to maintain their insurance up to date so we at DMV make sure to inform you if you have any problem with your insurance."
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "34",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 3,
+                        "utterance": "Is it needed that my address is always up to date with you guys?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "35",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "36",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "37",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 4,
+                        "utterance": "Yes, It is required. If not we won't be able to keep you informed about your insurance and we'll suspend your registration and license. You should make sure to turn in your vehicle's license plate before canceling your insurance policy"
+                    },
+                    {
+                        "da": "query_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "8",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "9",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "10",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 5,
+                        "utterance": "for the suspension to be put on hold until the result is known. Isn't there a chance for a hearing? May I at the very least request a hearing with the DMV?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "8",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "9",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "10",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 6,
+                        "utterance": "Yes, you also have the right to a hearing before the DMV."
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "13",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 7,
+                        "utterance": "And what effect can the hearing have?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "14",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "15",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "16",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 8,
+                        "utterance": "The purpose of the hearing is to determine whether the tolling authority notified you that you failed to pay tolls, fees or other charges related to 3 or more violations of the Authority's toll collection regulations, all such violations committed within a 5 year period, or failed to pay $ 200 in tolls accumulated within 5 years, if the violations occurred in a commercial vehicle, or failed to have them dismissed or transferred. At the hearing, you may NOT dispute whether you evaded a toll and/or failed to pay tolls, fees or other charges."
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "33",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 9,
+                        "utterance": "Well, that was very informative. Thank you. By the way, how can I dispute someone claiming I didn't pay my toll?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "34",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 10,
+                        "utterance": "To do this, please contact the tolling authority listed on the Notice of Registration Suspension."
+                    },
+                    {
+                        "da": "query_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "20",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "21",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 11,
+                        "utterance": "Alright. Back to the topic: do I have to appear at the hearing in person?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "20",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "21",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 12,
+                        "utterance": "You may request an in-person DMV hearing or you may request a hearing by affidavit, this is a hearing on paper. The Notice of Registration Suspension provides instructions about how to submit the affidavit to DMV."
+                    }
+                ]
+            },
+            {
+                "dial_id": "c50af25ca77f79ee213fe130689b43e9",
+                "turns": [
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "4",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 1,
+                        "utterance": "I moved recently and forgot to update my address. Could this be a problem?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "6",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "7",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 2,
+                        "utterance": "Yes, by statute, you have to report a change of address to DMV before ten days after moving."
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "48",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 3,
+                        "utterance": "Is it common to delay a transaction due to forgetting any prerequisite when going to the DMV office? what could be the alternative?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "49",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "50",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "52",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 4,
+                        "utterance": "Yes. Around 10% of our customers forget some of the pre-requisites when going to a DMV office. To avoid this, you could check on the DMV website to see if you can do your transaction online."
+                    },
+                    {
+                        "da": "query_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "8",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "9",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "10",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 5,
+                        "utterance": "I have another question about the toll that I'd like to ask. another question: where is the Notice of Suspension of Registration kept?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "8",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "9",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "10",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 6,
+                        "utterance": "The notice will inform you that if you pay all tolls, fees, or other charges due to the toll authority, or if you dismiss or transfer them, the suspension will not take effect."
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "28",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 7,
+                        "utterance": "How can I respond to a toll authority for non-payment of tolls?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "29",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "30",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 8,
+                        "utterance": "it is important that you DO NOT contact the New York State DMV to dispute whether you violated a toll regulation or did not pay the toll, fees, or other charges."
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "33",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 9,
+                        "utterance": "want to dispute an allegation?"
+                    },
+                    {
+                        "da": "response_negative",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "33",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 10,
+                        "utterance": "do not"
+                    },
+                    {
+                        "da": "respond_no_solution",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "28",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 11,
+                        "utterance": "Unfortunately, no relevant information is found."
+                    },
+                    {
+                        "da": "query_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "14",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "15",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "16",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 12,
+                        "utterance": "What is the purpose of a DMV hearing?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "14",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "15",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "16",
+                                "doc_id": "Registration suspensions for failure to pay tolls#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 13,
+                        "utterance": "The purpose of the hearing is to determine if the toll authority notified you that it did not pay tolls, fees, or other charges related to 3 or more violations of the Authority's toll collection regulations, all such violations committed within a period of 5-year period, or did not pay $ 200 in tolls accumulated within 5 years, if violations occurred in a commercial vehicle, or were not discarded or transferred"
+                    }
+                ]
+            }
+        ],
+        "ssa": [
+            {
+                "dial_id": "c4db6e2b814346c0efa90eba0e604657",
+                "turns": [
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "1",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 1,
+                        "utterance": "I'm looking for information regarding benefits planning, can you help me?"
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "2",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 2,
+                        "utterance": "Are you planning for your own future?"
+                    },
+                    {
+                        "da": "response_positive",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "2",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 3,
+                        "utterance": "Yes I am"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "3",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "4",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 4,
+                        "utterance": "You need to think about what your family would do if you died now. Social Security can help your family, provided you have earned enough Social Security credits through your work"
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "11",
+                                "doc_id": "Benefits Planner: Survivors | How You Apply | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 5,
+                        "utterance": "That's helpful to hear. Do you have any experience with the benefits planner? Thank you for your answer. Now, suppose I announce a death. What happens next?"
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "12",
+                                "doc_id": "Benefits Planner: Survivors | How You Apply | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 6,
+                        "utterance": "Are you asking in behalf of your spouse or parent records?"
+                    },
+                    {
+                        "da": "response_negative",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "12",
+                                "doc_id": "Benefits Planner: Survivors | How You Apply | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 7,
+                        "utterance": "Not, not at all."
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "16",
+                                "doc_id": "Benefits Planner: Survivors | How You Apply | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 8,
+                        "utterance": "Are you asking for a retirement or disability situation on your own record?"
+                    },
+                    {
+                        "da": "response_negative",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "16",
+                                "doc_id": "Benefits Planner: Survivors | How You Apply | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 9,
+                        "utterance": "No, neither that."
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "19",
+                                "doc_id": "Benefits Planner: Survivors | How You Apply | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 10,
+                        "utterance": "Are you asking because you're not getting any benefits?"
+                    },
+                    {
+                        "da": "response_negative",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "19",
+                                "doc_id": "Benefits Planner: Survivors | How You Apply | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 11,
+                        "utterance": "No, i'm not asking for any of that."
+                    }
+                ]
+            },
+            {
+                "dial_id": "7940d60705c19b2235da8ba9ccf82532",
+                "turns": [
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "1",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 1,
+                        "utterance": "Can you help me with planing the benefits for my survivors?"
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "2",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 2,
+                        "utterance": "Are you planning for the future of your survivors?"
+                    },
+                    {
+                        "da": "response_negative",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "2",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 3,
+                        "utterance": "Not right now."
+                    },
+                    {
+                        "da": "respond_no_solution",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "1",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 4,
+                        "utterance": "Unfortunately, no relevant information is found."
+                    },
+                    {
+                        "da": "query_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "3",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "4",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 5,
+                        "utterance": "But I want to know if my family would get any help from Social Security after my passing."
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "3",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "4",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 6,
+                        "utterance": "yes, Social Security can help your family if you have earned enough credits through your work."
+                    },
+                    {
+                        "da": "query_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "137",
+                                "doc_id": "Benefits Planner: Disability | How You Qualify | Social Security Administration#2_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "138",
+                                "doc_id": "Benefits Planner: Disability | How You Qualify | Social Security Administration#2_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 7,
+                        "utterance": "Do you also know about if ever the adult child is already receiving disability benefits in his own record, can he still get benefits on my record?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "137",
+                                "doc_id": "Benefits Planner: Disability | How You Qualify | Social Security Administration#2_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "138",
+                                "doc_id": "Benefits Planner: Disability | How You Qualify | Social Security Administration#2_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 8,
+                        "utterance": "He still should check if he can get benefits on his parent's record. Higher benefits might be payable and he could be entitled to receive Medicare."
+                    },
+                    {
+                        "da": "query_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "22",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "23",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "24",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 9,
+                        "utterance": "If I am widowed, at what age can I have benefits and for what benefits?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "22",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "23",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "24",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 10,
+                        "utterance": "She can get reduced benefits as early as age 60 or full benefits at full retirement age. If she's 50 years old she could get the benefits if she's disabled and her disability started 7 years or earlier before your death."
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "86",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 11,
+                        "utterance": "what if she remarries after my death?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "87",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 12,
+                        "utterance": "if she remarries after age 60, 50 if disabled, she would still qualify for the benefits on your social security records."
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "98",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 13,
+                        "utterance": "And if she receives a pension not covered by Social Security?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "99",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 14,
+                        "utterance": "If it's a pension based on work then their Social Security benefits as a survivor could be affected."
+                    }
+                ]
+            },
+            {
+                "dial_id": "e6cc96914e2e2613116da877e482c1a1",
+                "turns": [
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "1",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 1,
+                        "utterance": "I need help planning for my survivors."
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "2",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 2,
+                        "utterance": "Are you currently planning for the future of your survivors?"
+                    },
+                    {
+                        "da": "response_positive",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "2",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 3,
+                        "utterance": "Yes, I am."
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "3",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "4",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 4,
+                        "utterance": "If you have earned enough Social Security credits, then Social Security can help your family should you die now."
+                    },
+                    {
+                        "da": "query_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "49",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "50",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 5,
+                        "utterance": "Can my stepfather receive the benefits too?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "49",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "50",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 6,
+                        "utterance": "He can if he became your stepfather before you turned 16."
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "148",
+                                "doc_id": "Benefits Planner: Survivors | If You Are The Survivor | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 7,
+                        "utterance": "Is it okay if I ask a follow-up question for other Things? Will my 62-year-old mother's benefits be affected if she remarries?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "149",
+                                "doc_id": "Benefits Planner: Survivors | If You Are The Survivor | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 8,
+                        "utterance": "She will continue to qualify for benefits on the deceased spouse's Social Security record."
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "98",
+                                "doc_id": "Benefits Planner: Survivors | If You Are The Survivor | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 9,
+                        "utterance": "are the kids eligible for benefits after they turn 18?"
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "99",
+                                "doc_id": "Benefits Planner: Survivors | If You Are The Survivor | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 10,
+                        "utterance": "Are they unmarried children under 18, or up to age 19 and attending elementary or secondary school full time and the children of a worker who died?"
+                    },
+                    {
+                        "da": "response_negative",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "99",
+                                "doc_id": "Benefits Planner: Survivors | If You Are The Survivor | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 11,
+                        "utterance": "no she's 19 and not in school"
+                    }
+                ]
+            }
+        ]
+    }
+}

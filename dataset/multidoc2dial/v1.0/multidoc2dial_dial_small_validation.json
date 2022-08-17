@@ -1,0 +1,1381 @@
+{
+    "dial_data": {
+        "dmv": [
+            {
+                "dial_id": "1409501a35697e0ce68561e29577b90a",
+                "turns": [
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "23",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 1,
+                        "utterance": "My insurance ended so what should i do"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "24",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "25",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "26",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 2,
+                        "utterance": "You will need to get insurance or we will suspend your registration and license"
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "28",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 3,
+                        "utterance": "Don't do that I'll get insurance"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "29",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 4,
+                        "utterance": "Okay, have you received a letter from the DMV letting you know how to clear things up?"
+                    },
+                    {
+                        "da": "query_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "13",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 5,
+                        "utterance": "I have, that is why I am here to clear that up and change the address on my license and registration"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "13",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 6,
+                        "utterance": "Okay, we can take care of that"
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "24",
+                                "doc_id": "Help finding enough proof of ID#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 7,
+                        "utterance": "Thank you so much. After looking through these requirements that I need to bring to DMV, can you tell me whether a GED certificate will be a valid proof of identification?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "25",
+                                "doc_id": "Help finding enough proof of ID#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "26",
+                                "doc_id": "Help finding enough proof of ID#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "27",
+                                "doc_id": "Help finding enough proof of ID#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 8,
+                        "utterance": "Sure, it is. You can contact your college and get a certified copy."
+                    },
+                    {
+                        "da": "query_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "14",
+                                "doc_id": "Help finding enough proof of ID#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "15",
+                                "doc_id": "Help finding enough proof of ID#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "16",
+                                "doc_id": "Help finding enough proof of ID#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 9,
+                        "utterance": "Great. I think that I can found some bills, of some services, would that help too?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "14",
+                                "doc_id": "Help finding enough proof of ID#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "15",
+                                "doc_id": "Help finding enough proof of ID#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "16",
+                                "doc_id": "Help finding enough proof of ID#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 10,
+                        "utterance": "Yes, as long as they be a phone, electricity, gas, water or cable bill."
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "35",
+                                "doc_id": "Help finding enough proof of ID#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 11,
+                        "utterance": "Can I use my union card?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "36",
+                                "doc_id": "Help finding enough proof of ID#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "37",
+                                "doc_id": "Help finding enough proof of ID#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "38",
+                                "doc_id": "Help finding enough proof of ID#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 12,
+                        "utterance": "Yes, it's also a valid document, no matter if you have no longer that union job."
+                    }
+                ]
+            },
+            {
+                "dial_id": "98c58a56af5e55754eeb7d427928ff66",
+                "turns": [
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "4",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 1,
+                        "utterance": "I need to change my address."
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "5",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "6",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "7",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 2,
+                        "utterance": "You need to report it to the DMV."
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "9",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 3,
+                        "utterance": "Is your license current?"
+                    },
+                    {
+                        "da": "response_negative",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "9",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 4,
+                        "utterance": "Yes, I just have to change the address."
+                    },
+                    {
+                        "da": "respond_no_solution",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "4",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 5,
+                        "utterance": "Unfortunately, no relevant information is found."
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "33",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 6,
+                        "utterance": "What if my insurance had lapsed?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "35",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "36",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "37",
+                                "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 7,
+                        "utterance": "Your license and registration could be suspended."
+                    },
+                    {
+                        "da": "query_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "2",
+                                "doc_id": "Help finding enough proof of ID#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "3",
+                                "doc_id": "Help finding enough proof of ID#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "4",
+                                "doc_id": "Help finding enough proof of ID#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 8,
+                        "utterance": "Ok, yes, they are good alternatives. I know you ask a lot for birth certificates, but what if you don't have one handy?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "2",
+                                "doc_id": "Help finding enough proof of ID#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "3",
+                                "doc_id": "Help finding enough proof of ID#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "4",
+                                "doc_id": "Help finding enough proof of ID#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 9,
+                        "utterance": "You can go and use the NYS Department of Health Vital Records to lend you a hand on that. You can even order those through an independent partner."
+                    },
+                    {
+                        "da": "query_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "25",
+                                "doc_id": "Help finding enough proof of ID#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "26",
+                                "doc_id": "Help finding enough proof of ID#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "27",
+                                "doc_id": "Help finding enough proof of ID#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 10,
+                        "utterance": "Going back to those alternate documents, can i use General Educational Development certificate as well?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "25",
+                                "doc_id": "Help finding enough proof of ID#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "26",
+                                "doc_id": "Help finding enough proof of ID#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "27",
+                                "doc_id": "Help finding enough proof of ID#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 11,
+                        "utterance": "Sure. You can contact your college to ask them for a certified copy."
+                    },
+                    {
+                        "da": "query_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "25",
+                                "doc_id": "Help finding enough proof of ID#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "26",
+                                "doc_id": "Help finding enough proof of ID#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "27",
+                                "doc_id": "Help finding enough proof of ID#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 12,
+                        "utterance": "Are you sure? I don't want to waste my time there."
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "25",
+                                "doc_id": "Help finding enough proof of ID#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "26",
+                                "doc_id": "Help finding enough proof of ID#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "27",
+                                "doc_id": "Help finding enough proof of ID#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 13,
+                        "utterance": "Absolutely, that document is totally valid for this procedure."
+                    }
+                ]
+            },
+            {
+                "dial_id": "56f37985586c76d125118233adb410fa",
+                "turns": [
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "28",
+                                "doc_id": "DIAL-IN search accounts#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 1,
+                        "utterance": "how do i pay dial in search account fees?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "29",
+                                "doc_id": "DIAL-IN search accounts#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "30",
+                                "doc_id": "DIAL-IN search accounts#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 2,
+                        "utterance": "paying customers must include a deposit with the application. your first deposit must be enough to pay for two months of searches."
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "31",
+                                "doc_id": "DIAL-IN search accounts#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 3,
+                        "utterance": "when we accept your application. does this apply to you?"
+                    },
+                    {
+                        "da": "response_positive",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "31",
+                                "doc_id": "DIAL-IN search accounts#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 4,
+                        "utterance": "yes"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "32",
+                                "doc_id": "DIAL-IN search accounts#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 5,
+                        "utterance": "your deposit is added to your new account balance"
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "73",
+                                "doc_id": "DIAL-IN search accounts#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 6,
+                        "utterance": "what about my browser?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "74",
+                                "doc_id": "DIAL-IN search accounts#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 7,
+                        "utterance": "please update it to the newest version"
+                    },
+                    {
+                        "da": "query_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "68",
+                                "doc_id": "DIAL-IN search accounts#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 8,
+                        "utterance": "how do i contact the dmv about my dial in search account?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "68",
+                                "doc_id": "DIAL-IN search accounts#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 9,
+                        "utterance": "you can contact us at : NYSDMV DIAL - IN AccountsRoom 2316 Empire State PlazaAlbany, NY 12228"
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "37",
+                                "doc_id": "DIAL-IN search accounts#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 10,
+                        "utterance": "what if i have to pay a fee?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "38",
+                                "doc_id": "DIAL-IN search accounts#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "40",
+                                "doc_id": "DIAL-IN search accounts#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 11,
+                        "utterance": "your account records will reflect youe debits and your credits and show your account balance. please visit our escrow accounts page. "
+                    },
+                    {
+                        "da": "query_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "17",
+                                "doc_id": "DIAL-IN search accounts#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "18",
+                                "doc_id": "DIAL-IN search accounts#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "19",
+                                "doc_id": "DIAL-IN search accounts#3_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 12,
+                        "utterance": "how will i know my application has been accepted?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "17",
+                                "doc_id": "DIAL-IN search accounts#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "18",
+                                "doc_id": "DIAL-IN search accounts#3_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "19",
+                                "doc_id": "DIAL-IN search accounts#3_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 13,
+                        "utterance": "we will cerate an account for you, we will send yo your account number and password, your seven digit account number will never change."
+                    }
+                ]
+            }
+        ],
+        "ssa": [
+            {
+                "dial_id": "08a4c73e6eece0ee2b3a64a3949ee0ff",
+                "turns": [
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "1",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 1,
+                        "utterance": "I need help with planning my Social Security survivor benefits."
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "2",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 2,
+                        "utterance": "Do you need information about planning for your future Social Security survivor benefits?"
+                    },
+                    {
+                        "da": "response_negative",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "2",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 3,
+                        "utterance": "Yes."
+                    },
+                    {
+                        "da": "respond_no_solution",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "1",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 4,
+                        "utterance": "Unfortunately, no relevant information is found."
+                    },
+                    {
+                        "da": "query_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "22",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "23",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "24",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 5,
+                        "utterance": "What would my widower receive in benefits?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "22",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "23",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "24",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 6,
+                        "utterance": "In the event of your passing, your widower would start receiving reduced benefits at age 60 or full benefits if they are at retirement age or older."
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "83",
+                                "doc_id": "Benefits Planner: Disability | How You Qualify | Social Security Administration#2_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 7,
+                        "utterance": "Of course, and regarding doing other types of work, to obtain the status of disabled I should not be able to do any type of work?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "84",
+                                "doc_id": "Benefits Planner: Disability | How You Qualify | Social Security Administration#2_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 8,
+                        "utterance": "Yes, if you are unable to do any other type of work then you will be able to get disability."
+                    },
+                    {
+                        "da": "query_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "3",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "4",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 9,
+                        "utterance": "I want to make sure that my family is taken care of financially after I pass away. What is the procedure for receiving Social Security survivor benefits?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "3",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "4",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 10,
+                        "utterance": "Your Social Security can help ensure that your family is taken care of if you have earned enough credits through working."
+                    },
+                    {
+                        "da": "query_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "7",
+                                "doc_id": "Benefits Planner: Retirement | Getting Benefits While Working | Social Security Administration#2_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "8",
+                                "doc_id": "Benefits Planner: Retirement | Getting Benefits While Working | Social Security Administration#2_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 11,
+                        "utterance": "Thank you. I'd also like to know if the increase retroactive to January of the year you received money. What method is used to measure it?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "7",
+                                "doc_id": "Benefits Planner: Retirement | Getting Benefits While Working | Social Security Administration#2_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "8",
+                                "doc_id": "Benefits Planner: Retirement | Getting Benefits While Working | Social Security Administration#2_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 12,
+                        "utterance": " we will recalculate your benefit amount "
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "38",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 13,
+                        "utterance": "I'd like to learn more about Benefits Planner as well. What kind of care will my children get?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "39",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 14,
+                        "utterance": "Your children who are under 18 or age 19 if still attending school full time can receive Social Security benefits if they are unmarried."
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "43",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 15,
+                        "utterance": "Do you need more information about this?"
+                    },
+                    {
+                        "da": "response_negative",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "43",
+                                "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 16,
+                        "utterance": "Yes, I would like more information about benefits for my children."
+                    }
+                ]
+            },
+            {
+                "dial_id": "32e3c1e1d6824a9bf68c88cde9b9b91a",
+                "turns": [
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "1",
+                                "doc_id": "Benefits Planner: Disability | How You Apply | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 1,
+                        "utterance": "How do I apply for disability benefits?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "2",
+                                "doc_id": "Benefits Planner: Disability | How You Apply | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 2,
+                        "utterance": "I can help you with that. First off, you should apply for benefits as soon as you become disabled."
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "3",
+                                "doc_id": "Benefits Planner: Disability | How You Apply | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 3,
+                        "utterance": "Are you interested in applying now?"
+                    },
+                    {
+                        "da": "response_negative",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "3",
+                                "doc_id": "Benefits Planner: Disability | How You Apply | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 4,
+                        "utterance": "No, I don't think I am ready."
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "7",
+                                "doc_id": "Benefits Planner: Disability | How You Apply | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 5,
+                        "utterance": "Ok, no problem. Are you deaf or hard of hearing?"
+                    },
+                    {
+                        "da": "response_negative",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "7",
+                                "doc_id": "Benefits Planner: Disability | How You Apply | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 6,
+                        "utterance": "Oh, no. I am not."
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "6",
+                                "doc_id": "Benefits Planner: Disability | How You Apply | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 7,
+                        "utterance": "Do you have access to a telephone?"
+                    },
+                    {
+                        "da": "response_positive",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "6",
+                                "doc_id": "Benefits Planner: Disability | How You Apply | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 8,
+                        "utterance": "I do."
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "59",
+                                "doc_id": "Benefits Planner: Disability | How You Apply | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 9,
+                        "utterance": "Do you have any documents or publications that I can read?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "60",
+                                "doc_id": "Benefits Planner: Disability | How You Apply | Social Security Administration#1_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "61",
+                                "doc_id": "Benefits Planner: Disability | How You Apply | Social Security Administration#1_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "62",
+                                "doc_id": "Benefits Planner: Disability | How You Apply | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 10,
+                        "utterance": "We do, what are you interested in? Applying online for disability benefits? We also have documents on disability benefits and a starter kit."
+                    },
+                    {
+                        "da": "query_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "56",
+                                "doc_id": "Benefits Planner: Disability | How You Apply | Social Security Administration#1_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "58",
+                                "doc_id": "Benefits Planner: Disability | How You Apply | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 11,
+                        "utterance": "I am wondering about if I don't have enough work credits to be eligible for disability. What should I do?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "56",
+                                "doc_id": "Benefits Planner: Disability | How You Apply | Social Security Administration#1_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "58",
+                                "doc_id": "Benefits Planner: Disability | How You Apply | Social Security Administration#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 12,
+                        "utterance": "We do have some information called \"Your income and resources\" that you can access on page 5 of our Supplemental Security Income SSI booklet."
+                    }
+                ]
+            },
+            {
+                "dial_id": "8e0770d85d9e7f13ee04580aa88fcca3",
+                "turns": [
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "17",
+                                "doc_id": "Learn what documents you will need to get a Social Security Card | Social Security Administration#4_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 1,
+                        "utterance": "What documents do I need to get a corrected Social Security Card?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "18",
+                                "doc_id": "Learn what documents you will need to get a Social Security Card | Social Security Administration#4_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 2,
+                        "utterance": "Citizenship is one option."
+                    },
+                    {
+                        "da": "query_condition",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "19",
+                                "doc_id": "Learn what documents you will need to get a Social Security Card | Social Security Administration#4_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 3,
+                        "utterance": "Have you established yourself as American citizen with us?"
+                    },
+                    {
+                        "da": "response_negative",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "19",
+                                "doc_id": "Learn what documents you will need to get a Social Security Card | Social Security Administration#4_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 4,
+                        "utterance": "No, I don't think that I have."
+                    },
+                    {
+                        "da": "respond_no_solution",
+                        "references": [
+                            {
+                                "label": "precondition",
+                                "id_sp": "17",
+                                "doc_id": "Learn what documents you will need to get a Social Security Card | Social Security Administration#4_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 5,
+                        "utterance": "Unfortunately, no relevant information is found."
+                    },
+                    {
+                        "da": "query_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "14",
+                                "doc_id": "Learn what documents you will need to get a Social Security Card | Social Security Administration#4_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "16",
+                                "doc_id": "Learn what documents you will need to get a Social Security Card | Social Security Administration#4_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 6,
+                        "utterance": "Can I use my US passport as proof of both being a citizen and my identity?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "14",
+                                "doc_id": "Learn what documents you will need to get a Social Security Card | Social Security Administration#4_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "16",
+                                "doc_id": "Learn what documents you will need to get a Social Security Card | Social Security Administration#4_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 7,
+                        "utterance": "Yes you can."
+                    },
+                    {
+                        "da": "query_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "31",
+                                "doc_id": "Explore The Benefits You May Be Due#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 8,
+                        "utterance": "There's something more about increased benefits eligibility. I also have a question for you. Is it possible for me to receive compensation because of my ex-wife?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "31",
+                                "doc_id": "Explore The Benefits You May Be Due#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 9,
+                        "utterance": "You may may be eligible for a benefit based on a former spouse's work if that marriage lasted 10 years or more ."
+                    },
+                    {
+                        "da": "query_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "53",
+                                "doc_id": "Explore The Benefits You May Be Due#1_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "54",
+                                "doc_id": "Explore The Benefits You May Be Due#1_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "55",
+                                "doc_id": "Explore The Benefits You May Be Due#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 10,
+                        "utterance": "good to know , and do you guys have a number I could call if I can't get online?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "53",
+                                "doc_id": "Explore The Benefits You May Be Due#1_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "54",
+                                "doc_id": "Explore The Benefits You May Be Due#1_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "55",
+                                "doc_id": "Explore The Benefits You May Be Due#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 11,
+                        "utterance": "Yes, you can call us toll - free at 1 - 800 - 772 - 1213 ."
+                    },
+                    {
+                        "da": "query_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "11",
+                                "doc_id": "Explore The Benefits You May Be Due#1_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "12",
+                                "doc_id": "Explore The Benefits You May Be Due#1_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "13",
+                                "doc_id": "Explore The Benefits You May Be Due#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 12,
+                        "utterance": "and I want to find out more about being eligible for benefits because of someone else's contributions, so is there something I can look at for that?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "11",
+                                "doc_id": "Explore The Benefits You May Be Due#1_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "12",
+                                "doc_id": "Explore The Benefits You May Be Due#1_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "13",
+                                "doc_id": "Explore The Benefits You May Be Due#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 13,
+                        "utterance": "To find out if you might be eligible for a benefit based on another person's work you can view the information about benefits on the Social Security website .You can also use the Benefit Eligibility Screening Tool BEST to find out if you could get benefits that Social Security administers. BEST will take your answers and inform you of what benefits you may be eligible for."
+                    },
+                    {
+                        "da": "query_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "53",
+                                "doc_id": "Explore The Benefits You May Be Due#1_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "54",
+                                "doc_id": "Explore The Benefits You May Be Due#1_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "55",
+                                "doc_id": "Explore The Benefits You May Be Due#1_0"
+                            }
+                        ],
+                        "role": "user",
+                        "turn_id": 14,
+                        "utterance": "and which is more private if I want to do it that way, like if I call will it be private?"
+                    },
+                    {
+                        "da": "respond_solution",
+                        "references": [
+                            {
+                                "label": "solution",
+                                "id_sp": "53",
+                                "doc_id": "Explore The Benefits You May Be Due#1_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "54",
+                                "doc_id": "Explore The Benefits You May Be Due#1_0"
+                            },
+                            {
+                                "label": "solution",
+                                "id_sp": "55",
+                                "doc_id": "Explore The Benefits You May Be Due#1_0"
+                            }
+                        ],
+                        "role": "agent",
+                        "turn_id": 15,
+                        "utterance": "We treat all calls confidentially ."
+                    }
+                ]
+            }
+        ]
+    }
+}

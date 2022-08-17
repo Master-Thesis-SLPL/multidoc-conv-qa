@@ -1,0 +1,3121 @@
+{
+    "dial_data": {
+        "dmv": {
+            "Top 5 DMV Mistakes and How to Avoid Them#3_0": [
+                {
+                    "dial_id": "dea7174409afbfe0af0ace21e7f318ae",
+                    "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0",
+                    "domain": "dmv",
+                    "turns": [
+                        {
+                            "turn_id": 1,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "23",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "My insurance ended so what should i do"
+                        },
+                        {
+                            "turn_id": 2,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "24",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "25",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "26",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "You will need to get insurance or we will suspend your registration and license"
+                        },
+                        {
+                            "turn_id": 3,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "28",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Don't do that I'll get insurance"
+                        },
+                        {
+                            "turn_id": 4,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "29",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Okay, have you received a letter from the DMV letting you know how to clear things up?"
+                        },
+                        {
+                            "turn_id": 5,
+                            "role": "user",
+                            "da": "query_solution",
+                            "references": [
+                                {
+                                    "sp_id": "13",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "I have, that is why I am here to clear that up and change the address on my license and registration"
+                        },
+                        {
+                            "turn_id": 6,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "13",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Okay, we can take care of that"
+                        },
+                        {
+                            "turn_id": 7,
+                            "role": "user",
+                            "da": "query_solution",
+                            "references": [
+                                {
+                                    "sp_id": "35",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "36",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "37",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Will I still have to turn in anything or can I keep it as I renew my insurance"
+                        },
+                        {
+                            "turn_id": 8,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "35",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "36",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "37",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "If you show proof of insurance and you go ahead with the address change than everything should be fine"
+                        },
+                        {
+                            "turn_id": 9,
+                            "role": "user",
+                            "da": "query_solution",
+                            "references": [
+                                {
+                                    "sp_id": "24",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "25",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "26",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "OKay, well I just logged in and I have insurance and I just need to give you my new address...is that fine"
+                        },
+                        {
+                            "turn_id": 10,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "24",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "25",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "26",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Good, we now have all the information we need so you should be good to go"
+                        },
+                        {
+                            "turn_id": 11,
+                            "role": "agent",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "31",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Did you just now get your new insurance coverage?"
+                        },
+                        {
+                            "turn_id": 12,
+                            "role": "user",
+                            "da": "response_negative",
+                            "references": [
+                                {
+                                    "sp_id": "31",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Nope, earlier but it just showed up on my account and payment went through so I should be covered"
+                        },
+                        {
+                            "turn_id": 13,
+                            "role": "agent",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "33",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Just don't let it happen again or you might lose your license and registration, so just stay insured"
+                        },
+                        {
+                            "turn_id": 14,
+                            "role": "user",
+                            "da": "response_positive",
+                            "references": [
+                                {
+                                    "sp_id": "33",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "won't happen again, it was just a mistake on my part"
+                        },
+                        {
+                            "turn_id": 15,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "35",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "36",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "37",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Okay, well we have your address and it should all be good"
+                        },
+                        {
+                            "turn_id": 16,
+                            "role": "user",
+                            "da": "query_solution",
+                            "references": [
+                                {
+                                    "sp_id": "18",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "19",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "20",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "So just to be sure, if i change address again then I should come in and let you know?"
+                        },
+                        {
+                            "turn_id": 17,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "18",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "19",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "20",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Yes, and please have your insurance up to date when you do so"
+                        }
+                    ]
+                },
+                {
+                    "dial_id": "83d090a234b905fa4f0cb8ed8f0b5535",
+                    "doc_id": "Top 5 DMV Mistakes and How to Avoid Them#3_0",
+                    "domain": "dmv",
+                    "turns": [
+                        {
+                            "turn_id": 1,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "4",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "I need to change my address."
+                        },
+                        {
+                            "turn_id": 2,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "5",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "6",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "7",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "You need to report it to the DMV."
+                        },
+                        {
+                            "turn_id": 3,
+                            "role": "agent",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "9",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Is your license current?"
+                        },
+                        {
+                            "turn_id": 4,
+                            "role": "user",
+                            "da": "response_negative",
+                            "references": [
+                                {
+                                    "sp_id": "9",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Yes, I just have to change the address."
+                        },
+                        {
+                            "turn_id": 5,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "33",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "What if my insurance had lapsed?"
+                        },
+                        {
+                            "turn_id": 6,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "35",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "36",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "37",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Your license and registration could be suspended."
+                        },
+                        {
+                            "turn_id": 7,
+                            "role": "user",
+                            "da": "query_solution",
+                            "references": [
+                                {
+                                    "sp_id": "5",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "6",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "7",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "What if I forgot to update my address?"
+                        },
+                        {
+                            "turn_id": 8,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "5",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "6",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "7",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "You must change it immediately."
+                        },
+                        {
+                            "turn_id": 9,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "34",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "What if I don't change it?"
+                        },
+                        {
+                            "turn_id": 10,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "35",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "36",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "37",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Your license will be suspended."
+                        },
+                        {
+                            "turn_id": 11,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "14",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "What if I move to another state?"
+                        },
+                        {
+                            "turn_id": 12,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "15",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "16",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "17",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "You must resolve any issues before you leave."
+                        },
+                        {
+                            "turn_id": 13,
+                            "role": "user",
+                            "da": "query_solution",
+                            "references": [
+                                {
+                                    "sp_id": "24",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "25",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "26",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "How will they know if I have insurance?"
+                        },
+                        {
+                            "turn_id": 14,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "24",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "25",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "26",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "DMV works with insurance companies."
+                        }
+                    ]
+                }
+            ],
+            "DIAL-IN search accounts#3_0": [
+                {
+                    "dial_id": "9f5633139a815b123df20367a37e9fc4",
+                    "doc_id": "DIAL-IN search accounts#3_0",
+                    "domain": "dmv",
+                    "turns": [
+                        {
+                            "turn_id": 1,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "28",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "how do i pay dial in search account fees?"
+                        },
+                        {
+                            "turn_id": 2,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "29",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "30",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "paying customers must include a deposit with the application. your first deposit must be enough to pay for two months of searches."
+                        },
+                        {
+                            "turn_id": 3,
+                            "role": "agent",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "31",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "when we accept your application. does this apply to you?"
+                        },
+                        {
+                            "turn_id": 4,
+                            "role": "user",
+                            "da": "response_positive",
+                            "references": [
+                                {
+                                    "sp_id": "31",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "yes"
+                        },
+                        {
+                            "turn_id": 5,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "32",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "your deposit is added to your new account balance"
+                        },
+                        {
+                            "turn_id": 6,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "73",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "what about my browser?"
+                        },
+                        {
+                            "turn_id": 7,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "74",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "please update it to the newest version"
+                        },
+                        {
+                            "turn_id": 8,
+                            "role": "user",
+                            "da": "query_solution",
+                            "references": [
+                                {
+                                    "sp_id": "68",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "how do i contact the dmv about my dial in search account?"
+                        },
+                        {
+                            "turn_id": 9,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "68",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "you can contact us at : NYSDMV DIAL - IN AccountsRoom 2316 Empire State PlazaAlbany, NY 12228"
+                        },
+                        {
+                            "turn_id": 10,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "37",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "what if i have to pay a fee?"
+                        },
+                        {
+                            "turn_id": 11,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "38",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "40",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "your account records will reflect youe debits and your credits and show your account balance. please visit our escrow accounts page. "
+                        },
+                        {
+                            "turn_id": 12,
+                            "role": "user",
+                            "da": "query_solution",
+                            "references": [
+                                {
+                                    "sp_id": "17",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "18",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "19",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "how will i know my application has been accepted?"
+                        },
+                        {
+                            "turn_id": 13,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "17",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "18",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "19",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "we will cerate an account for you, we will send yo your account number and password, your seven digit account number will never change."
+                        }
+                    ]
+                },
+                {
+                    "dial_id": "be588fec30ffd8149a53615c46970798",
+                    "doc_id": "DIAL-IN search accounts#3_0",
+                    "domain": "dmv",
+                    "turns": [
+                        {
+                            "turn_id": 1,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "28",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "I need to know how to pay the dial-in search account fees."
+                        },
+                        {
+                            "turn_id": 2,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "29",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "30",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "The custoers must pay a deposit with the application, and it should be enough to pay for two months of searches."
+                        },
+                        {
+                            "turn_id": 3,
+                            "role": "agent",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "31",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Was your application accepted?"
+                        },
+                        {
+                            "turn_id": 4,
+                            "role": "user",
+                            "da": "response_positive",
+                            "references": [
+                                {
+                                    "sp_id": "31",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Yes, it was."
+                        },
+                        {
+                            "turn_id": 5,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "32",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "then, your deposit will be added to your new account balance."
+                        },
+                        {
+                            "turn_id": 6,
+                            "role": "user",
+                            "da": "query_solution",
+                            "references": [
+                                {
+                                    "sp_id": "26",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "27",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Can you tell me some of the organizations that are exempt from the search fees?"
+                        },
+                        {
+                            "turn_id": 7,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "26",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "27",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Some of the exempted organizations are any public organization, its officers, a volunteer fire company, volunteer ambulance service, etc. These organizations are exempt from the search fee."
+                        },
+                        {
+                            "turn_id": 8,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "55",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "What to do in case none of the users performed a search that the DMV contacted me for?"
+                        },
+                        {
+                            "turn_id": 9,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "56",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "You should contact the DMV immediately."
+                        },
+                        {
+                            "turn_id": 10,
+                            "role": "user",
+                            "da": "query_solution",
+                            "references": [
+                                {
+                                    "sp_id": "46",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "47",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "48",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Why would the DMV contact me about a search?"
+                        },
+                        {
+                            "turn_id": 11,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "46",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "47",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "48",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "The DMV may contact you to ask you about a search to make sure you comply with the Dial-In Terms of Service."
+                        },
+                        {
+                            "turn_id": 12,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "51",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "What if the search is done on behalf of a client?"
+                        },
+                        {
+                            "turn_id": 13,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "52",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "In that case, you'll have to give the permissible use of your client and a proof of your client-agent relationship."
+                        }
+                    ]
+                }
+            ],
+            "New York State Insurance Requirements#3_0": [
+                {
+                    "dial_id": "27792b3995d3965961055a569a5aede1",
+                    "doc_id": "New York State Insurance Requirements#3_0",
+                    "domain": "dmv",
+                    "turns": [
+                        {
+                            "turn_id": 1,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "45",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "I'm enquiring about out of state insurance docs"
+                        },
+                        {
+                            "turn_id": 2,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "46",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "We will never accept out - of - state vehicle insurance coverage of any type "
+                        },
+                        {
+                            "turn_id": 3,
+                            "role": "agent",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "47",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Is your vehicle registered in New York?"
+                        },
+                        {
+                            "turn_id": 4,
+                            "role": "user",
+                            "da": "response_positive",
+                            "references": [
+                                {
+                                    "sp_id": "47",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Yes"
+                        },
+                        {
+                            "turn_id": 5,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "48",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "49",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "50",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "it must have New York State auto liability insurance coverage.\nYour motorcycle must have insurance coverage any time it is operated on a public road or highway. Unlike most other motor vehicles , motorcycles are registered for one year rather than two"
+                        },
+                        {
+                            "turn_id": 6,
+                            "role": "user",
+                            "da": "query_solution",
+                            "references": [
+                                {
+                                    "sp_id": "24",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "25",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Do I need insurance to register my vehicle?"
+                        },
+                        {
+                            "turn_id": 7,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "24",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "25",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Yes the DMV requires auto liability insurance to register a vehicle in New York"
+                        },
+                        {
+                            "turn_id": 8,
+                            "role": "user",
+                            "da": "query_solution",
+                            "references": [
+                                {
+                                    "sp_id": "33",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "34",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "35",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "How long do I have to register?"
+                        },
+                        {
+                            "turn_id": 9,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "33",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "34",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "35",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "You must register your vehicle at the DMV within 180 days of the effective date on your insurance ID card"
+                        },
+                        {
+                            "turn_id": 10,
+                            "role": "user",
+                            "da": "query_solution",
+                            "references": [
+                                {
+                                    "sp_id": "18",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Where can I find more information?"
+                        },
+                        {
+                            "turn_id": 11,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "18",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "The New York State Department of Financial Services website has more information about liability insurance and insurance companies licensed in New York : http://www.dfs.ny.gov"
+                        },
+                        {
+                            "turn_id": 12,
+                            "role": "user",
+                            "da": "query_solution",
+                            "references": [
+                                {
+                                    "sp_id": "27",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "28",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "29",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "What kind of proof of insurance do I need?"
+                        },
+                        {
+                            "turn_id": 13,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "27",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "28",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "29",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": " Your insurance company will issue proof of insurance in two ways: It will give you two original NY State Insurance ID Cards or provide you with access to your digital electronic NY State Insurance ID Card"
+                        }
+                    ]
+                },
+                {
+                    "dial_id": "10db331606ecf90e67a808d8fb7e411a",
+                    "doc_id": "New York State Insurance Requirements#3_0",
+                    "domain": "dmv",
+                    "turns": [
+                        {
+                            "turn_id": 1,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "23",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Do I need insurance to register my vehicle? "
+                        },
+                        {
+                            "turn_id": 2,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "24",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "25",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Yes. The DMV requires auto liability insurance to register a vehicle in New York"
+                        },
+                        {
+                            "turn_id": 3,
+                            "role": "agent",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "26",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Do you have insurance?"
+                        },
+                        {
+                            "turn_id": 4,
+                            "role": "user",
+                            "da": "response_negative",
+                            "references": [
+                                {
+                                    "sp_id": "26",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "No"
+                        },
+                        {
+                            "turn_id": 5,
+                            "role": "user",
+                            "da": "query_solution",
+                            "references": [
+                                {
+                                    "sp_id": "18",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Where can I find more info?"
+                        },
+                        {
+                            "turn_id": 6,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "18",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "The New York State Department of Financial Services website has more information about liability insurance and insurance companies licensed in New York : http://www.dfs.ny.gov"
+                        },
+                        {
+                            "turn_id": 7,
+                            "role": "user",
+                            "da": "query_solution",
+                            "references": [
+                                {
+                                    "sp_id": "20",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "21",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "22",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "How many names can be included on a vehicle registration?"
+                        },
+                        {
+                            "turn_id": 8,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "20",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "21",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "22",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "There can only be 1 or 2 names on a registration registrants"
+                        },
+                        {
+                            "turn_id": 9,
+                            "role": "user",
+                            "da": "query_solution",
+                            "references": [
+                                {
+                                    "sp_id": "33",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "34",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "35",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "When do I need to register the vehicle with the DMV?"
+                        },
+                        {
+                            "turn_id": 10,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "33",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "34",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "35",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "You must register your vehicle at the DMV within 180 days of the effective date on your insurance ID card. Bring one copy or form of your Insurance Identification Cards with you. The DMV office will keep the paper card "
+                        },
+                        {
+                            "turn_id": 11,
+                            "role": "user",
+                            "da": "query_solution",
+                            "references": [
+                                {
+                                    "sp_id": "42",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "43",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "44",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Can I provide a copy of my insurance ID?"
+                        },
+                        {
+                            "turn_id": 12,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "42",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "43",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "44",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Yes. However the DMV will not accept a card if the DMV barcode reader can not read scan the barcode"
+                        }
+                    ]
+                }
+            ],
+            "Commercial vehicle registration fees, vehicle use taxes and supplemental fees#3_0": [
+                {
+                    "dial_id": "c76af36d54451ddd09676713fd889065",
+                    "doc_id": "Commercial vehicle registration fees, vehicle use taxes and supplemental fees#3_0",
+                    "domain": "dmv",
+                    "turns": [
+                        {
+                            "turn_id": 1,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "13",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Can you please tell me about the county use taxes and the supplemental fees?"
+                        },
+                        {
+                            "turn_id": 2,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "14",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "15",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "16",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "these are taxes that all residents of the New York City and several counties in New York have to pay when they register or renew a commercial vehicle."
+                        },
+                        {
+                            "turn_id": 3,
+                            "role": "agent",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "17",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Do you have more questions about these taxes?"
+                        },
+                        {
+                            "turn_id": 4,
+                            "role": "user",
+                            "da": "response_negative",
+                            "references": [
+                                {
+                                    "sp_id": "17",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "No, that's enough."
+                        },
+                        {
+                            "turn_id": 5,
+                            "role": "user",
+                            "da": "query_solution",
+                            "references": [
+                                {
+                                    "sp_id": "14",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "15",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "16",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "aactually, who's in charge of collecting the taxes?"
+                        },
+                        {
+                            "turn_id": 6,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "14",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "15",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "16",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "That would be the DMV who collects the taxes for the city and counties."
+                        },
+                        {
+                            "turn_id": 7,
+                            "role": "agent",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "19",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "do you have your residence outside New York City and are you exempt from the vehicle use tax in your county?"
+                        },
+                        {
+                            "turn_id": 8,
+                            "role": "user",
+                            "da": "response_positive",
+                            "references": [
+                                {
+                                    "sp_id": "19",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Yes, that's correct."
+                        },
+                        {
+                            "turn_id": 9,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "20",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "You should complete form UT-11C."
+                        },
+                        {
+                            "turn_id": 10,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "34",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "What about the county use tax chart for counties outside of New York City?"
+                        },
+                        {
+                            "turn_id": 11,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "35",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "36",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "37",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "That chart shows the use taxes and supplemental fees for original registrations and renewals. Thes sales tax depends on the purchase proce of the vehicle and where you are located."
+                        },
+                        {
+                            "turn_id": 12,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "21",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Now, what if I reside in New York City and am exempt from the NYC vehicle use tax?"
+                        },
+                        {
+                            "turn_id": 13,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "22",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "In that case, you should go to a local DMV and get form UT-11, You can also get it from a DMC call center."
+                        }
+                    ]
+                },
+                {
+                    "dial_id": "47d8822063e3d1b654b289f45d412789",
+                    "doc_id": "Commercial vehicle registration fees, vehicle use taxes and supplemental fees#3_0",
+                    "domain": "dmv",
+                    "turns": [
+                        {
+                            "turn_id": 1,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "13",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "How do the county taxes work? how are they used?"
+                        },
+                        {
+                            "turn_id": 2,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "14",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "15",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "16",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Residents of New York City and several counties in New York must pay a vehicle use tax when they register a commercial vehicle or renew a commercial vehicle registration ."
+                        },
+                        {
+                            "turn_id": 3,
+                            "role": "agent",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "17",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Do you have any questions about these taxes?"
+                        },
+                        {
+                            "turn_id": 4,
+                            "role": "user",
+                            "da": "response_positive",
+                            "references": [
+                                {
+                                    "sp_id": "17",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "yes "
+                        },
+                        {
+                            "turn_id": 5,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "18",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Ok great! Thank you for your response. You can ask the city or county you are in about that"
+                        },
+                        {
+                            "turn_id": 6,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "21",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Is there anyway to become exempt from them?"
+                        },
+                        {
+                            "turn_id": 7,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "22",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "You can contact the DMV Call Center"
+                        },
+                        {
+                            "turn_id": 8,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "23",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Do you know where the centers are located?"
+                        },
+                        {
+                            "turn_id": 9,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "24",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "25",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "26",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "yes I do. New York City Bronx, Kings (Brooklyn), New York (Manhattan), Queens, Richmond (Staten Island)"
+                        },
+                        {
+                            "turn_id": 10,
+                            "role": "user",
+                            "da": "query_solution",
+                            "references": [
+                                {
+                                    "sp_id": "9",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "10",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "11",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "What are the fees for that?"
+                        },
+                        {
+                            "turn_id": 11,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "9",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "10",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "11",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "The fees listed in the chart are for commercial vehicles that weigh less than 18,000 lbs"
+                        },
+                        {
+                            "turn_id": 12,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "19",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "how do I know if I have to pay or not?"
+                        },
+                        {
+                            "turn_id": 13,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "20",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "you can view and download the form here  complete form UT-11C"
+                        },
+                        {
+                            "turn_id": 14,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "34",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "What about the taxes for outside counties of new york?"
+                        },
+                        {
+                            "turn_id": 15,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "35",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "36",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "37",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": " The chart show the use taxes and supplemental fees for all original registrations and renewals"
+                        }
+                    ]
+                }
+            ]
+        },
+        "ssa": {
+            "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0": [
+                {
+                    "dial_id": "51a8a0969480057016df43b16eac206f",
+                    "doc_id": "Benefits Planner: Survivors | Planning For Your Survivors | Social Security Administration#1_0",
+                    "domain": "ssa",
+                    "turns": [
+                        {
+                            "turn_id": 1,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "1",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "I need help with planning my Social Security survivor benefits."
+                        },
+                        {
+                            "turn_id": 2,
+                            "role": "agent",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "2",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Do you need information about planning for your future Social Security survivor benefits?"
+                        },
+                        {
+                            "turn_id": 3,
+                            "role": "user",
+                            "da": "response_negative",
+                            "references": [
+                                {
+                                    "sp_id": "2",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Yes."
+                        },
+                        {
+                            "turn_id": 4,
+                            "role": "user",
+                            "da": "query_solution",
+                            "references": [
+                                {
+                                    "sp_id": "22",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "23",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "24",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "What would my widower receive in benefits?"
+                        },
+                        {
+                            "turn_id": 5,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "22",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "23",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "24",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "In the event of your passing, your widower would start receiving reduced benefits at age 60 or full benefits if they are at retirement age or older."
+                        },
+                        {
+                            "turn_id": 6,
+                            "role": "user",
+                            "da": "query_solution",
+                            "references": [
+                                {
+                                    "sp_id": "3",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "4",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "I want to make sure that my family is financially taken care of after my passing. How do Social Security survivor benefits work?"
+                        },
+                        {
+                            "turn_id": 7,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "3",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "4",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Your Social Security can help ensure that your family is taken care of if you have earned enough credits through working."
+                        },
+                        {
+                            "turn_id": 8,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "38",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "What about my children? What would they receive?"
+                        },
+                        {
+                            "turn_id": 9,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "39",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Your children who are under 18 or age 19 if still attending school full time can receive Social Security benefits if they are unmarried."
+                        },
+                        {
+                            "turn_id": 10,
+                            "role": "agent",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "43",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Do you need more information about this?"
+                        },
+                        {
+                            "turn_id": 11,
+                            "role": "user",
+                            "da": "response_negative",
+                            "references": [
+                                {
+                                    "sp_id": "43",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Yes, I would like more information about benefits for my children."
+                        }
+                    ]
+                }
+            ],
+            "Benefits Planner: Disability | How You Apply | Social Security Administration#1_0": [
+                {
+                    "dial_id": "db43edca626871c4eda7e6c5b2bae7d6",
+                    "doc_id": "Benefits Planner: Disability | How You Apply | Social Security Administration#1_0",
+                    "domain": "ssa",
+                    "turns": [
+                        {
+                            "turn_id": 1,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "1",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "How do I apply for disability benefits?"
+                        },
+                        {
+                            "turn_id": 2,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "2",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "I can help you with that. First off, you should apply for benefits as soon as you become disabled."
+                        },
+                        {
+                            "turn_id": 3,
+                            "role": "agent",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "3",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Are you interested in applying now?"
+                        },
+                        {
+                            "turn_id": 4,
+                            "role": "user",
+                            "da": "response_negative",
+                            "references": [
+                                {
+                                    "sp_id": "3",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "No, I don't think I am ready."
+                        },
+                        {
+                            "turn_id": 5,
+                            "role": "agent",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "7",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Ok, no problem. Are you deaf or hard of hearing?"
+                        },
+                        {
+                            "turn_id": 6,
+                            "role": "user",
+                            "da": "response_negative",
+                            "references": [
+                                {
+                                    "sp_id": "7",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Oh, no. I am not."
+                        },
+                        {
+                            "turn_id": 7,
+                            "role": "agent",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "6",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Do you have access to a telephone?"
+                        },
+                        {
+                            "turn_id": 8,
+                            "role": "user",
+                            "da": "response_positive",
+                            "references": [
+                                {
+                                    "sp_id": "6",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "I do."
+                        },
+                        {
+                            "turn_id": 9,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "59",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Do you have any documents or publications that I can read?"
+                        },
+                        {
+                            "turn_id": 10,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "60",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "61",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "62",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "We do, what are you interested in? Applying online for disability benefits? We also have documents on disability benefits and a starter kit."
+                        },
+                        {
+                            "turn_id": 11,
+                            "role": "user",
+                            "da": "query_solution",
+                            "references": [
+                                {
+                                    "sp_id": "56",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "58",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "I am wondering about if I don't have enough work credits to be eligible for disability. What should I do?"
+                        },
+                        {
+                            "turn_id": 12,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "56",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "58",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "We do have some information called \"Your income and resources\" that you can access on page 5 of our Supplemental Security Income SSI booklet."
+                        }
+                    ]
+                }
+            ],
+            "Learn what documents you will need to get a Social Security Card | Social Security Administration#4_0": [
+                {
+                    "dial_id": "9cfead4c0da5f664703631ae06fa3520",
+                    "doc_id": "Learn what documents you will need to get a Social Security Card | Social Security Administration#4_0",
+                    "domain": "ssa",
+                    "turns": [
+                        {
+                            "turn_id": 1,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "17",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "What documents do I need to get a corrected Social Security Card?"
+                        },
+                        {
+                            "turn_id": 2,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "18",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Citizenship is one option."
+                        },
+                        {
+                            "turn_id": 3,
+                            "role": "agent",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "19",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Have you established yourself as American citizen with us?"
+                        },
+                        {
+                            "turn_id": 4,
+                            "role": "user",
+                            "da": "response_negative",
+                            "references": [
+                                {
+                                    "sp_id": "19",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "No, I don't think that I have."
+                        },
+                        {
+                            "turn_id": 5,
+                            "role": "user",
+                            "da": "query_solution",
+                            "references": [
+                                {
+                                    "sp_id": "14",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "16",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Can I use my US passport as proof of both being a citizen and my identity?"
+                        },
+                        {
+                            "turn_id": 6,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "14",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "16",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Yes you can."
+                        },
+                        {
+                            "turn_id": 7,
+                            "role": "user",
+                            "da": "query_solution",
+                            "references": [
+                                {
+                                    "sp_id": "18",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Ok, I see what you mean by citizenship. A passport proves that?"
+                        },
+                        {
+                            "turn_id": 8,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "18",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Yes, it does."
+                        },
+                        {
+                            "turn_id": 9,
+                            "role": "agent",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "26",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Do you need to change your name on your Social Security Card?"
+                        },
+                        {
+                            "turn_id": 10,
+                            "role": "user",
+                            "da": "response_negative",
+                            "references": [
+                                {
+                                    "sp_id": "26",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Not right now, but I might in the future. I am getting married next year."
+                        },
+                        {
+                            "turn_id": 11,
+                            "role": "user",
+                            "da": "query_solution",
+                            "references": [
+                                {
+                                    "sp_id": "38",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "If I had changed my name what document would I need?"
+                        },
+                        {
+                            "turn_id": 12,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "38",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Any unexpired identity document in your new name, as long as we can find in our records your previous identity."
+                        },
+                        {
+                            "turn_id": 13,
+                            "role": "user",
+                            "da": "query_solution",
+                            "references": [
+                                {
+                                    "sp_id": "14",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "16",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Is a passport ok?"
+                        },
+                        {
+                            "turn_id": 14,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "14",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "16",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Yes it is."
+                        },
+                        {
+                            "turn_id": 15,
+                            "role": "user",
+                            "da": "query_solution",
+                            "references": [
+                                {
+                                    "sp_id": "35",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "36",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "What if my documentation in my old name has expired?"
+                        },
+                        {
+                            "turn_id": 16,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "35",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "36",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Yes, we will accept expired documents to prove your prior name."
+                        }
+                    ]
+                },
+                {
+                    "dial_id": "239adf06e62a9c2466cfddc185b6770c",
+                    "doc_id": "Learn what documents you will need to get a Social Security Card | Social Security Administration#4_0",
+                    "domain": "ssa",
+                    "turns": [
+                        {
+                            "turn_id": 1,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "1",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "I need a corrected ss card for an adult"
+                        },
+                        {
+                            "turn_id": 2,
+                            "role": "agent",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "2",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Do you need to egally change your name because of marriage , divorce , court order or any other reason"
+                        },
+                        {
+                            "turn_id": 3,
+                            "role": "user",
+                            "da": "response_negative",
+                            "references": [
+                                {
+                                    "sp_id": "2",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "no "
+                        },
+                        {
+                            "turn_id": 4,
+                            "role": "agent",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "4",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "are you working?"
+                        },
+                        {
+                            "turn_id": 5,
+                            "role": "user",
+                            "da": "response_negative",
+                            "references": [
+                                {
+                                    "sp_id": "4",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "N/A"
+                        },
+                        {
+                            "turn_id": 6,
+                            "role": "agent",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "6",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Has your name changed?"
+                        },
+                        {
+                            "turn_id": 7,
+                            "role": "user",
+                            "da": "response_positive",
+                            "references": [
+                                {
+                                    "sp_id": "6",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "yes"
+                        },
+                        {
+                            "turn_id": 8,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "7",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "8",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "9",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "If you do not tell us when your name changes it could  Prevent your wages from being posted correctly to your Social Security record "
+                        },
+                        {
+                            "turn_id": 9,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "43",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "What documents do I need as proof of identity?"
+                        },
+                        {
+                            "turn_id": 10,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "44",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "45",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "46",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "U.S. driver 's license or State - issued non - driver identification card"
+                        },
+                        {
+                            "turn_id": 11,
+                            "role": "user",
+                            "da": "query_solution",
+                            "references": [
+                                {
+                                    "sp_id": "7",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "8",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "9",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "will this cuase a delay when I file taxes?"
+                        },
+                        {
+                            "turn_id": 12,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "7",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "8",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "9",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "it may which may lower the amount of your future Social Security benefits  and Cause delays when you file your taxes"
+                        },
+                        {
+                            "turn_id": 13,
+                            "role": "user",
+                            "da": "query_solution",
+                            "references": [
+                                {
+                                    "sp_id": "57",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "58",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "will my new card have the same number as my old card?"
+                        },
+                        {
+                            "turn_id": 14,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "57",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "58",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Your new card will have the same number as your previous card  and will show your new name "
+                        },
+                        {
+                            "turn_id": 15,
+                            "role": "user",
+                            "da": "query_solution",
+                            "references": [
+                                {
+                                    "sp_id": "35",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "36",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "what documents do I need?"
+                        },
+                        {
+                            "turn_id": 16,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "35",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "36",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": " We will accept an identity document in your old name that has expired"
+                        }
+                    ]
+                }
+            ],
+            "Benefits Planner: Retirement | Online Calculator (WEP Version)#1_0": [
+                {
+                    "dial_id": "e9e7fd7ab7668d36757bc79cc0bb167f",
+                    "doc_id": "Benefits Planner: Retirement | Online Calculator (WEP Version)#1_0",
+                    "domain": "ssa",
+                    "turns": [
+                        {
+                            "turn_id": 1,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "1",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "I need help with the retirement benefits planner"
+                        },
+                        {
+                            "turn_id": 2,
+                            "role": "agent",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "2",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Do you need help with the online calculator WEP version?"
+                        },
+                        {
+                            "turn_id": 3,
+                            "role": "user",
+                            "da": "response_positive",
+                            "references": [
+                                {
+                                    "sp_id": "2",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "yes I do"
+                        },
+                        {
+                            "turn_id": 4,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "3",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "4",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "The calculator allows you to estimate your Social Security benefit "
+                        },
+                        {
+                            "turn_id": 5,
+                            "role": "agent",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "5",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Will you be working on something that needs more accurate estimates?"
+                        },
+                        {
+                            "turn_id": 6,
+                            "role": "user",
+                            "da": "response_negative",
+                            "references": [
+                                {
+                                    "sp_id": "5",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "no , just something to get an idea of what to expect"
+                        },
+                        {
+                            "turn_id": 7,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "17",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "whats with the retirement age being different?"
+                        },
+                        {
+                            "turn_id": 8,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "18",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "If you qualify for benefits as a Survivor your full retirement age for survivors benefits may be different ."
+                        },
+                        {
+                            "turn_id": 9,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "15",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Why does it do that thing when I enter my birhtday? it doesn't seem right"
+                        },
+                        {
+                            "turn_id": 10,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "16",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "If your birthday falls on January 1st\u00a0 we will figure your benefits as if your birthday was in the previous year ."
+                        },
+                        {
+                            "turn_id": 11,
+                            "role": "user",
+                            "da": "query_solution",
+                            "references": [
+                                {
+                                    "sp_id": "8",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "9",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "10",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "someone helped me before and we got different numbers, is that normal or were we using some other calculator?"
+                        },
+                        {
+                            "turn_id": 12,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "8",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "9",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "10",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "The Online Calculator is updated periodically with new benefit increases and other benefit amounts, so it is not uncommon that your benefit estimates will differ from time to time."
+                        }
+                    ]
+                }
+            ],
+            "Learn what documents you will need to get a Social Security Card | Social Security Administration#8_0": [
+                {
+                    "dial_id": "06289cf0b8e8aa840e3fead08876c2e0",
+                    "doc_id": "Learn what documents you will need to get a Social Security Card | Social Security Administration#8_0",
+                    "domain": "ssa",
+                    "turns": [
+                        {
+                            "turn_id": 1,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "7",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Will I need specific documents to get a card?"
+                        },
+                        {
+                            "turn_id": 2,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "8",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "You will need proof of citizenship."
+                        },
+                        {
+                            "turn_id": 3,
+                            "role": "agent",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "18",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Do you have a U.S. passport?"
+                        },
+                        {
+                            "turn_id": 4,
+                            "role": "user",
+                            "da": "response_negative",
+                            "references": [
+                                {
+                                    "sp_id": "18",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "No, no passport."
+                        },
+                        {
+                            "turn_id": 5,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "27",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Are there any other documents I can use?"
+                        },
+                        {
+                            "turn_id": 6,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "28",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Yes, there are several other acceptable documents."
+                        },
+                        {
+                            "turn_id": 7,
+                            "role": "user",
+                            "da": "query_solution",
+                            "references": [
+                                {
+                                    "sp_id": "8",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Can I use a Certificate of Naturalization to prove citizenship?"
+                        },
+                        {
+                            "turn_id": 8,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "8",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Yes, that is one of the accepted documents."
+                        },
+                        {
+                            "turn_id": 9,
+                            "role": "agent",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "23",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Do you have a Certificate of Naturalization or Citizenship?"
+                        },
+                        {
+                            "turn_id": 10,
+                            "role": "user",
+                            "da": "response_positive",
+                            "references": [
+                                {
+                                    "sp_id": "23",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "We lived outside the U.S., what do I need to prove my child's citizenship?"
+                        },
+                        {
+                            "turn_id": 11,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "24",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "25",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "26",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "You can use a passport or school records."
+                        },
+                        {
+                            "turn_id": 12,
+                            "role": "user",
+                            "da": "query_solution",
+                            "references": [
+                                {
+                                    "sp_id": "9",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "10",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "11",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Can I use my child's school records to prove my citizenship?"
+                        },
+                        {
+                            "turn_id": 13,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "9",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "10",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "11",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "No, it has to be on the accepted documents list."
+                        }
+                    ]
+                }
+            ],
+            "Learn what documents you will need to get a Social Security Card | Social Security Administration#14_0": [
+                {
+                    "dial_id": "8bcf8fec873c888f90a533c496724e9e",
+                    "doc_id": "Learn what documents you will need to get a Social Security Card | Social Security Administration#14_0",
+                    "domain": "ssa",
+                    "turns": [
+                        {
+                            "turn_id": 1,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "21",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "What kind of documents are required to get a card?"
+                        },
+                        {
+                            "turn_id": 2,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "22",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "You need an original proof of citizenship."
+                        },
+                        {
+                            "turn_id": 3,
+                            "role": "agent",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "26",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "If it's for a child, you need a State issued birth certificate recorded before the child was 5."
+                        },
+                        {
+                            "turn_id": 4,
+                            "role": "user",
+                            "da": "response_negative",
+                            "references": [
+                                {
+                                    "sp_id": "26",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "What if her birth certificate wasn't issued when she was born?"
+                        },
+                        {
+                            "turn_id": 5,
+                            "role": "agent",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "28",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Does your child have a passport?"
+                        },
+                        {
+                            "turn_id": 6,
+                            "role": "user",
+                            "da": "response_negative",
+                            "references": [
+                                {
+                                    "sp_id": "28",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "No, she doesn't have a passport."
+                        },
+                        {
+                            "turn_id": 7,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "66",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "What if I can't get a hold of the documents?"
+                        },
+                        {
+                            "turn_id": 8,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "67",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "68",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "69",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "There are other documents we can consider, such as an employee ID card if it has your name, age, and is not expired."
+                        },
+                        {
+                            "turn_id": 9,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "48",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "What can I use for a child without a passport?"
+                        },
+                        {
+                            "turn_id": 10,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "49",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "50",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "51",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "You can submit an adoption decree or state issued ID card."
+                        },
+                        {
+                            "turn_id": 11,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "33",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "My older child used to live in another country, how can I get him ma Social Security card?"
+                        },
+                        {
+                            "turn_id": 12,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "34",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "35",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "36",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Submit his passport or school records as proof he was never issued a SSN."
+                        },
+                        {
+                            "turn_id": 13,
+                            "role": "user",
+                            "da": "query_condition",
+                            "references": [
+                                {
+                                    "sp_id": "61",
+                                    "label": "precondition"
+                                }
+                            ],
+                            "utterance": "Will you need proof of my identity?"
+                        },
+                        {
+                            "turn_id": 14,
+                            "role": "agent",
+                            "da": "respond_solution",
+                            "references": [
+                                {
+                                    "sp_id": "62",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "63",
+                                    "label": "solution"
+                                },
+                                {
+                                    "sp_id": "64",
+                                    "label": "solution"
+                                }
+                            ],
+                            "utterance": "Yes, you can use your driver's license or state ID card."
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
