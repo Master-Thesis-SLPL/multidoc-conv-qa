@@ -19,8 +19,8 @@
 #  --model_name_or_path '/content/drive/MyDrive/experiments/01-dialdoc/save/checkpoint-2000' \
 
 
-python ../cqa/run_qa.py \
- --dataset_name  '../utils/dialdoc.py' \
+python ../run_qa.py \
+ --dataset_name  '../../utils/dialdoc.py' \
  --dataset_config_name doc2dial_rc \
  --model_name_or_path roberta-large \
  --do_train \
