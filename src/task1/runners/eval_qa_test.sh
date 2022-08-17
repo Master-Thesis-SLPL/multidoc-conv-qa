@@ -1,5 +1,5 @@
 python ../run_qa.py \
- --dataset_name  '../../utils/dialdoc.py' \
+ --dataset_name  '../../utils/multidialdoc.py' \
  --dataset_config_name doc2dial_rc_small_validation \
  --model_name_or_path '/content/drive/MyDrive/experiments/01-dialdoc/save/checkpoint-2000' \
  --do_eval \

@@ -20,7 +20,7 @@
 
 
 python ../run_qa.py \
- --dataset_name  '../../utils/dialdoc.py' \
+ --dataset_name  '../../utils/multidialdoc.py' \
  --dataset_config_name doc2dial_rc \
  --model_name_or_path roberta-large \
  --do_train \
