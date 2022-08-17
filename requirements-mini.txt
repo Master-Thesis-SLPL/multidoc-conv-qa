@@ -1,0 +1,6 @@
+transformers==4.17.0
+tqdm==4.63.0
+tensorboard==2.8.0
+datasets==2.0.0
+spacy==2.2.4
+matplotlib==3.2.2
