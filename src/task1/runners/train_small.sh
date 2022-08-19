@@ -1,0 +1,35 @@
+python ../run_qa.py \
+ --dataset_name  '../../utils/multidialdoc.py' \
+ --cache_dir /content/drive/MyDrive/experiments/02-docalog/cache \
+ --output_dir /content/drive/MyDrive/experiments/02-docalog/save \
+ --hub_model_id 'alistvt/02-roberta-docalog' \
+ --dataset_config_name multidoc2dial_rc_small \
+ --model_name_or_path roberta-large \
+ --do_train \
+ --do_eval \
+ --early_stop \
+ --early_stopping_patience 3 \
+ --version_2_with_negative \
+ --logging_steps 200 \
+ --save_steps 1000 \
+ --learning_rate 3e-5 \
+ --num_train_epochs 3 \
+ --max_seq_length 512  \
+ --max_answer_length 50 \
+ --doc_stride 128  \
+ --overwrite_output_dir  \
+ --per_device_train_batch_size 2 \
+ --per_device_eval_batch_size 2 \
+ --gradient_accumulation_steps 30  \
+ --evaluation_strategy steps \
+ --eval_steps 10 \
+ --load_best_model_at_end \
+ --early_stopping_patience 3 \
+ --metric_for_best_model exact \
+ --save_total_limit 3 \
+ --warmup_steps 10 \
+ --weight_decay 0.01 \
+ --fp16 \
+ --push_to_hub true \
+ --hub_strategy 'every_save' \
+ --hub_token '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'

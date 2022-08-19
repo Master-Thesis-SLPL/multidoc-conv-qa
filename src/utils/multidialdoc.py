@@ -250,7 +250,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
             description="Load MultiDoc2Dial dataset for machine reading comprehension tasks",
         ),
         datasets.BuilderConfig(
-            name="multidoc2dial_rc_small_validation",
+            name="multidoc2dial_rc_small",
             version=VERSION,
             description="Load MultiDoc2Dial dataset for machine reading comprehension tasks",
         ),
@@ -395,7 +395,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     "doc_html_raw": datasets.Value("string"),
                 }
             )
-        elif self.config.name == "multidoc2dial_rc" or self.config.name == "multidoc2dial_rc_small_validation":
+        elif self.config.name == "multidoc2dial_rc" or self.config.name == "multidoc2dial_rc_small":
             features = datasets.Features(
                 {
                     "id": datasets.Value("string"),
@@ -571,7 +571,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     },
                 ),
             ]        
-        elif self.config.name == "multidoc2dial_rc_small_validation":
+        elif self.config.name == "multidoc2dial_rc_small":
             return [
                 datasets.SplitGenerator(
                     name=datasets.Split.VALIDATION,
@@ -893,7 +893,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                                 ],
                             }
 
-        elif self.config.name == "multidoc2dial_rc" or self.config.name == "multidoc2dial_rc_small_validation":
+        elif self.config.name == "multidoc2dial_rc" or self.config.name == "multidoc2dial_rc_small":
             """Load dialog data in the reading comprehension task setup, where context is the grounding document,
             input query is dialog history in reversed order, and output to predict is the next agent turn."""
 
