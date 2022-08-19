@@ -44,9 +44,9 @@ model_labse = AutoModel.from_pretrained("setu4993/LaBSE")
 logger = logging.getLogger(__name__)
 
 if any(['unseen' in item for item in sys.argv]):
-    DOC_FILEPATH = "/home/alavian/Documents/stvt/CAiRE/dataset/multidialdoc/dialdoc2022_sharedtask/MDD-UNSEEN/multidoc2dial_doc_cdccovid.json"
+    DOC_FILEPATH = "../../dataset/multidoc2dial/v1.0/dialdoc2022_sharedtask/MDD-UNSEEN/multidoc2dial_doc_cdccovid.json"
 else:
-    DOC_FILEPATH = "/home/alavian/Documents/stvt/CAiRE/dataset/multidialdoc/multidoc2dial/multidoc2dial_doc.json"
+    DOC_FILEPATH = "../../dataset/multidoc2dial/v1.0/multidoc2dial_doc.json"
 
 if '--generative' in sys.argv:
     GENERATIVE = True

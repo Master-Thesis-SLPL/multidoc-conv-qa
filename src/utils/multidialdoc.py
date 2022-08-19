@@ -188,7 +188,7 @@ def retriever_get_documents(domain, queries, k=2) -> List[str]:
 
 
 MAX_Q_LEN = 100  # Max length of question
-YOUR_LOCAL_DOWNLOAD = "../dataset"  # For subtask1, MultiDoc2Dial v1.0 is already included in the folder "dataset".
+YOUR_LOCAL_DOWNLOAD = "../../../dataset"  # For subtask1, MultiDoc2Dial v1.0 is already included in the folder "dataset".
 
 _CITATION = """\
 @inproceedings{feng2021multidoc2dial,
@@ -495,7 +495,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     name=datasets.Split.TRAIN,
                     gen_kwargs={
                         "filepath": os.path.join(
-                            data_dir, "multidialdoc/multidoc2dial/multidoc2dial_dial_train.json"
+                            data_dir, "multidoc2dial/v1.0/multidoc2dial_dial_train.json"
                         ),
                     },
                 ),
@@ -503,7 +503,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     name=datasets.Split.VALIDATION,
                     gen_kwargs={
                         "filepath": os.path.join(
-                            data_dir, "multidialdoc/multidoc2dial/multidoc2dial_dial_validation.json"
+                            data_dir, "multidoc2dial/v1.0/multidoc2dial_dial_validation.json"
                         ),
                     },
                 ),
@@ -514,7 +514,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     name=datasets.Split.TRAIN,
                     gen_kwargs={
                         "filepath": os.path.join(
-                            data_dir, "multidialdoc/multidoc2dial/multidoc2dial_dial_testdev.json"
+                            data_dir, "multidoc2dial/v1.0/multidoc2dial_dial_testdev.json"
                         ),
                     },
                 )
@@ -525,7 +525,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     name=datasets.Split.TRAIN,
                     gen_kwargs={
                         "filepath": os.path.join(
-                            data_dir, "multidialdoc/multidoc2dial/test_phase/multidoc2dial_dial_finaltest.json"
+                            data_dir, "multidoc2dial/v1.0/test_phase/multidoc2dial_dial_finaltest.json"
                         ),
                     },
                 )
@@ -536,7 +536,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     name=datasets.Split.TRAIN,
                     gen_kwargs={
                         "filepath": os.path.join(
-                            data_dir, "multidialdoc/multidoc2dial/multidoc2dial_doc.json"
+                            data_dir, "multidoc2dial/v1.0/multidoc2dial_doc.json"
                         ),
                     },
                 )
@@ -547,7 +547,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     name=datasets.Split.TRAIN,
                     gen_kwargs={
                         "filepath": os.path.join(
-                            data_dir, "multidialdoc/multidoc2dial/test_phase/multidoc2dial_doc_with_unseen.json"
+                            data_dir, "multidoc2dial/v1.0/test_phase/multidoc2dial_doc_with_unseen.json"
                         ),
                     },
                 )
@@ -558,7 +558,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     name=datasets.Split.VALIDATION,
                     gen_kwargs={
                         "filepath": os.path.join(
-                            data_dir, "multidialdoc/multidoc2dial/multidoc2dial_dial_validation.json"
+                            data_dir, "multidoc2dial/v1.0/multidoc2dial_dial_validation.json"
                         ),
                     },
                 ),
@@ -566,7 +566,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     name=datasets.Split.TRAIN,
                     gen_kwargs={
                         "filepath": os.path.join(
-                            data_dir, "multidialdoc/multidoc2dial/multidoc2dial_dial_train.json"
+                            data_dir, "multidoc2dial/v1.0/multidoc2dial_dial_train.json"
                         ),
                     },
                 ),
@@ -577,7 +577,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     name=datasets.Split.VALIDATION,
                     gen_kwargs={
                         "filepath": os.path.join(
-                            data_dir, "multidialdoc/multidoc2dial/multidoc2dial_dial_small_validation.json"
+                            data_dir, "multidoc2dial/v1.0/multidoc2dial_dial_small_validation.json"
                         ),
                     },
                 ),
@@ -585,7 +585,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     name=datasets.Split.TRAIN,
                     gen_kwargs={
                         "filepath": os.path.join(
-                            data_dir, "multidialdoc/multidoc2dial/multidoc2dial_dial_small_train.json"
+                            data_dir, "multidoc2dial/v1.0/multidoc2dial_dial_small_train.json"
                         ),
                     },
                 ),
@@ -597,7 +597,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     name=datasets.Split.VALIDATION,
                     gen_kwargs={
                         "filepath": os.path.join(
-                            data_dir, "multidialdoc/multidoc2dial/multidoc2dial_dial_testdev.json"
+                            data_dir, "multidoc2dial/v1.0/multidoc2dial_dial_testdev.json"
                         ),
                     },
                 )
@@ -608,7 +608,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     name=datasets.Split.VALIDATION,
                     gen_kwargs={
                         "filepath": os.path.join(
-                            data_dir, "multidialdoc/multidoc2dial/test_phase/multidoc2dial_dial_finaltest.json"
+                            data_dir, "multidoc2dial/v1.0/test_phase/multidoc2dial_dial_finaltest.json"
                         ),
                     },
                 )
@@ -620,8 +620,8 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     name=datasets.Split.VALIDATION,
                     gen_kwargs={
                         "filepath": os.path.join(
-                            # data_dir, "multidialdoc/multidoc2dial/multidoc2dial_dial_test.json"
-                            data_dir, "multidialdoc/multidoc2dial/multidoc2dial_dial_validation.json"
+                            # data_dir, "multidoc2dial/v1.0/multidoc2dial_dial_test.json"
+                            data_dir, "multidoc2dial/v1.0/multidoc2dial_dial_validation.json"
                         ),
                     },
                 )
