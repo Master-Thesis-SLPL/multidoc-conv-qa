@@ -33,3 +33,5 @@ python ../run_qa.py \
  --push_to_hub true \
  --hub_strategy 'every_save' \
  --hub_token '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'
+
+#  TEST
