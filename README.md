@@ -1,5 +1,5 @@
 # CAiRE in DialDoc21
-<img src="plot/pytorch-logo-dark.png" width="10%"> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+
 
 <img align="right" src="plot/HKUST.jpeg" width="12%">
 
