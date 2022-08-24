@@ -10,4 +10,4 @@ rouge-score==0.0.4
 sacrebleu==1.4.3
 sentencepiece==0.1.95
 fairscale
-
+ipykernel
