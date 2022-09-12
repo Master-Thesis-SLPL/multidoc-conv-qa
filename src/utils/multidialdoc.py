@@ -110,6 +110,11 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
             description="Load MultiDoc2Dial validation dataset for machine reading comprehension tasks for testdev with retriever",
         ),
         datasets.BuilderConfig(
+            name="multidoc2dial_rc_retriever_testdev_small",
+            version=VERSION,
+            description="Load MultiDoc2Dial small validation dataset for machine reading comprehension tasks for testdev with retriever",
+        ),
+        datasets.BuilderConfig(
             name="multidoc2dial_rc_mddseen_dev",
             version=VERSION,
             description="Load MultiDoc2Dial dataset for machine reading comprehension tasks for test",
@@ -276,7 +281,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                 }
             )
 
-        elif self.config.name == "multidoc2dial_rc_retriever_testdev":
+        elif self.config.name in ["multidoc2dial_rc_retriever_testdev", "multidoc2dial_rc_retriever_testdev_small"]:
             features = datasets.Features(
                 {
                     "id": datasets.Value("string"),
@@ -463,8 +468,18 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     name=datasets.Split.VALIDATION,
                     gen_kwargs={
                         "filepath": os.path.join(
-                            # data_dir, "multidoc2dial/v1.0/multidoc2dial_dial_test.json"
                             data_dir, "multidoc2dial/v1.0/multidoc2dial_dial_validation.json"
+                        ),
+                    },
+                )
+            ]
+        elif self.config.name == "multidoc2dial_rc_retriever_testdev_small":
+            return [
+                datasets.SplitGenerator(
+                    name=datasets.Split.VALIDATION,
+                    gen_kwargs={
+                        "filepath": os.path.join(
+                            data_dir, "multidoc2dial/v1.0/multidoc2dial_dial_test.json"
                         ),
                     },
                 )
@@ -862,8 +877,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                                 "domain": domain,}
                             yield id_, qa
 
-
-        elif self.config.name == "multidoc2dial_rc_retriever_testdev":
+        elif self.config.name in ["multidoc2dial_rc_retriever_testdev", "multidoc2dial_rc_retriever_testdev_small"]:
             """Load dialog data in the reading comprehension task setup, where context is the grounding document,
             input query is dialog history in reversed order, and output to predict is the next agent turn.
             for each question we will return multiple instances with id_x where x is the ranking of the N-best document."""

@@ -1,3 +1,7 @@
+"""
+Python module presenting all diferent retrievers implemented
+ in jupyter notebooks in a modular manner.
+"""
 
 import json
 import pickle
