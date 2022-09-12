@@ -55,6 +55,10 @@ from data_utils import (
     load_datasets
 )
 
+sys.path.append(os.path.abspath('../retriever'))
+from retrievers import DrTeitRetriever
+
+
 logger = logging.getLogger(__name__)
 
 
@@ -294,7 +298,9 @@ def main():
             UserWarning
         )
 
-    datasets, extra_datasets = load_datasets(data_args, model_args)
+    retriever = DrTeitRetriever()
+
+    datasets, extra_datasets = load_datasets(data_args, model_args, retriever=retriever)
 
     train_dataset, validation_dataset, question_column_name, context_column_name, answer_column_name = proc_dataset(training_args, data_args, datasets, tokenizer, extra_datasets=extra_datasets)
 
