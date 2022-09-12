@@ -241,7 +241,7 @@ def final_postprocess_qa_predictions(
                 predictions[new_id] = {
                     "question": examples[index]["only-question"],
                     "predictions": [all_predictions[id]],
-                    "questions": examples[index]["questions"],
+                    "questions": examples[index]["question"],
                 }
             else:
                 predictions[new_id]["predictions"].append(all_predictions[id])
