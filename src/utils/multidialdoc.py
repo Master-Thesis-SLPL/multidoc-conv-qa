@@ -139,8 +139,8 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
     DEFAULT_CONFIG_NAME = "dialogue_domain"
 
     def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
         self.retriever = kwargs.pop("retriever")
+        super().__init__(*args, **kwargs)
 
     def _info(self):
 
