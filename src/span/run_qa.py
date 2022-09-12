@@ -55,7 +55,7 @@ from data_utils import (
     load_datasets
 )
 
-sys.path.append(os.path.abspath('../retriever'))
+sys.path.append(os.path.abspath('../../retriever'))
 from retrievers import DrTeitRetriever
 
 
