@@ -523,7 +523,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
     def _load_doc_data_rc_extra(self, filepath):
         # TODO
         doc_filepath = os.path.join(os.path.dirname(filepath), "multidoc2dial_doc.json")
-        retriever_load_docs(doc_filepath)
+        self.retriever.load_docs(doc_filepath)
         with open(doc_filepath, encoding="utf-8") as f:
             data = json.load(f)["doc_data"]
         return data
@@ -901,7 +901,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
 
                             queries = list(reversed(all_prev_utterances))
                             # queries = list(reversed(all_user_utterances))
-                            doc_ids = retriever_get_documents(None, queries)
+                            doc_ids = self.retriever.get_documents(None, queries)
 
                             for doc_rank, (domain, doc_id) in enumerate(doc_ids):
                                 question_str = " ".join(list(reversed(all_prev_utterances))).strip()
@@ -959,7 +959,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                         # queries = list(reversed(all_user_utterances))
                         if turn["turn_id"] == int(dial["id"].split('_')[-1]):
                             queries = list(reversed(all_prev_utterances))
-                            doc_ids = retriever_get_documents(None, queries)
+                            doc_ids = self.retriever.get_documents(None, queries)
                             for doc_rank, (doc_domain, doc_id) in enumerate(doc_ids):
                                 question_str = " ".join(list(reversed(all_prev_utterances))).strip()
                                 question = " ".join(question_str.split()[:MAX_Q_LEN])
