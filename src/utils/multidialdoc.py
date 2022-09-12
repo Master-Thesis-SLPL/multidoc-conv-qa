@@ -133,6 +133,10 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
 
     DEFAULT_CONFIG_NAME = "dialogue_domain"
 
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.retriever = kwargs.pop("retriever")
+
     def _info(self):
 
         if self.config.name == "dialogue_domain":
@@ -510,7 +514,6 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                 )
             ]
         
-
     def _load_doc_data_rc(self, filepath):
         doc_filepath = os.path.join(os.path.dirname(filepath), "multidoc2dial_doc.json")
         with open(doc_filepath, encoding="utf-8") as f:

@@ -47,7 +47,7 @@ def _improve_answer_span(doc_tokens, input_start, input_end, tokenizer, orig_ans
 
 
 
-def load_datasets(data_args, model_args):
+def load_datasets(data_args, model_args, retriever):
     # Get the datasets: you can either provide your own CSV/JSON/TXT training and evaluation files (see below)
     # or just provide the name of one of the public datasets available on the hub at https://huggingface.co/datasets/
     # (the dataset will be downloaded automatically from the datasets Hub).
@@ -59,7 +59,7 @@ def load_datasets(data_args, model_args):
     # download the dataset.
     if data_args.dataset_name is not None:
         # Downloading and loading a dataset from the hub.
-        datasets = load_dataset(data_args.dataset_name, data_args.dataset_config_name, cache_dir=model_args.cache_dir)
+        datasets = load_dataset(data_args.dataset_name, data_args.dataset_config_name, cache_dir=model_args.cache_dir, retriever=retriever)
     else:
         data_files = {}
         if data_args.train_file is not None:
@@ -67,7 +67,7 @@ def load_datasets(data_args, model_args):
         if data_args.validation_file is not None:
             data_files["validation"] = data_args.validation_file
         extension = data_args.train_file.split(".")[-1]
-        datasets = load_dataset(extension, data_files=data_files, field="data")
+        datasets = load_dataset(extension, data_files=data_files, field="data", retriever=retriever)
     # See more about loading any type of standard or custom dataset (from files, python dict, pandas DataFrame, etc) at
     # https://huggingface.co/docs/datasets/loading_datasets.html.
 

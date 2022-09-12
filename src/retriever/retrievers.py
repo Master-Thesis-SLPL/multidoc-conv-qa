@@ -22,7 +22,7 @@ class DrTeitRetriever:
         self.tfidf_wm = None
         self.N_DOC = 488
 
-    def retriever_load_docs(self, path2doc) -> None:
+    def load_docs(self, path2doc) -> None:
         with open(path2doc, 'r') as f:
             multidoc2dial_doc = json.load(f)
         
@@ -130,7 +130,7 @@ class DrTeitRetriever:
         scores = scores[best_k_idx]
         return (scores, best_k_idx)
 
-    def retriever_get_documents(self, domain, queries, k=2) -> List[str]:
+    def get_documents(self, domain, queries, k=2) -> List[str]:
         "returns list of related document IDs"
         if domain:
             titles = [title for title in self.title_to_embeddings.keys() if self.title_to_domain[title] == domain]
