@@ -134,7 +134,7 @@ class DrTeitRetriever:
         scores = scores[best_k_idx]
         return (scores, best_k_idx)
 
-    def get_documents(self, domain, queries, k=2) -> List[str]:
+    def get_documents(self, domain, queries, k=1) -> List[str]:
         "returns list of related document IDs"
         if domain:
             titles = [title for title in self.title_to_embeddings.keys() if self.title_to_domain[title] == domain]

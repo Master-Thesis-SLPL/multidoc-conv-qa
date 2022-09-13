@@ -34,8 +34,173 @@ import pickle
 import json
 from tqdm import tqdm
 
+answer_max_length = 30
+tokenizer_t5 = AutoTokenizer.from_pretrained("mrm8488/t5-base-finetuned-summarize-news")
+model_t5 = AutoModelWithLMHead.from_pretrained("mrm8488/t5-base-finetuned-summarize-news")
+
+tokenizer_labse = AutoTokenizer.from_pretrained("setu4993/LaBSE")
+model_labse = AutoModel.from_pretrained("setu4993/LaBSE")
 
 logger = logging.getLogger(__name__)
+
+if any(['unseen' in item for item in sys.argv]):
+    DOC_FILEPATH = "../../../dataset/multidoc2dial/v1.0/dialdoc2022_sharedtask/MDD-UNSEEN/multidoc2dial_doc_cdccovid.json"
+else:
+    DOC_FILEPATH = "../../../dataset/multidoc2dial/v1.0/multidoc2dial_doc.json"
+
+if '--generative' in sys.argv:
+    GENERATIVE = True
+else:
+    GENERATIVE = False
+
+tfidfVectorizer = None
+tfidf_wm = None
+N_DOC = 488
+words2IDF = {}
+
+def tfIDF_fitting(path2doc) -> None:
+    global tfidfVectorizer, tfidf_wm, N_DOC
+    global words2IDF
+
+    with open(path2doc, 'r') as f:
+        multidoc2dial_doc = json.load(f)
+    
+    doc_texts_train = []
+    for domain in multidoc2dial_doc['doc_data']:
+        for title in multidoc2dial_doc['doc_data'][domain]:
+            doc_texts_train.append(multidoc2dial_doc['doc_data'][domain]\
+                                          [title]['doc_text'].strip())
+    N_DOC = len(doc_texts_train)
+
+    tfidfVectorizer = TfidfVectorizer(strip_accents=None,
+                                    analyzer='char',
+                                    ngram_range=(2, 8),
+                                    norm='l2',
+                                    use_idf=True,
+                                    smooth_idf=True)
+    tfidf_wm = tfidfVectorizer.fit_transform(doc_texts_train)
+    
+    words = set()
+    doc_texts_train_tokenized = []
+    for doc in doc_texts_train:
+        tokenized_doc = [s.lower() for s in tokenizer_labse.tokenize(doc)]
+        doc_texts_train_tokenized.append(tokenized_doc) 
+        words = set(tokenized_doc).union(words)
+    
+    for word in tqdm(words, desc="[Loading documents - IDF scores]"):
+        n_word = 0
+        for doc in doc_texts_train_tokenized:
+            if word in doc:
+                n_word += 1
+        words2IDF[word] = np.log(N_DOC / (n_word + 1))
+
+
+def get_embeddings(sentece):
+    """
+    Return embeddings based on encoder model
+
+    :param sentence: input sentence(s)
+    :type sentence: str or list of strs
+    :return: embeddings
+    """
+    tokenized = tokenizer_labse(sentece,
+                                return_tensors="pt",
+                                padding=True)
+    with torch.no_grad():
+        embeddings = model_labse(**tokenized)
+    
+    return np.squeeze(np.array(embeddings.pooler_output))
+
+
+def calc_idf_score(sentence) -> float:
+    """
+    Calculate the mean idf score for given sentence.
+
+    :param sentence: input sentence
+    :type sentence: str
+    :return: mean idf score of sentence token
+    """
+    tokenzied_sentence = [s.lower() for s in tokenizer_labse.tokenize(sentence)]
+    score = 0
+    for token in tokenzied_sentence:
+        if token in words2IDF:
+            score += words2IDF[token]
+        else:
+            score += np.log(N_DOC)
+    if len(tokenzied_sentence) == 0:
+        return 0
+    return score / len(tokenzied_sentence)
+
+
+def get_best_answer_for_question_history(answers, questions, beta=1) -> str:
+    """
+    answers: List
+    questions: List
+
+    Returns answer: Str
+    """
+    if len(answers) == 1:
+        return answers[0]
+    if isinstance(questions, str):
+        questions = [questions] #.split("$#@$")
+    answer_sim = np.array(list(map(lambda x: 0.0, answers)))
+    tfidf_sim = np.array(list(map(lambda x: 0.0, answers)))
+
+    coef_sum = 0
+    span_vecs = np.squeeze(np.asarray(tfidf_wm @ tfidfVectorizer.transform(answers).todense().T)).T
+    answers_embds = list(map(get_embeddings, answers))
+    
+    for i, question in enumerate(questions):
+        question_embd = get_embeddings(question)
+        question_trasform = np.squeeze(np.asarray(tfidf_wm @ tfidfVectorizer.transform([question]).todense().T))
+
+        answer_score = list(map(lambda x: np.dot(x, question_embd) /
+                            (np.linalg.norm(question_embd) * np.linalg.norm(x)),
+                            answers_embds))
+        answer_score = np.array(answer_score)
+        tfidf_score = list(map(lambda x: np.dot(x, question_trasform) /
+                            (np.linalg.norm(question_trasform) * np.linalg.norm(x)),
+                            span_vecs))
+        tfidf_score = np.array(tfidf_sim)
+
+        coef = 2**(-i) * calc_idf_score(question)
+        coef_sum += coef
+
+        answer_sim += coef * answer_score
+        tfidf_sim += coef * tfidf_score
+
+    sim = (answer_sim + beta * tfidf_sim) / coef_sum
+    return answers[np.argmax(sim)]
+
+
+def get_best_answer_for_question(answers, question, beta=1) -> str:
+    """
+    answers: List
+    question: Str
+
+    Returns answer: Str
+    """
+    if len(answers) == 1:
+        return answers[0]
+    question_embd = get_embeddings(question)
+    answers_embds = list(map(get_embeddings, answers))
+    answer_sim = list(map(lambda x: np.dot(x, question_embd) /
+                            (np.linalg.norm(question_embd) * np.linalg.norm(x)),
+                            answers_embds))
+    question_trasform = np.squeeze(np.asarray(tfidf_wm @ tfidfVectorizer.transform([question]).todense().T))
+    tfidf_sim = list(map(lambda x: np.dot(x, question_trasform) /
+                            (np.linalg.norm(question_trasform) * np.linalg.norm(x)),
+                            np.squeeze(np.asarray(tfidf_wm @ tfidfVectorizer.transform(answers).todense().T)).T))
+    sim = np.array(answer_sim) + beta * np.array(tfidf_sim)
+    return answers[np.argmax(sim)]
+
+
+def summarize(predictions, k=3):
+    text = ".".join(predictions[:k])
+    input_ids = tokenizer_t5.encode(text, return_tensors="pt", add_special_tokens=True)
+    generated_ids = model_t5.generate(input_ids=input_ids, num_beams=2, max_length=answer_max_length,  repetition_penalty=2.5, length_penalty=1.0, early_stopping=True)
+    preds = [tokenizer_t5.decode(g, skip_special_tokens=True, clean_up_tokenization_spaces=True) for g in generated_ids]
+    return preds[0]
 
 
 def final_postprocess_qa_predictions(
@@ -83,8 +248,16 @@ def final_postprocess_qa_predictions(
 
         output = collections.OrderedDict()
 
+        #   Fitting TF-IDF
+        global DOC_FILEPATH
+        tfIDF_fitting(DOC_FILEPATH)
+        
         for id in tqdm(predictions, desc="getting best answer for each question"):
-            output[id] = predictions[id]["predictions"][0]
+            if GENERATIVE:
+                output[id] = summarize(predictions[id]["predictions"])
+            else:
+                output[id] = get_best_answer_for_question_history(predictions[id]["predictions"], predictions[id]["questions"])
+                # output[id] = get_best_answer_for_question(predictions[id]["predictions"], predictions[id]["question"])
             
     return output
 
