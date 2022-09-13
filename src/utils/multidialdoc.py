@@ -280,7 +280,6 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     "domain": datasets.Value("string"),
                 }
             )
-
         elif self.config.name in ["multidoc2dial_rc_retriever_testdev", "multidoc2dial_rc_retriever_testdev_small"]:
             features = datasets.Features(
                 {
