@@ -9,14 +9,16 @@ import numpy as np
 from datasets import load_dataset
 
 DOC_DOMAIN_SPLIT = "train"
-YOUR_DATASETS_SOURCE_DIR = ""  # the root folder of your local `datasets` source code.
+# the root folder of your local `datasets` source code.
+YOUR_DATASETS_SOURCE_DIR = "../../../dataset"
 
 def text2line(text):
     return text.replace("\n", " ").replace("\r", " ").strip()
 
 
 def save_dial_domain():
-    dial_dataset = load_dataset("../utils/dialdoc/dialdoc.py", name=f"dialogue_domain_test", split=DOC_DOMAIN_SPLIT)
+    dial_dataset = load_dataset(
+        "../../utils/dialdoc.py", name=f"dialogue_domain_test", split=DOC_DOMAIN_SPLIT)
     d = {}
     for ex in tqdm(dial_dataset, total=len(dial_dataset), ncols=100):
         doc_id = ex["doc_id"]
@@ -38,9 +40,11 @@ def save_dial_domain():
 
 def load_dial_data(split):
     if "test" in split:
-        dial_dataset = load_dataset("../utils/dialdoc/dialdoc.py", name=f"dialogue_domain_{split}", split=DOC_DOMAIN_SPLIT)
+        dial_dataset = load_dataset(
+            "../../utils/dialdoc.py", name=f"dialogue_domain_{split}", split=DOC_DOMAIN_SPLIT)
     else:
-        dial_dataset = load_dataset("../utils/dialdoc/dialdoc.py", name="dialogue_domain", split=split)
+        dial_dataset = load_dataset(
+            "../../utils/dialdoc.py", name="dialogue_domain", split=split)
 
     lines = []
     for ex in tqdm(dial_dataset, total=len(dial_dataset), ncols=100):
@@ -80,7 +84,8 @@ def load_dial_data(split):
     return lines
 
 def load_doc_data(test_stage):
-    doc_dataset = load_dataset("../utils/dialdoc/dialdoc.py", name="document_domain" if test_stage!="test" else "document_domain_test", split=DOC_DOMAIN_SPLIT)
+    doc_dataset = load_dataset("../../utils/dialdoc.py", name="document_domain" if test_stage !=
+                               "test" else "document_domain_test", split=DOC_DOMAIN_SPLIT)
 
     d_doc = defaultdict(dict)
     for ex in doc_dataset:

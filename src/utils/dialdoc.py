@@ -25,7 +25,7 @@ import os
 import datasets
 
 MAX_Q_LEN = 100  # Max length of question
-YOUR_LOCAL_DOWNLOAD = "../../dataset"
+YOUR_LOCAL_DOWNLOAD = "../../../dataset"
 
 _CITATION = """\
 @inproceedings{feng-etal-2020-doc2dial,
@@ -291,8 +291,9 @@ class Doc2dial(datasets.GeneratorBasedBuilder):
 
         my_urls = _URLs
 
-        # data_dir = dl_manager.download_and_extract(my_urls) 
-        data_dir = YOUR_LOCAL_DOWNLOAD # point to local dir to avoid downloading the dataset again
+        # data_dir = dl_manager.download_and_extract(my_urls)
+        # point to local dir to avoid downloading the dataset again
+        data_dir = YOUR_LOCAL_DOWNLOAD
 
         if self.config.name == "dialogue_domain":
             return [
@@ -419,13 +420,15 @@ class Doc2dial(datasets.GeneratorBasedBuilder):
             ]
 
     def _load_doc_data_rc(self, filepath):
-        doc_filepath = os.path.join(os.path.dirname(filepath), "doc2dial_doc.json")
+        doc_filepath = os.path.join(
+            os.path.dirname(filepath), "doc2dial_doc.json")
         with open(doc_filepath, encoding="utf-8") as f:
             data = json.load(f)["doc_data"]
         return data
 
     def _load_doc_data_rc_extra(self, filepath):
-        doc_filepath = os.path.join(os.path.dirname(filepath), "doc2dial_doc_with_unseen.json")
+        doc_filepath = os.path.join(os.path.dirname(
+            filepath), "doc2dial_doc_with_unseen.json")
         with open(doc_filepath, encoding="utf-8") as f:
             data = json.load(f)["doc_data"]
         return data
@@ -511,9 +514,9 @@ class Doc2dial(datasets.GeneratorBasedBuilder):
                 data = json.load(f)
                 for domain in data["doc_data"]:
                     for doc_id in data["doc_data"][domain]:
-                        for dialogue in data["doc_data"][domain][doc_id]:
+                        for turn_number, dialogue in enumerate(data["doc_data"][domain][doc_id]):
 
-                            yield doc_id, {
+                            yield f"{doc_id}_{turn_number}", {
                                 "domain": domain,
                                 "doc_id": doc_id,
                                 "title": data["doc_data"][domain][doc_id]["title"],
@@ -567,7 +570,7 @@ class Doc2dial(datasets.GeneratorBasedBuilder):
                                     "doc_html_raw"
                                 ],
                             }
-        
+
         elif self.config.name == "document_domain_test":
 
             logging.info("generating examples from = %s", filepath)
@@ -643,12 +646,14 @@ class Doc2dial(datasets.GeneratorBasedBuilder):
                 for domain, d_doc_dials in dial_data.items():
                     for doc_id, dials in d_doc_dials.items():
                         doc = doc_data[domain][doc_id]
-                        doc_spans = [{"start": span["start_sp"], "end": span["end_sp"]} for _, span in doc["spans"].items()]
+                        doc_spans = [{"start": span["start_sp"], "end": span["end_sp"]}
+                                     for _, span in doc["spans"].items()]
                         for dial in dials:
                             all_prev_utterances = []
                             for idx, turn in enumerate(dial["turns"]):
                                 all_prev_utterances.append(
-                                    "\t{}: {}".format(turn["role"], turn["utterance"])
+                                    "\t{}: {}".format(
+                                        turn["role"], turn["utterance"])
                                 )
                                 if "answers" not in turn:
                                     turn["answers"] = self._get_answers_rc(
@@ -668,14 +673,19 @@ class Doc2dial(datasets.GeneratorBasedBuilder):
                                 question_str = " ".join(
                                     list(reversed(all_prev_utterances))
                                 ).strip()
-                                question = " ".join(question_str.split()[:MAX_Q_LEN])
-                                id_ = "{}_{}".format(dial["dial_id"], turn["turn_id"]) # For subtask1, the id should be this format.
+                                question = " ".join(
+                                    question_str.split()[:MAX_Q_LEN])
+                                # For subtask1, the id should be this format.
+                                id_ = "{}_{}".format(
+                                    dial["dial_id"], turn["turn_id"])
                                 qa = {
-                                    "id": id_, # For subtask1, the id should be this format.
+                                    # For subtask1, the id should be this format.
+                                    "id": id_,
                                     "title": doc_id,
                                     "context": doc["doc_text"],
                                     "question": question,
-                                    "answers": [],  # For subtask1, "answers" contains the grounding annotations for evaluation.
+                                    # For subtask1, "answers" contains the grounding annotations for evaluation.
+                                    "answers": [],
                                     "domain": domain,
                                 }
                                 if "answers" not in turn_to_predict:
@@ -705,7 +715,8 @@ class Doc2dial(datasets.GeneratorBasedBuilder):
                             all_prev_utterances = []
                             for idx, turn in enumerate(dial["turns"]):
                                 all_prev_utterances.append(
-                                    "\t{}: {}".format(turn["role"], turn["utterance"])
+                                    "\t{}: {}".format(
+                                        turn["role"], turn["utterance"])
                                 )
                                 if turn["role"] == "agent":
                                     continue
@@ -717,14 +728,18 @@ class Doc2dial(datasets.GeneratorBasedBuilder):
                             question_str = " ".join(
                                 list(reversed(all_prev_utterances))
                             ).strip()
-                            question = " ".join(question_str.split()[:MAX_Q_LEN])
-                            id_ = "{}_{}".format(dial["dial_id"], turn["turn_id"]) # For subtask1, the id should be this format.
+                            question = " ".join(
+                                question_str.split()[:MAX_Q_LEN])
+                            # For subtask1, the id should be this format.
+                            id_ = "{}_{}".format(
+                                dial["dial_id"], turn["turn_id"])
                             qa = {
-                                "id": id_, # For subtask1, the id should be this format.
+                                # For subtask1, the id should be this format.
+                                "id": id_,
                                 "title": doc_id,
                                 "context": doc["doc_text"],
                                 "question": question,
-                                "domain": domain,}
+                                "domain": domain, }
                             yield id_, qa
 
         elif self.config.name == "doc2dial_rc_test":
@@ -742,7 +757,8 @@ class Doc2dial(datasets.GeneratorBasedBuilder):
                             all_prev_utterances = []
                             for idx, turn in enumerate(dial["turns"]):
                                 all_prev_utterances.append(
-                                    "\t{}: {}".format(turn["role"], turn["utterance"])
+                                    "\t{}: {}".format(
+                                        turn["role"], turn["utterance"])
                                 )
                                 if turn["role"] == "agent":
                                     continue
@@ -754,12 +770,16 @@ class Doc2dial(datasets.GeneratorBasedBuilder):
                             question_str = " ".join(
                                 list(reversed(all_prev_utterances))
                             ).strip()
-                            question = " ".join(question_str.split()[:MAX_Q_LEN])
-                            id_ = "{}_{}".format(dial["dial_id"], turn["turn_id"]) # For subtask1, the id should be this format.
+                            question = " ".join(
+                                question_str.split()[:MAX_Q_LEN])
+                            # For subtask1, the id should be this format.
+                            id_ = "{}_{}".format(
+                                dial["dial_id"], turn["turn_id"])
                             qa = {
-                                "id": id_, # For subtask1, the id should be this format.
+                                # For subtask1, the id should be this format.
+                                "id": id_,
                                 "title": doc_id,
                                 "context": doc["doc_text"],
                                 "question": question,
-                                "domain": domain,}
+                                "domain": domain, }
                             yield id_, qa
