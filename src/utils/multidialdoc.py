@@ -478,7 +478,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     name=datasets.Split.VALIDATION,
                     gen_kwargs={
                         "filepath": os.path.join(
-                            data_dir, "multidoc2dial/v1.0/multidoc2dial_dial_test.json"
+                            data_dir, "multidoc2dial/v1.0/multidoc2dial_dial_small_validation.json"
                         ),
                     },
                 )
