@@ -431,7 +431,7 @@ def main():
     # Prediction
     if extra_args.only_predict:
         logger.info("*** Prediction ***")
-        results = trainer.only_predict()
+        results = trainer.only_predict(eval_dataset=validation_dataset)
         logger.info("*** Prediction Ended ***")
 
     return results

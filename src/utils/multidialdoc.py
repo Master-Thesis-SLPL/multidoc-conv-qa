@@ -529,14 +529,17 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
             ]
         
     def _load_doc_data_rc(self, filepath):
-        doc_filepath = os.path.join(os.path.dirname(filepath), "multidoc2dial_doc.json")
+        # doc_filepath = os.path.join(os.path.dirname(filepath), "multidoc2dial_doc.json")
+        # TODO
+        doc_filepath = os.path.join('..', '..', '..', 'dataset', 'multidoc2dial', 'v1.0', "multidoc2dial_doc.json")
         with open(doc_filepath, encoding="utf-8") as f:
             data = json.load(f)["doc_data"]
         return data
 
     def _load_doc_data_rc_extra(self, filepath):
         # TODO
-        doc_filepath = os.path.join(os.path.dirname(filepath), "multidoc2dial_doc.json")
+        # doc_filepath = os.path.join(os.path.dirname(filepath), "multidoc2dial_doc.json")
+        doc_filepath = os.path.join('..', '..', '..', 'dataset', 'multidoc2dial', 'v1.0', "multidoc2dial_doc.json")
         self.retriever.load_docs(doc_filepath)
         with open(doc_filepath, encoding="utf-8") as f:
             data = json.load(f)["doc_data"]
