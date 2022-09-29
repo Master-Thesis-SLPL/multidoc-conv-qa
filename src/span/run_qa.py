@@ -416,7 +416,7 @@ def main():
 
     # Evaluation
     results = {}
-    if training_args.do_eval:
+    if training_args.do_eval and not extra_args.only_predict:
         logger.info("*** Evaluate ***")
         results = trainer.evaluate()
 
