@@ -64,15 +64,15 @@ class QuestionAnsweringTrainer(Trainer):
         if self.post_process_function is not None and self.compute_metrics is not None:
             eval_preds = self.post_process_function(eval_examples, eval_dataset, output.predictions)
             
-            if len(eval_preds.predictions) != len(eval_preds.label_ids):
-                label_ids = []
-                ids = []
-                for label in eval_preds.label_ids:
-                    id, answers = label["id"], label["answers"]
-                    new_id = "{}_{}".format(* id.split('_')[0:2])
-                    if new_id not in ids:
-                        ids.append(new_id)
-                        label_ids.append({"id": new_id, "answers": answers})
+            # converting {}_{}_{} format to standard {}_{} format            
+            label_ids = []
+            ids = []
+            for label in eval_preds.label_ids:
+                id, answers = label["id"], label["answers"]
+                new_id = "{}_{}".format(* id.split('_')[0:2])
+                if new_id not in ids:
+                    ids.append(new_id)
+                    label_ids.append({"id": new_id, "answers": answers})
 
                 eval_preds = EvalPred(eval_preds.predictions, label_ids)
 
