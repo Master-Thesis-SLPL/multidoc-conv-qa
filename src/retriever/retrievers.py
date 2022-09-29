@@ -3,10 +3,8 @@ Python module presenting all diferent retrievers implemented
  in jupyter notebooks in a modular manner.
 """
 
-import json
-import pickle
-from typing import List
-from typing import Tuple
+import json, os, pickle
+from typing import List, Tuple
 
 import numpy as np
 from tqdm import tqdm
@@ -15,7 +13,14 @@ import torch
 from transformers import AutoTokenizer, AutoModel, AutoConfig
 
 
+
+
+
 class DrTeitRetriever:
+    file_title_embeddings = os.path.join('..', '..', 'retriever', 'doc_title_LaBSE_Embedding.npy')
+    file_title_to_embeddings = os.path.join('..', '..', 'retriever', 'title_to_embeddings.pkl')
+    file_words2IDF = os.path.join('..', '..', 'retriever', 'words_to_IDF.pkl')
+
     def __init__(self):    
         self.tokenizer_labse = AutoTokenizer.from_pretrained("setu4993/LaBSE")
         self.model_labse = AutoModel.from_pretrained("setu4993/LaBSE")
@@ -42,15 +47,19 @@ class DrTeitRetriever:
         self.N_DOC = len(titles)
         
         TRAIN_SIZE = len(titles)
-        for title in tqdm(titles, desc="[Loading documents - title embedding]"):
-            self.title_to_embeddings[title] = self.get_embeddings(title)
-        
-        self.tfidfVectorizer = TfidfVectorizer(strip_accents=None,
-                                        analyzer='char',
-                                        ngram_range=(2, 8),
-                                        norm='l2',
-                                        use_idf=True,
-                                        smooth_idf=True)
+
+        if not os.path.exists(DrTeitRetriever.file_title_to_embeddings):
+            for title in tqdm(titles, desc="[Loading documents - title embedding]"):
+                self.title_to_embeddings[title] = self.get_embeddings(title)
+
+            with open(DrTeitRetriever.file_title_to_embeddings, 'wb') as f:
+                pickle.dump(self.title_to_embeddings, f)
+        else:
+            with open(DrTeitRetriever.file_title_to_embeddings, 'rb') as f:
+                self.title_to_embeddings = pickle.load(f)
+
+        self.tfidfVectorizer = TfidfVectorizer(strip_accents=None, analyzer='char', 
+                        ngram_range=(2, 8), norm='l2', use_idf=True, smooth_idf=True)
         self.tfidf_wm = self.tfidfVectorizer.fit_transform(doc_texts_train)
 
         words = set()
@@ -60,12 +69,20 @@ class DrTeitRetriever:
             doc_texts_train_tokenized.append(tokenized_doc) 
             words = set(tokenized_doc).union(words)
         
-        for word in tqdm(words, desc="[Loading documents - IDF scores]"):
-            n_word = 0
-            for doc in doc_texts_train_tokenized:
-                if word in doc:
-                    n_word += 1
-            self.words2IDF[word] = np.log(self.N_DOC / (n_word + 1))
+
+        if not os.path.exists(DrTeitRetriever.file_words2IDF):
+            for word in tqdm(words, desc="[Loading documents - IDF scores]"):
+                n_word = 0
+                for doc in doc_texts_train_tokenized:
+                    if word in doc:
+                        n_word += 1
+                self.words2IDF[word] = np.log(self.N_DOC / (n_word + 1))    
+            
+            with open(DrTeitRetriever.file_words2IDF, 'wb') as f:
+                pickle.dump(self.words2IDF, f)
+        else:
+            with open(DrTeitRetriever.file_words2IDF, 'rb') as f:
+                self.words2IDF = pickle.load(f)
 
     def get_embeddings(self, sentece):
         """
