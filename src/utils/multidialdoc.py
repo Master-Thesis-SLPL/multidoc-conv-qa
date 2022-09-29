@@ -489,7 +489,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     name=datasets.Split.VALIDATION,
                     gen_kwargs={
                         "filepath": os.path.join(
-                            data_dir, "multidialdoc/v1.0/dialdoc2022_sharedtask/MDD-SEEN/phase_dev/mdd_dev_pub.json"
+                            data_dir, "multidoc2dial/v1.0/dialdoc2022_sharedtask/MDD-SEEN/phase_dev/mdd_dev_pub.json"
                         ),
                     },
                 )
@@ -500,7 +500,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     name=datasets.Split.VALIDATION,
                     gen_kwargs={
                         "filepath": os.path.join(
-                            data_dir, "multidialdoc/v1.0/dialdoc2022_sharedtask/MDD-SEEN/phase_test/mdd_test_pub.json"
+                            data_dir, "multidoc2dial/v1.0/dialdoc2022_sharedtask/MDD-SEEN/phase_test/mdd_test_pub.json"
                         ),
                     },
                 )
@@ -511,7 +511,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     name=datasets.Split.VALIDATION,
                     gen_kwargs={
                         "filepath": os.path.join(
-                            data_dir, "multidialdoc/v1.0/dialdoc2022_sharedtask/MDD-UNSEEN/phase_dev/mdd_dev_pub.json"
+                            data_dir, "multidoc2dial/v1.0/dialdoc2022_sharedtask/MDD-UNSEEN/phase_dev/mdd_dev_pub.json"
                         ),
                     },
                 )
@@ -522,7 +522,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     name=datasets.Split.VALIDATION,
                     gen_kwargs={
                         "filepath": os.path.join(
-                            data_dir, "multidialdoc/v1.0/dialdoc2022_sharedtask/MDD-UNSEEN/phase_test/mdd_test_pub.json"
+                            data_dir, "multidoc2dial/v1.0/dialdoc2022_sharedtask/MDD-UNSEEN/phase_test/mdd_test_pub.json"
                         ),
                     },
                 )
