@@ -971,20 +971,37 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                         # queries = list(reversed(all_user_utterances))
                         if turn["turn_id"] == int(dial["id"].split('_')[-1]):
                             queries = list(reversed(all_prev_utterances))
-                            doc_ids = self.retriever.get_documents(None, queries)
-                            for doc_rank, (doc_domain, doc_id) in enumerate(doc_ids):
-                                question_str = " ".join(list(reversed(all_prev_utterances))).strip()
-                                question = " ".join(question_str.split()[:MAX_Q_LEN])
-                                id_ = "{}_{}".format(dial["id"], doc_rank) # For subtask1, the id should be this format.
-                                # id_ = "{}_{}".format(dial["id"], turn["turn_id"]) # For subtask1, the id should be this format.
-                                qa = {
-                                    "id": id_, # For subtask1, the id should be this format.
-                                    "title": doc_id,
-                                    "context": docs[doc_domain][doc_id]["doc_text"],
-                                    "only-question": turn["utterance"],    
-                                    "question": question,    
-                                    "domain": doc_domain,
-                                    "doc-rank": doc_rank,
-                                    "questions": list(reversed(all_utterances)),
-                                }
-                                yield id_, qa
+                            doc_ids = self.retriever.get_documents(None, queries, k=3)
+                            
+                            question_str = " ".join(list(reversed(all_prev_utterances))).strip()
+                            question = " ".join(question_str.split()[:MAX_Q_LEN])
+                            id_ = "{}_0".format(dial["id"], doc_rank) # For subtask1, the id should be this format.
+                            # id_ = "{}_{}".format(dial["id"], turn["turn_id"]) # For subtask1, the id should be this format.
+                            qa = {
+                                "id": id_, # For subtask1, the id should be this format.
+                                "title": doc_id,
+                                "context": "\n".join([docs[doc_domain][doc_id]["doc_text"] for doc_domain,doc_id in doc_ids]),
+                                "only-question": turn["utterance"],    
+                                "question": question,    
+                                "domain": doc_ids[0][0],
+                                "doc-rank": doc_rank,
+                                "questions": list(reversed(all_utterances)),
+                            }
+                            yield id_, qa
+                            
+                            # for doc_rank, (doc_domain, doc_id) in enumerate(doc_ids):
+                            #     question_str = " ".join(list(reversed(all_prev_utterances))).strip()
+                            #     question = " ".join(question_str.split()[:MAX_Q_LEN])
+                            #     id_ = "{}_{}".format(dial["id"], doc_rank) # For subtask1, the id should be this format.
+                            #     # id_ = "{}_{}".format(dial["id"], turn["turn_id"]) # For subtask1, the id should be this format.
+                            #     qa = {
+                            #         "id": id_, # For subtask1, the id should be this format.
+                            #         "title": doc_id,
+                            #         "context": docs[doc_domain][doc_id]["doc_text"],
+                            #         "only-question": turn["utterance"],    
+                            #         "question": question,    
+                            #         "domain": doc_domain,
+                            #         "doc-rank": doc_rank,
+                            #         "questions": list(reversed(all_utterances)),
+                            #     }
+                            #     yield id_, qa
