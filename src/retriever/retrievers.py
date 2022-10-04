@@ -12,7 +12,7 @@ import numpy as np
 import torch
 from sklearn.feature_extraction.text import TfidfVectorizer
 from tqdm import tqdm
-from transformers import AutoConfig, AutoModel, AutoTokenizer
+from transformers import AutoConfig, AutoModel, AutoTokenizer, AutoModelForSequenceClassification
 
 
 class DrTeitRetriever:
@@ -30,7 +30,7 @@ class DrTeitRetriever:
         self.tfidf_wm = None
         self.N_DOC = 488
 
-    def load_docs(self, path2doc) -> None:
+    def load_docs(self, path2doc):
         with open(path2doc, 'r') as f:
             multidoc2dial_doc = json.load(f)
         
@@ -47,14 +47,14 @@ class DrTeitRetriever:
         
         TRAIN_SIZE = len(titles)
 
-        if not os.path.exists(DrTeitRetriever.file_title_to_embeddings):
+        if not os.path.exists(self.file_title_to_embeddings):
             for title in tqdm(titles, desc="[Loading documents - title embedding]"):
                 self.title_to_embeddings[title] = self.get_embeddings(title)
 
-            with open(DrTeitRetriever.file_title_to_embeddings, 'wb') as f:
+            with open(self.file_title_to_embeddings, 'wb') as f:
                 pickle.dump(self.title_to_embeddings, f)
         else:
-            with open(DrTeitRetriever.file_title_to_embeddings, 'rb') as f:
+            with open(self.file_title_to_embeddings, 'rb') as f:
                 self.title_to_embeddings = pickle.load(f)
 
         self.tfidfVectorizer = TfidfVectorizer(strip_accents=None, analyzer='char', 
@@ -69,7 +69,7 @@ class DrTeitRetriever:
             words = set(tokenized_doc).union(words)
         
 
-        if not os.path.exists(DrTeitRetriever.file_words2IDF):
+        if not os.path.exists(self.file_words2IDF):
             for word in tqdm(words, desc="[Loading documents - IDF scores]"):
                 n_word = 0
                 for doc in doc_texts_train_tokenized:
@@ -77,10 +77,10 @@ class DrTeitRetriever:
                         n_word += 1
                 self.words2IDF[word] = np.log(self.N_DOC / (n_word + 1))    
             
-            with open(DrTeitRetriever.file_words2IDF, 'wb') as f:
+            with open(self.file_words2IDF, 'wb') as f:
                 pickle.dump(self.words2IDF, f)
         else:
-            with open(DrTeitRetriever.file_words2IDF, 'rb') as f:
+            with open(self.file_words2IDF, 'rb') as f:
                 self.words2IDF = pickle.load(f)
 
     def get_embeddings(self, sentece):
@@ -99,7 +99,7 @@ class DrTeitRetriever:
         
         return np.squeeze(np.array(embeddings.pooler_output))
 
-    def calc_idf_score(self, sentence) -> float:
+    def calc_idf_score(self, sentence):
         """
         Calculate the mean idf score for given sentence.
 
@@ -118,7 +118,7 @@ class DrTeitRetriever:
             return 0
         return score / len(tokenzied_sentence)
 
-    def predict_labelwise_doc_at_history_ordered(self, queries, title_embeddings, k=1, alpha=10) -> Tuple[List[float], List[str]]:
+    def predict_dr_teit(self, queries, title_embeddings, k=1, alpha=10, coef_reverse_power=True):
         """
         Predict which document is matched to the given query.
 
@@ -128,6 +128,8 @@ class DrTeitRetriever:
         :type title_embeddings: list[str]
         :param k: number of returning docs
         :type k: int 
+        :param coef_reverse_power: use reverse 2^ power for the previous coefs or not
+        :type coef_reverse_power: bool
         :return: return the document names and accuracies
         """
         idf_score = np.array(list(map(lambda x: 0.0, title_embeddings)))
@@ -139,7 +141,10 @@ class DrTeitRetriever:
                                 (np.linalg.norm(query_embd) * np.linalg.norm(x)),
                                 title_embeddings))
             query_sim = np.array(query_sim)
-            coef = 2**(-i) * self.calc_idf_score(query)
+            if coef_reverse_power:
+                coef = 2**(-i) * self.calc_idf_score(query)
+            else:
+                coef = self.calc_idf_score(query)
             coef_sum += coef
 
             idf_score += coef * query_sim
@@ -150,14 +155,67 @@ class DrTeitRetriever:
         scores = scores[best_k_idx]
         return (scores, best_k_idx)
 
-    def get_documents(self, domain, queries, k=1) -> List[str]:
+    def get_documents(self, domain, queries, k=1):
         "returns list of related document IDs"
         if domain:
             titles = [title for title in self.title_to_embeddings.keys() if self.title_to_domain[title] == domain]
         else:
             titles = [title for title in self.title_to_embeddings.keys()]
         title_embeddings = [self.title_to_embeddings[title] for title in titles]
-        acc, best_k_idx = self.predict_labelwise_doc_at_history_ordered(queries, title_embeddings, k)
+        acc, best_k_idx = self.predict_dr_teit(queries, title_embeddings, k)
+        if domain:
+            return [titles[i] for i in best_k_idx]
+        else:
+            return [(self.title_to_domain[titles[i]], titles[i]) for i in best_k_idx]
+
+
+class DrFudRetriever(DrTeitRetriever):
+    fudnet_model_name = "alistvt/fudnet"
+    separation_token = " <SEP> "
+    
+    def __init__(self):
+        super().__init__()
+        self.tokenizer_fudnet = AutoTokenizer.from_pretrained(self.fudnet_model_name)
+        self.model_fudnet = AutoModelForSequenceClassification.from_pretrained(self.fudnet_model_name, num_labels=2)
+
+    def combine_and_tokenize(self, prev_question, current_question, prediction=False, cuda=False):
+        combined = f"{prev_question}{self.separation_token}{current_question}"
+        if prediction:
+            tokenized = self.tokenizer_fudnet(combined, max_length=128, padding="max_length", truncation=True, return_tensors='pt')
+        else:
+            tokenized = self.tokenizer_fudnet(combined, max_length=128, padding="max_length", truncation=True)
+        if cuda:
+            tokenized_cuda = {}
+            for key, value in tokenized.items():
+                tokenized_cuda[key] = value.cuda()
+            return tokenized_cuda
+        else:
+            return tokenized
+
+    def get_documents(self, domain, queries, k=1):
+        "returns list of related document IDs"
+        if domain:
+            titles = [title for title in self.title_to_embeddings.keys() if self.title_to_domain[title] == domain]
+        else:
+            titles = [title for title in self.title_to_embeddings.keys()]
+        title_embeddings = [self.title_to_embeddings[title] for title in titles]
+
+        if len(queries) > 1:
+            prev_question, current_question = "", queries[0]
+        else:
+            prev_question, current_question = queries[2], queries[0]
+
+        inputs = self.combine_and_tokenize(prev_question, current_question, prediction=True, cuda=True)
+        outputs = self.model_fudnet(**inputs)
+        is_followup = bool(torch.argmax(outputs.logits))
+        
+        if is_followup:
+            dr_scores, dr_predictions = self.predict_dr_teit(queries[:3], title_embeddings, k, coef_reverse_power=False)
+            return dr_predictions
+        else:
+            dr_scores, dr_predictions = self.predict_dr_teit([queries[0]], title_embeddings, k, coef_reverse_power=False)
+            return dr_predictions
+        
         if domain:
             return [titles[i] for i in best_k_idx]
         else:

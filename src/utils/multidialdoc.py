@@ -894,9 +894,8 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                         all_prev_utterances = []
                         all_user_utterances = []
                         for idx, turn in enumerate(dial["turns"]):
-                            all_prev_utterances.append(
-                                "\t{}: {}".format(turn["role"], turn["utterance"])
-                            )
+                            all_prev_utterances.append(turn["utterance"])
+                                # "\t{}: {}".format(turn["role"], turn["utterance"])
                             if "answers" not in turn:
                                 turn["answers"], doc_id = self._get_answers_rc(
                                     turn["references"],
@@ -916,7 +915,6 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                                 continue
 
                             queries = list(reversed(all_prev_utterances))
-                            # queries = list(reversed(all_user_utterances))
                             doc_ids = self.retriever.get_documents(None, queries)
 
                             for doc_rank, (domain, doc_id) in enumerate(doc_ids):
@@ -962,9 +960,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     all_user_utterances = []
                     all_utterances = []
                     for idx, turn in enumerate(dial["dial"]):
-                        all_prev_utterances.append(
-                            "\t{}: {}".format(turn["role"], turn["utterance"])
-                        )
+                        all_prev_utterances.append(turn["utterance"])
                         if turn["role"] == "agent":
                             all_utterances[-1] = all_utterances[-1] + turn["utterance"]
                             continue
