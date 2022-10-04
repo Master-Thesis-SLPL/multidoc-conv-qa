@@ -175,8 +175,8 @@ class DrFudRetriever(DrTeitRetriever):
     
     def __init__(self):
         super().__init__()
-        self.tokenizer_fudnet = AutoTokenizer.from_pretrained(self.fudnet_model_name)
-        self.model_fudnet = AutoModelForSequenceClassification.from_pretrained(self.fudnet_model_name, num_labels=2)
+        self.tokenizer_fudnet = self.tokenizer_labse
+        self.model_fudnet = AutoModelForSequenceClassification.from_pretrained(self.fudnet_model_name)
 
     def combine_and_tokenize(self, prev_question, current_question, prediction=False, cuda=False):
         combined = f"{prev_question}{self.separation_token}{current_question}"
