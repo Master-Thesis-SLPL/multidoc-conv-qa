@@ -1,2 +1,3 @@
-src/retriever/cloudflared.log
-src/retriever/cloudflared
+*cloudflared.log
+*cloudflared
+*.pyc
