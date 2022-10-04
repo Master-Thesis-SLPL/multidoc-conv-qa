@@ -56,7 +56,7 @@ from data_utils import (
 )
 
 sys.path.append(os.path.abspath('../../retriever'))
-from retrievers import DrTeitRetriever
+from retrievers import DrTeitRetriever, DrFudRetriever
 
 
 logger = logging.getLogger(__name__)
@@ -298,7 +298,7 @@ def main():
             UserWarning
         )
 
-    retriever = DrTeitRetriever()
+    retriever = DrFudRetriever()
 
     datasets, extra_datasets = load_datasets(data_args, model_args, retriever=retriever)
 
