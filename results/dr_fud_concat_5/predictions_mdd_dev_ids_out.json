@@ -1,0 +1,1196 @@
+[
+  {
+    "id": "83236af4c52644c27df34aac12860238_9",
+    "grounding": "the civil penalty is $500",
+    "utterance": "the civil penalty is $500",
+    "turn_id": 9
+  },
+  {
+    "id": "3a052312b66c3273ffe7de030b0e1bff_1",
+    "grounding": "Go for it! Fill Out the FAFSA",
+    "utterance": "Go for it! Fill Out the FAFSA",
+    "turn_id": 1
+  },
+  {
+    "id": "ee65234e4871047d7888d2b1a46206af_1",
+    "grounding": "Find out if you can get disability compensation or benefits for illnesses including some cancers believed to be caused by contact with radiation during military service.",
+    "utterance": "Find out if you can get disability compensation or benefits for illnesses including some cancers believed to be caused by contact with radiation during military service.",
+    "turn_id": 1
+  },
+  {
+    "id": "dcbb085e0585ceb55c29e6ed817c99a9_9",
+    "grounding": "we ll decide that you don t have a qualifying disability and your claim will be denied.",
+    "utterance": "we ll decide that you don t have a qualifying disability and your claim will be denied.",
+    "turn_id": 9
+  },
+  {
+    "id": "54193684a189981822e4bac3fe6bae93_12",
+    "grounding": "Life insuranceExplore your life insurance options and find out how to apply as a service member, Veteran, or family member.",
+    "utterance": "Life insuranceExplore your life insurance options and find out how to apply as a service member, Veteran, or family member.",
+    "turn_id": 12
+  },
+  {
+    "id": "438a526113293991c77ec104ebd34174_1",
+    "grounding": "Share our information with potential college students, their parents, counselors, or other mentors.",
+    "utterance": "Share our information with potential college students, their parents, counselors, or other mentors.",
+    "turn_id": 1
+  },
+  {
+    "id": "241f48160995243e3ccd1437d9fd04e5_9",
+    "grounding": "VA Survivors PensionFind out if you re eligible and how to apply for VA pension benefits as a surviving spouse or child of a deceased Veteran with wartime service.",
+    "utterance": "VA Survivors PensionFind out if you re eligible and how to apply for VA pension benefits as a surviving spouse or child of a deceased Veteran with wartime service.",
+    "turn_id": 9
+  },
+  {
+    "id": "f7bdcf0423e51fc6774ceb65393c5265_9",
+    "grounding": "Parents , each of the checklists from elementary school through high school includes items for you, such as how to support your child in his or her studies, where to set up a college savings account, and what to do when it s time to apply for financial aid.",
+    "utterance": "Parents , each of the checklists from elementary school through high school includes items for you, such as how to support your child in his or her studies, where to set up a college savings account, and what to do when it s time to apply for financial aid.",
+    "turn_id": 9
+  },
+  {
+    "id": "20753219dabd61fd7604efc02b711402_11",
+    "grounding": "you may be eligible for the Veterans Pension program.",
+    "utterance": "you may be eligible for the Veterans Pension program.",
+    "turn_id": 11
+  },
+  {
+    "id": "b284a4735f8d84a97ba634ad0b2db4d3_8",
+    "grounding": "Call us toll - free at 844 - 698 - 2311.",
+    "utterance": "Call us toll - free at 844 - 698 - 2311.",
+    "turn_id": 8
+  },
+  {
+    "id": "5264367dcf1ce7b15b0b6659f405d588_7",
+    "grounding": "you may have the combination on your new custom plates. Most picture plates require a $31.25 annual personalized fee in addition to the $31.25 custom plate fee. You must also pay a plate fee for the new plates ,",
+    "utterance": "you may have the combination on your new custom plates. Most picture plates require a $31.25 annual personalized fee in addition to the $31.25 custom plate fee. You must also pay a plate fee for the new plates ,",
+    "turn_id": 7
+  },
+  {
+    "id": "389d7aac2f768d5277cb9c1d475c2ca8_13",
+    "grounding": "ask the financial aid office for this figure. Make sure it includes amounts you will pay to the school directly such as tuition and fees as well as other costs such as living expenses, books and supplies, and transportation.",
+    "utterance": "ask the financial aid office for this figure. Make sure it includes amounts you will pay to the school directly such as tuition and fees as well as other costs such as living expenses, books and supplies, and transportation.",
+    "turn_id": 13
+  },
+  {
+    "id": "6d2d42910bf7a741883c3bc8c7ee110d_7",
+    "grounding": "you need two things : The estimated \" gross \" monthly amount of your pension from your government job not covered by Social Security. The estimated monthly amount of your Social Security benefit as a spouse, widow, or widower before the effect of GPO.",
+    "utterance": "you need two things : The estimated \" gross \" monthly amount of your pension from your government job not covered by Social Security. The estimated monthly amount of your Social Security benefit as a spouse, widow, or widower before the effect of GPO.",
+    "turn_id": 7
+  },
+  {
+    "id": "89b11817c59b5a9b5b31e6945e8d42f6_1",
+    "grounding": "Payments are made for up to 25 years.",
+    "utterance": "Payments are made for up to 25 years.",
+    "turn_id": 1
+  },
+  {
+    "id": "23e62698979d1660ffab1b6a673e50d8_5",
+    "grounding": "Benefits paid to you as a spouse will not decrease your spouse s retirement benefit. In fact , the value of the benefits you may receive, added to their benefits, may help your spouse decide if taking benefits sooner may be more advantageous.",
+    "utterance": "Benefits paid to you as a spouse will not decrease your spouse s retirement benefit. In fact , the value of the benefits you may receive, added to their benefits, may help your spouse decide if taking benefits sooner may be more advantageous.",
+    "turn_id": 5
+  },
+  {
+    "id": "df27366a04eee0fb825807421c9643d0_3",
+    "grounding": "Federal Student Aid FSA routinely conducts program reviews to confirm that a school meets FSA requirements for institutional eligibility, financial responsibility, and administrative capability. During a program review , reviewers evaluate the school s compliance with FSA requirements, assess liabilities for errors in performance, and identify actions the school must take to improve its future administrative capabilities.",
+    "utterance": "Federal Student Aid FSA routinely conducts program reviews to confirm that a school meets FSA requirements for institutional eligibility, financial responsibility, and administrative capability. During a program review , reviewers evaluate the school s compliance with FSA requirements, assess liabilities for errors in performance, and identify actions the school must take to improve its future administrative capabilities.",
+    "turn_id": 3
+  },
+  {
+    "id": "2301e365f0bd1476c8f79f5b4b33fb2b_7",
+    "grounding": "\n\nWhat is an escrow account? ",
+    "utterance": "\n\nWhat is an escrow account? ",
+    "turn_id": 7
+  },
+  {
+    "id": "6b3c27c1056a99cc2e76e2f9954564b7_4",
+    "grounding": "your new ID will show :' NOT FOR FEDERAL PURPOSES'.",
+    "utterance": "your new ID will show :' NOT FOR FEDERAL PURPOSES'.",
+    "turn_id": 4
+  },
+  {
+    "id": "cb0b749cdff0d7eeb4ffc63de30bc9e4_5",
+    "grounding": "If a birth certificate does not exist ,",
+    "utterance": "If a birth certificate does not exist ,",
+    "turn_id": 5
+  },
+  {
+    "id": "0ed3f2efc5b7482d7c2d34c0b5837357_9",
+    "grounding": "your children may also qualify to receive benefits on your record. Your eligible child can be your biological child, adopted child, or stepchild. A dependent grandchild may also qualify.",
+    "utterance": "your children may also qualify to receive benefits on your record. Your eligible child can be your biological child, adopted child, or stepchild. A dependent grandchild may also qualify.",
+    "turn_id": 9
+  },
+  {
+    "id": "c8eb764b9c681371b2f92deebb1d9c4c_11",
+    "grounding": "If you do not have your Surety Bond ,",
+    "utterance": "If you do not have your Surety Bond ,",
+    "turn_id": 11
+  },
+  {
+    "id": "6e7ccaa8f44365c5c816032118e3b0de_3",
+    "grounding": "Follow the instructions on your suspension order. Send the bottom part of the order along with a certified check, personal check, or money order payable to Commissioner of Motor Vehicles for the penalty to",
+    "utterance": "Follow the instructions on your suspension order. Send the bottom part of the order along with a certified check, personal check, or money order payable to Commissioner of Motor Vehicles for the penalty to",
+    "turn_id": 3
+  },
+  {
+    "id": "e3fc746c88493c749914d1e69d5b0673_7",
+    "grounding": "select LOG IN on the FAFSA home page , select I am the student , enter your FSA ID , and be sure to select FAFSA RENEWAL once given the option.",
+    "utterance": "select LOG IN on the FAFSA home page , select I am the student , enter your FSA ID , and be sure to select FAFSA RENEWAL once given the option.",
+    "turn_id": 7
+  },
+  {
+    "id": "ed7fd9907c8325477f7e2af89eda7cf4_1",
+    "grounding": "Since April 1 , 2010 , DMV has issued Empire Gold vehicle license plates. DMV no longer issues Empire Blue and White plates.",
+    "utterance": "Since April 1 , 2010 , DMV has issued Empire Gold vehicle license plates. DMV no longer issues Empire Blue and White plates.",
+    "turn_id": 1
+  },
+  {
+    "id": "8f2456ebfa2c504dd8699102211a9afc_11",
+    "grounding": "you may be able to get Extra Help with the costs monthly premiums, annual deductibles, and prescription copayments related to Medicare prescription drug coverage. Visit Extra Help with your Medicare prescription drug costs for more information.",
+    "utterance": "you may be able to get Extra Help with the costs monthly premiums, annual deductibles, and prescription copayments related to Medicare prescription drug coverage. Visit Extra Help with your Medicare prescription drug costs for more information.",
+    "turn_id": 11
+  },
+  {
+    "id": "2088892a44db934c69363e8c947cd21f_1",
+    "grounding": "You don't have to get an Enhanced or REAL ID. 3 However ,",
+    "utterance": "You don't have to get an Enhanced or REAL ID. 3 However ,",
+    "turn_id": 1
+  },
+  {
+    "id": "aef28283382ba8b0e1fcab554d8cb516_1",
+    "grounding": "Since April 1 , 2010 , DMV has issued Empire Gold vehicle license plates. DMV no longer issues Empire Blue and White plates.",
+    "utterance": "Since April 1 , 2010 , DMV has issued Empire Gold vehicle license plates. DMV no longer issues Empire Blue and White plates.",
+    "turn_id": 1
+  },
+  {
+    "id": "df0786f17d9f4708d23e6d40fe51f0b5_4",
+    "grounding": "certain life changes may affect eligibility for an increase in your federal benefits. For example , if your spouse or ex - spouse dies ,",
+    "utterance": "certain life changes may affect eligibility for an increase in your federal benefits. For example , if your spouse or ex - spouse dies ,",
+    "turn_id": 4
+  },
+  {
+    "id": "59fe5dcf2c7ca6ed16f315b15a256bb6_3",
+    "grounding": "When you start receiving Social Security retirement benefits ,",
+    "utterance": "When you start receiving Social Security retirement benefits ,",
+    "turn_id": 3
+  },
+  {
+    "id": "91cd80306792f6e32d22b264d36dfd35_4",
+    "grounding": "You must register any vehicle owned by you or your business at a DMV office. 2 See general information about registering a vehicle [15] and specific requirements for different vehicle types [16].",
+    "utterance": "You must register any vehicle owned by you or your business at a DMV office. 2 See general information about registering a vehicle [15] and specific requirements for different vehicle types [16].",
+    "turn_id": 4
+  },
+  {
+    "id": "1f832ee80738f4f876c3072e17dc620c_3",
+    "grounding": "\n\nMy address changed ",
+    "utterance": "\n\nMy address changed ",
+    "turn_id": 3
+  },
+  {
+    "id": "cd5d5381f3656e6c86cb9f59af20ebcf_4",
+    "grounding": "you can : Complete your application online. Call our toll - free telephone number",
+    "utterance": "you can : Complete your application online. Call our toll - free telephone number",
+    "turn_id": 4
+  },
+  {
+    "id": "68bde1de04e1739c10aa71d88dfa466d_3",
+    "grounding": "Entered active duty on or before September 7 , 1980 , and served at least 90 days on active military service, with at least 1 day during a wartime period ,",
+    "utterance": "Entered active duty on or before September 7 , 1980 , and served at least 90 days on active military service, with at least 1 day during a wartime period ,",
+    "turn_id": 3
+  },
+  {
+    "id": "11586215853c514663a8c7099903539c_7",
+    "grounding": "Drilling for points rather than pay",
+    "utterance": "Drilling for points rather than pay",
+    "turn_id": 7
+  },
+  {
+    "id": "9b15edcf84617263a50661fc5f1f7fe3_9",
+    "grounding": "The Appeals Council looks at all requests for review , but it may deny a request if it believes the hearing decision was supported and in accordance with social security law and regulations.",
+    "utterance": "The Appeals Council looks at all requests for review , but it may deny a request if it believes the hearing decision was supported and in accordance with social security law and regulations.",
+    "turn_id": 9
+  },
+  {
+    "id": "a4f7567e6bc3db63d13ec065b1e781bb_13",
+    "grounding": "the Social Security Administration SSA",
+    "utterance": "the Social Security Administration SSA",
+    "turn_id": 13
+  },
+  {
+    "id": "9f61667636fe04c71da3d43f4c018b97_9",
+    "grounding": "VA s Duty to Assist requires VA to assist you in getting evidence, such as medical records, that s needed to support your case. VA s Duty to Assist applies during your initial claim and if you file a Supplemental Claim.",
+    "utterance": "VA s Duty to Assist requires VA to assist you in getting evidence, such as medical records, that s needed to support your case. VA s Duty to Assist applies during your initial claim and if you file a Supplemental Claim.",
+    "turn_id": 9
+  },
+  {
+    "id": "292b1a338c8695d299a4f919c670a146_7",
+    "grounding": "Enrolled in VA health care ,",
+    "utterance": "Enrolled in VA health care ,",
+    "turn_id": 7
+  },
+  {
+    "id": "d1606887f847bcfbc481d848fb971191_6",
+    "grounding": "You can apply for Disability benefits online , or if you prefer , you can apply by calling our toll - free number , 1 - 800 - 772 - 1213.",
+    "utterance": "You can apply for Disability benefits online , or if you prefer , you can apply by calling our toll - free number , 1 - 800 - 772 - 1213.",
+    "turn_id": 6
+  },
+  {
+    "id": "75c06a577f77c301bd53d163bd497585_1",
+    "grounding": "If you re a family member caring for a Veteran with disabilities who was injured in the line of duty on or after September 11 , 2001 ,",
+    "utterance": "If you re a family member caring for a Veteran with disabilities who was injured in the line of duty on or after September 11 , 2001 ,",
+    "turn_id": 1
+  },
+  {
+    "id": "a0dba714f145b522c021e6c04ec8182b_10",
+    "grounding": "you may not need to apply for Medicare Part B at age 65. You may qualify for a \" Special Enrollment Period \" SEP that will let you sign up for Part B during : Any month you remain covered under the group health plan and your, or your spouse's, employment continues ;",
+    "utterance": "you may not need to apply for Medicare Part B at age 65. You may qualify for a \" Special Enrollment Period \" SEP that will let you sign up for Part B during : Any month you remain covered under the group health plan and your, or your spouse's, employment continues ;",
+    "turn_id": 10
+  },
+  {
+    "id": "04420023b17be8762424528d3258a3a3_13",
+    "grounding": "Up to $10,000 of coverage Up to $30,000 of supplemental coverage",
+    "utterance": "Up to $10,000 of coverage Up to $30,000 of supplemental coverage",
+    "turn_id": 13
+  },
+  {
+    "id": "aa974866e20b9df7bf251c368830ad35_8",
+    "grounding": "Applying online is the easiest way to complete your application at a time that works for you, without a trip to the Social Security office. You can also apply by phone or at a Social Security office. This section will tell you about the different options.",
+    "utterance": "Applying online is the easiest way to complete your application at a time that works for you, without a trip to the Social Security office. You can also apply by phone or at a Social Security office. This section will tell you about the different options.",
+    "turn_id": 8
+  },
+  {
+    "id": "90740ea8e6f3e4afaad9fafa0efc1869_3",
+    "grounding": "you must surrender your vehicle registration and plates to the New York DMV [1].",
+    "utterance": "you must surrender your vehicle registration and plates to the New York DMV [1].",
+    "turn_id": 3
+  },
+  {
+    "id": "c41fa5c67f97a3ed61bd46b0243fe70a_8",
+    "grounding": "Once you ve completed your FAFSA form , there are more steps you have to take before you receive financial aid. Make sure you know what happens after you submit your FAFSA form.",
+    "utterance": "Once you ve completed your FAFSA form , there are more steps you have to take before you receive financial aid. Make sure you know what happens after you submit your FAFSA form.",
+    "turn_id": 8
+  },
+  {
+    "id": "70d3c5b2f342ee6f99673736ea6a016b_6",
+    "grounding": "Residents of New York City and several counties in New York State must pay a vehicle use tax when they register a passenger vehicle or renew a passenger vehicle registration.",
+    "utterance": "Residents of New York City and several counties in New York State must pay a vehicle use tax when they register a passenger vehicle or renew a passenger vehicle registration.",
+    "turn_id": 6
+  },
+  {
+    "id": "9a1657631445dade9db616c29d2a3de2_1",
+    "grounding": "Share our information with potential college students, their parents, counselors, or other mentors.",
+    "utterance": "Share our information with potential college students, their parents, counselors, or other mentors.",
+    "turn_id": 1
+  },
+  {
+    "id": "3cddd1bbc0dd4d9f6a38f7718de1953d_3",
+    "grounding": "If you were involved in this research ,",
+    "utterance": "If you were involved in this research ,",
+    "turn_id": 3
+  },
+  {
+    "id": "ef7084e0229b09f7e0827cc4c320ddc9_1",
+    "grounding": "Payments are made for up to 25 years.",
+    "utterance": "Payments are made for up to 25 years.",
+    "turn_id": 1
+  },
+  {
+    "id": "8a9ae5c425489c54179bccb418729d9f_11",
+    "grounding": "please allow added time for postal delivery to the DMV.",
+    "utterance": "please allow added time for postal delivery to the DMV.",
+    "turn_id": 11
+  },
+  {
+    "id": "6394597aeb7c100c7211c1d321a258fd_11",
+    "grounding": "you may be eligible for the Veterans Pension program.",
+    "utterance": "you may be eligible for the Veterans Pension program.",
+    "turn_id": 11
+  },
+  {
+    "id": "b728a6212d5473ab13623aec361d82d8_3",
+    "grounding": "The Higher Education Act of 1965, as amended HEA, allows institutions of higher education to outsource any aspect of the institution s participation in federal student aid programs, including, but not limited to, services and functions necessary",
+    "utterance": "The Higher Education Act of 1965, as amended HEA, allows institutions of higher education to outsource any aspect of the institution s participation in federal student aid programs, including, but not limited to, services and functions necessary",
+    "turn_id": 3
+  },
+  {
+    "id": "87db86a6e38b7577c7f5ae29b8c3197f_1",
+    "grounding": "Find out what happens after you request a decision review",
+    "utterance": "Find out what happens after you request a decision review",
+    "turn_id": 1
+  },
+  {
+    "id": "5384f49718162d927e52ae62f9ff7723_9",
+    "grounding": "You may add icons for the following lifetime licenses / privileges / certifications: Sportsman, Boating Safety, Small / Big Game, Fishing, Bow Hunting, Muzzle Loading, Trapping, and the Empire Passport. Only lifetime purchased licenses, privileges or certifications may be added to the NY State DMV issued photo documents - annual licenses cannot be added.",
+    "utterance": "You may add icons for the following lifetime licenses / privileges / certifications: Sportsman, Boating Safety, Small / Big Game, Fishing, Bow Hunting, Muzzle Loading, Trapping, and the Empire Passport. Only lifetime purchased licenses, privileges or certifications may be added to the NY State DMV issued photo documents - annual licenses cannot be added.",
+    "turn_id": 9
+  },
+  {
+    "id": "ed4555ac287884943d41edd91ac3c847_7",
+    "grounding": "watch our Veteran copayments video YouTube.",
+    "utterance": "watch our Veteran copayments video YouTube.",
+    "turn_id": 7
+  },
+  {
+    "id": "90c474610318be15cfed995bdcf4e74d_10",
+    "grounding": "you may be offered loans as part of your school s financial aid offer. A loan is money you borrow and must pay back with interest.",
+    "utterance": "you may be offered loans as part of your school s financial aid offer. A loan is money you borrow and must pay back with interest.",
+    "turn_id": 10
+  },
+  {
+    "id": "b557ef3eb5fa8b6270d452ef97dbb0bf_13",
+    "grounding": "You can't renew a HazMat endorsement at a DMV office.",
+    "utterance": "You can't renew a HazMat endorsement at a DMV office.",
+    "turn_id": 13
+  },
+  {
+    "id": "c2d3fb69752bcdb6ca5fe8f2e8cca418_6",
+    "grounding": "then the entrance counseling will fulfill counseling requirements for Direct Subsidized Loans and Direct Unsubsidized Loans.",
+    "utterance": "then the entrance counseling will fulfill counseling requirements for Direct Subsidized Loans and Direct Unsubsidized Loans.",
+    "turn_id": 6
+  },
+  {
+    "id": "6c6d80f58ad2b02271b5808af32866ce_6",
+    "grounding": "Enrolled in VA health care ,",
+    "utterance": "Enrolled in VA health care ,",
+    "turn_id": 6
+  },
+  {
+    "id": "42bc15ba72e6465763ecd433d187e443_3",
+    "grounding": "You can now file for Supplemental Security Income SSI online but only if you meet certain requirements. You are eligible to file online for SSI if you :",
+    "utterance": "You can now file for Supplemental Security Income SSI online but only if you meet certain requirements. You are eligible to file online for SSI if you :",
+    "turn_id": 3
+  },
+  {
+    "id": "4ca3108b66983f8ba7ec41803de6fd29_1",
+    "grounding": "\n\n\nCommon changes to IRP registrations include ",
+    "utterance": "\n\n\nCommon changes to IRP registrations include ",
+    "turn_id": 1
+  },
+  {
+    "id": "c993d0de33f790b65664cc34ae8dd9d4_5",
+    "grounding": "a junior learner permit allows a young driver to drive only while supervised depending on the region in which you are driving , a junior driver license , may allow a young driver to drive unsupervised with certain restrictions.",
+    "utterance": "a junior learner permit allows a young driver to drive only while supervised depending on the region in which you are driving , a junior driver license , may allow a young driver to drive unsupervised with certain restrictions.",
+    "turn_id": 5
+  },
+  {
+    "id": "9552723aef2aa721db999ce6c6cc1198_1",
+    "grounding": "and what to do next.",
+    "utterance": "and what to do next.",
+    "turn_id": 1
+  },
+  {
+    "id": "e15d64e51666084a5640a2c5ee6cd896_3",
+    "grounding": "A stepchild, grandchild, step grandchild, or adopted child ;",
+    "utterance": "A stepchild, grandchild, step grandchild, or adopted child ;",
+    "turn_id": 3
+  },
+  {
+    "id": "54bd961b302015b074228a297448a935_1",
+    "grounding": "You are only eligible for the HazMat or Hazmat / Tank Endorsement [4] if you are age 21 or older and you meet the Federal medical requirements.",
+    "utterance": "You are only eligible for the HazMat or Hazmat / Tank Endorsement [4] if you are age 21 or older and you meet the Federal medical requirements.",
+    "turn_id": 1
+  },
+  {
+    "id": "27e7e90177f5fb87f7436e9357d14aa0_13",
+    "grounding": "The judge will listen to your testimony.",
+    "utterance": "The judge will listen to your testimony.",
+    "turn_id": 13
+  },
+  {
+    "id": "d0b3e6759ee3f9f8bc36aba021275835_6",
+    "grounding": "Inspection After Repair",
+    "utterance": "Inspection After Repair",
+    "turn_id": 6
+  },
+  {
+    "id": "833d87d10680999e124d4f2036be458a_5",
+    "grounding": "contact the court directly. A suspension due to a traffic ticket is an' indefinite' suspension. An indefinite suspension means your driver license or privilege to drive is taken away until you pay a suspension termination fee of $70 and have valid driver license.",
+    "utterance": "contact the court directly. A suspension due to a traffic ticket is an' indefinite' suspension. An indefinite suspension means your driver license or privilege to drive is taken away until you pay a suspension termination fee of $70 and have valid driver license.",
+    "turn_id": 5
+  },
+  {
+    "id": "0f7bc9e69c328902b09fbfb43d02c04c_16",
+    "grounding": "Most traffic violations carry violation points. The points will be added to your record using the date the violation occurred, not the date you are found guilty.",
+    "utterance": "Most traffic violations carry violation points. The points will be added to your record using the date the violation occurred, not the date you are found guilty.",
+    "turn_id": 16
+  },
+  {
+    "id": "8adeb3f3f85943bc7258c180fac90a74_8",
+    "grounding": "What Is The Best Age To Start Your Benefits?",
+    "utterance": "What Is The Best Age To Start Your Benefits?",
+    "turn_id": 8
+  },
+  {
+    "id": "e0939b86b6f621211e52deec88dd9040_14",
+    "grounding": "SUBMIT AN APPEAL OF YOUR REVOCATION TO THE DMV APPEALS BOARD. To submit an appeal , mail the appeal form [12], appeal and a copy of your denial letter to the DMV Appeals Board within sixty 60 days of the date of your denial letter.",
+    "utterance": "SUBMIT AN APPEAL OF YOUR REVOCATION TO THE DMV APPEALS BOARD. To submit an appeal , mail the appeal form [12], appeal and a copy of your denial letter to the DMV Appeals Board within sixty 60 days of the date of your denial letter.",
+    "turn_id": 14
+  },
+  {
+    "id": "dfbee475104c0f9c95312296869f8cee_1",
+    "grounding": "you must have supervised driving practice 2 you must take a pre - licensing course or a driver education course before you take your road test",
+    "utterance": "you must have supervised driving practice 2 you must take a pre - licensing course or a driver education course before you take your road test",
+    "turn_id": 1
+  },
+  {
+    "id": "fb8e6032d62962636ef0372268e36bb6_16",
+    "grounding": "VA claim exam C&P exam Find out why you might need a claim exam , how to schedule and prepare for your appointment , and what to expect during and after the exam.",
+    "utterance": "VA claim exam C&P exam Find out why you might need a claim exam , how to schedule and prepare for your appointment , and what to expect during and after the exam.",
+    "turn_id": 16
+  },
+  {
+    "id": "a61ab753094765155c65e20861516017_5",
+    "grounding": "You can also ask a regional benefit office for a copy of this form to fill out. Or you can call the VA toll - free hotline at 800 - 827 - 1000, Monday through Friday , 8:00 a.m. - 9:00 p.m. ET , to request a form.",
+    "utterance": "You can also ask a regional benefit office for a copy of this form to fill out. Or you can call the VA toll - free hotline at 800 - 827 - 1000, Monday through Friday , 8:00 a.m. - 9:00 p.m. ET , to request a form.",
+    "turn_id": 5
+  },
+  {
+    "id": "f0b1e7e9af8caed27141e38633dda1f2_1",
+    "grounding": "When you start receiving disability benefits ,",
+    "utterance": "When you start receiving disability benefits ,",
+    "turn_id": 1
+  },
+  {
+    "id": "05d1233e323f975fe059cf5f94bd5bf1_3",
+    "grounding": "Find out if a deferment is the best option for your situation. With deferment , you won t have to make a payment. However , you probably won t be making any progress toward forgiveness or paying back your loan.",
+    "utterance": "Find out if a deferment is the best option for your situation. With deferment , you won t have to make a payment. However , you probably won t be making any progress toward forgiveness or paying back your loan.",
+    "turn_id": 3
+  },
+  {
+    "id": "59021148d87890c7e7af8a7e5dbc6aab_11",
+    "grounding": "we deduct $1 from your benefit payments for every $2 you earn above the annual limit. For 2019 , that limit is $17,640.",
+    "utterance": "we deduct $1 from your benefit payments for every $2 you earn above the annual limit. For 2019 , that limit is $17,640.",
+    "turn_id": 11
+  },
+  {
+    "id": "45039ef332f44e2f5ca95af1afe145a6_11",
+    "grounding": "visit StudentAid.gov.",
+    "utterance": "visit StudentAid.gov.",
+    "turn_id": 11
+  },
+  {
+    "id": "dbdd5dc2c277d855baf90cc28dfebc9a_1",
+    "grounding": "Another academic year , another chance to receive financial aid!",
+    "utterance": "Another academic year , another chance to receive financial aid!",
+    "turn_id": 1
+  },
+  {
+    "id": "62439f632f6d2f809ffc2976e50a16c9_1",
+    "grounding": "If your service - connected disability limits your ability to perform activities of daily living like bathing, dressing, accessing the community, and interacting with others and you can t return to work right away ,",
+    "utterance": "If your service - connected disability limits your ability to perform activities of daily living like bathing, dressing, accessing the community, and interacting with others and you can t return to work right away ,",
+    "turn_id": 1
+  },
+  {
+    "id": "4ef1342e2b8a9bebc0f16a7de6790349_11",
+    "grounding": "Get answers to frequently asked questions about decision reviews. Go to FAQs",
+    "utterance": "Get answers to frequently asked questions about decision reviews. Go to FAQs",
+    "turn_id": 11
+  },
+  {
+    "id": "37afb9b7f19e98b5c72d2125bded7c9d_5",
+    "grounding": "you would need to make 120 more qualifying monthly payments.",
+    "utterance": "you would need to make 120 more qualifying monthly payments.",
+    "turn_id": 5
+  },
+  {
+    "id": "31d25f79f93e8a1e343fcbc9b641409c_1",
+    "grounding": "Vocational Rehab programs for service members and VeteransExplore VR&E support - and - services tracks for help learning new skills, finding a new job, starting a business, getting educational counseling, or returning to your former job.",
+    "utterance": "Vocational Rehab programs for service members and VeteransExplore VR&E support - and - services tracks for help learning new skills, finding a new job, starting a business, getting educational counseling, or returning to your former job.",
+    "turn_id": 1
+  },
+  {
+    "id": "d09f59b7c51a1aeebeeb500359128bdc_3",
+    "grounding": "After your business location is inspected and approved ,",
+    "utterance": "After your business location is inspected and approved ,",
+    "turn_id": 3
+  },
+  {
+    "id": "b3e946ca24f496266eac09619b061cc3_7",
+    "grounding": "\n\n\nServicemembers Group Life Insurance (SGLI) ",
+    "utterance": "\n\n\nServicemembers Group Life Insurance (SGLI) ",
+    "turn_id": 7
+  },
+  {
+    "id": "a533273134c8cb4540777bbc07216bd1_3",
+    "grounding": "\n\nHow do I opt in if I want my legacy claim or appeal to be considered in the modernized system? ",
+    "utterance": "\n\nHow do I opt in if I want my legacy claim or appeal to be considered in the modernized system? ",
+    "turn_id": 3
+  },
+  {
+    "id": "40f00a5b820e48bfdf6b4a650866283e_7",
+    "grounding": "You can use the online application to apply for disability benefits if you :",
+    "utterance": "You can use the online application to apply for disability benefits if you :",
+    "turn_id": 7
+  },
+  {
+    "id": "fbd71d41a3664987af39687d2b735a89_6",
+    "grounding": "a current or previous passport , school and/or employment records , and any other record that would show long - term residence outside the United States could be used to show that your child does not have a Social Security number.",
+    "utterance": "a current or previous passport , school and/or employment records , and any other record that would show long - term residence outside the United States could be used to show that your child does not have a Social Security number.",
+    "turn_id": 6
+  },
+  {
+    "id": "058328ee521d30ce59e2fc8aa01d029e_17",
+    "grounding": "Through the end of 2018 , the ACA required all U.S. taxpayers to have health coverage that met a minimum standard called the minimum essential coverage requirement unless they qualified for an exemption due to certain life events, financial status, or other factors. This meant that if you had affordable health coverage options, but chose not to buy health insurance, you would have to pay a fee when filing your taxes.",
+    "utterance": "Through the end of 2018 , the ACA required all U.S. taxpayers to have health coverage that met a minimum standard called the minimum essential coverage requirement unless they qualified for an exemption due to certain life events, financial status, or other factors. This meant that if you had affordable health coverage options, but chose not to buy health insurance, you would have to pay a fee when filing your taxes.",
+    "turn_id": 17
+  },
+  {
+    "id": "beeccc5f3c4412bf40d9a72095a94f6e_11",
+    "grounding": "your license will have' UNDER 21' 10",
+    "utterance": "your license will have' UNDER 21' 10",
+    "turn_id": 11
+  },
+  {
+    "id": "bbbe0dfcf07cdb213491092e7290d6d5_8",
+    "grounding": "These StudentAid.gov banners, available in English and Spanish, can be used to link directly to StudentAid.gov, where students can learn about planning and paying for college.",
+    "utterance": "These StudentAid.gov banners, available in English and Spanish, can be used to link directly to StudentAid.gov, where students can learn about planning and paying for college.",
+    "turn_id": 8
+  },
+  {
+    "id": "971b98497f65ee8965abd1611d100e59_1",
+    "grounding": "\n\n\nHow do I request a Board hearing? ",
+    "utterance": "\n\n\nHow do I request a Board hearing? ",
+    "turn_id": 1
+  },
+  {
+    "id": "fe132fe64875f957637bd6a202aa4dd2_11",
+    "grounding": "you may be able to use this benefit in FY 2020 or future years if the law continues to give us the authority to offer these grants and we don t go beyond the new FY cap.",
+    "utterance": "you may be able to use this benefit in FY 2020 or future years if the law continues to give us the authority to offer these grants and we don t go beyond the new FY cap.",
+    "turn_id": 11
+  },
+  {
+    "id": "6e2582ff8aa791be1bb016e4e5b3d4c8_1",
+    "grounding": "You can apply for Disability benefits online , or if you prefer , you can apply by calling our toll - free number , 1 - 800 - 772 - 1213.",
+    "utterance": "You can apply for Disability benefits online , or if you prefer , you can apply by calling our toll - free number , 1 - 800 - 772 - 1213.",
+    "turn_id": 1
+  },
+  {
+    "id": "b1dd603395629bc3025196329adad379_15",
+    "grounding": "Public Service Loan Forgiveness PSLF Program : You may qualify for this loan forgiveness program if you are employed by a government or a not - for - profit organization. You must make 120 qualifying payments under an income - driven plan to qualify.",
+    "utterance": "Public Service Loan Forgiveness PSLF Program : You may qualify for this loan forgiveness program if you are employed by a government or a not - for - profit organization. You must make 120 qualifying payments under an income - driven plan to qualify.",
+    "turn_id": 15
+  },
+  {
+    "id": "7775a25bcdb3d9a6fff84696089f246b_10",
+    "grounding": "Sign and submit the FAFSA renewal.",
+    "utterance": "Sign and submit the FAFSA renewal.",
+    "turn_id": 10
+  },
+  {
+    "id": "a969b9328c79885c2fb0aad3712d8985_7",
+    "grounding": "it does not matter in what order you list the schools. However , to be considered for state aid , some states require you to list schools in a particular order for instance, you might need to list a state school first.",
+    "utterance": "it does not matter in what order you list the schools. However , to be considered for state aid , some states require you to list schools in a particular order for instance, you might need to list a state school first.",
+    "turn_id": 7
+  },
+  {
+    "id": "9fcff278258f393febc6c8de0b94bba2_4",
+    "grounding": "Social Security does not yet have an online application for Children s benefits. Visit Apply For Disability Benefits Child Under Age 18 to apply for your child.",
+    "utterance": "Social Security does not yet have an online application for Children s benefits. Visit Apply For Disability Benefits Child Under Age 18 to apply for your child.",
+    "turn_id": 4
+  },
+  {
+    "id": "532463c41e459f0ed4b181e4ac7e71b5_6",
+    "grounding": "You ll need to file a claim for disability compensation.",
+    "utterance": "You ll need to file a claim for disability compensation.",
+    "turn_id": 6
+  },
+  {
+    "id": "5ff1cc139e41e8ee03e1f72ff485cbca_6",
+    "grounding": "share link",
+    "utterance": "share link",
+    "turn_id": 6
+  },
+  {
+    "id": "f4df995cf9277bf18ae94256e145e706_5",
+    "grounding": "Commercial driving operation is restricted to New York State only , and you are required to meet the Federal medical requirements. you must be age 18 or older drivers with a HAZMAT H or HAZMAT / Tank X endorsement [4] may select this driving type",
+    "utterance": "Commercial driving operation is restricted to New York State only , and you are required to meet the Federal medical requirements. you must be age 18 or older drivers with a HAZMAT H or HAZMAT / Tank X endorsement [4] may select this driving type",
+    "turn_id": 5
+  },
+  {
+    "id": "c1285fe001ca8cef714150a63ccfd1b1_1",
+    "grounding": "share link",
+    "utterance": "share link",
+    "turn_id": 1
+  },
+  {
+    "id": "572f1bb0468119f21f4ee1d581773c04_3",
+    "grounding": "the medical requirements are the same under both programs and disability is determined by the same process.",
+    "utterance": "the medical requirements are the same under both programs and disability is determined by the same process.",
+    "turn_id": 3
+  },
+  {
+    "id": "1b840040aad6aa0a3b7b879731b7cde3_1",
+    "grounding": "You can work while you receive Social Security retirement or survivors benefits. When you do , it could mean a higher benefit for you in the future.",
+    "utterance": "You can work while you receive Social Security retirement or survivors benefits. When you do , it could mean a higher benefit for you in the future.",
+    "turn_id": 1
+  },
+  {
+    "id": "2e91a2a94f8b4a22d71ab783a7237c5f_10",
+    "grounding": "Change Your VA direct deposit informationFind out how to change your direct deposit information online.",
+    "utterance": "Change Your VA direct deposit informationFind out how to change your direct deposit information online.",
+    "turn_id": 10
+  },
+  {
+    "id": "e2f1e34dba7fbe3205b6e34b6a6e3d93_9",
+    "grounding": "You re enrolled in VA health care",
+    "utterance": "You re enrolled in VA health care",
+    "turn_id": 9
+  },
+  {
+    "id": "1a6de9a6ad47a0f707e1c5276a7ee8dd_7",
+    "grounding": "You ll need to file a claim for disability compensation. Find out how to file a claim for disability compensation When you file , you ll have to show that your health problems are linked to your contact with certain environmental hazards while serving in the military.",
+    "utterance": "You ll need to file a claim for disability compensation. Find out how to file a claim for disability compensation When you file , you ll have to show that your health problems are linked to your contact with certain environmental hazards while serving in the military.",
+    "turn_id": 7
+  },
+  {
+    "id": "d2030db011b9a5c806051552302754bd_11",
+    "grounding": "DMV will send a notice called an order to the address we have on file. Be sure to follow the instructions on the order.",
+    "utterance": "DMV will send a notice called an order to the address we have on file. Be sure to follow the instructions on the order.",
+    "turn_id": 11
+  },
+  {
+    "id": "6070e3dcc2ef2ec0a8bbba02f8a14233_8",
+    "grounding": "Loan Simulator is a new tool to help you make decisions about your student loans. Use it to find a repayment plan that meets your needs and goals or to decide whether to consolidate.",
+    "utterance": "Loan Simulator is a new tool to help you make decisions about your student loans. Use it to find a repayment plan that meets your needs and goals or to decide whether to consolidate.",
+    "turn_id": 8
+  },
+  {
+    "id": "4bca0fcd70bbb32ef558042e9289f9a8_15",
+    "grounding": "use our checklists for help.",
+    "utterance": "use our checklists for help.",
+    "turn_id": 15
+  },
+  {
+    "id": "86c30674eda3147cfbce8e7840a47d62_14",
+    "grounding": "you will receive fines and penalties 60 days or less after the expiration date : $ 25 to $40 plus state and local surcharges more than 60 days after the expiration date : $ 75 to $300 plus state and local surcharges",
+    "utterance": "you will receive fines and penalties 60 days or less after the expiration date : $ 25 to $40 plus state and local surcharges more than 60 days after the expiration date : $ 75 to $300 plus state and local surcharges",
+    "turn_id": 14
+  },
+  {
+    "id": "1ef93da34b7082bae7433debd5f7af44_8",
+    "grounding": "The payments under this plan increase or decrease based on your annual income.",
+    "utterance": "The payments under this plan increase or decrease based on your annual income.",
+    "turn_id": 8
+  },
+  {
+    "id": "dedc023b85f1ecb8c665ba76905d61ef_3",
+    "grounding": "add or delete vehicles transfer plates from one vehicle to another",
+    "utterance": "add or delete vehicles transfer plates from one vehicle to another",
+    "turn_id": 3
+  },
+  {
+    "id": "b739315851fd18772c0683f90f9263ff_3",
+    "grounding": "you may qualify for the National Call to Service program, which allows you to choose an education benefit as an alternative to the Montgomery GI Bill MGIB.",
+    "utterance": "you may qualify for the National Call to Service program, which allows you to choose an education benefit as an alternative to the Montgomery GI Bill MGIB.",
+    "turn_id": 3
+  },
+  {
+    "id": "cfc858cccd6ed507d41d4830c3f2157e_13",
+    "grounding": "A few examples of how DMV s information sharing programs benefit all of us are provided below.",
+    "utterance": "A few examples of how DMV s information sharing programs benefit all of us are provided below.",
+    "turn_id": 13
+  },
+  {
+    "id": "bc8434592acdfb99bdda61b5baecd122_1",
+    "grounding": "You can apply online for Medicare even if you are not ready to retire. Use our online application to sign up for Medicare. It takes less than 10 minutes.",
+    "utterance": "You can apply online for Medicare even if you are not ready to retire. Use our online application to sign up for Medicare. It takes less than 10 minutes.",
+    "turn_id": 1
+  },
+  {
+    "id": "ae591eb631dfa4126c81778bc078d70e_12",
+    "grounding": "your payment is always based on your income and family size, regardless of any changes in your income. This means that if your income increases over time, in some cases your payment may be higher than the amount you would have to pay under the 10-year Standard Repayment Plan.",
+    "utterance": "your payment is always based on your income and family size, regardless of any changes in your income. This means that if your income increases over time, in some cases your payment may be higher than the amount you would have to pay under the 10-year Standard Repayment Plan.",
+    "turn_id": 12
+  },
+  {
+    "id": "bd2f0b47665a3809ba8e065b40487752_5",
+    "grounding": "Use both theregistration fee and county use tax charts to determine your registration fee and county use tax.",
+    "utterance": "Use both theregistration fee and county use tax charts to determine your registration fee and county use tax.",
+    "turn_id": 5
+  },
+  {
+    "id": "621a7b0fb9b38a075cc92efd0a4757f1_13",
+    "grounding": "spouse; divorced spouse ;",
+    "utterance": "spouse; divorced spouse ;",
+    "turn_id": 13
+  },
+  {
+    "id": "132372cdfa71c0d6d7769ce26f474a15_3",
+    "grounding": "\n\nYou will get your new ID in 2 weeks ",
+    "utterance": "\n\nYou will get your new ID in 2 weeks ",
+    "turn_id": 3
+  },
+  {
+    "id": "e109c0c11c35e39850e35152f197a92b_7",
+    "grounding": "You can't make changes to an IRP registration by phone. You may call the IRB with questions at 1 - 518 - 473 - 5834",
+    "utterance": "You can't make changes to an IRP registration by phone. You may call the IRB with questions at 1 - 518 - 473 - 5834",
+    "turn_id": 7
+  },
+  {
+    "id": "065b32e81b444f4f8aefcd4431ba9d2f_5",
+    "grounding": "This transaction can only be processed in person, at a DMV office.",
+    "utterance": "This transaction can only be processed in person, at a DMV office.",
+    "turn_id": 5
+  },
+  {
+    "id": "b4273988c8eab3bd9a38a3b1db77d90e_10",
+    "grounding": "Driver License [18 ]",
+    "utterance": "Driver License [18 ]",
+    "turn_id": 10
+  },
+  {
+    "id": "9a3c8e240b05e022ada94596f8ee5e53_1",
+    "grounding": "\n\n\nHow do I renew my hazardous materials (HazMat) endorsement? ",
+    "utterance": "\n\n\nHow do I renew my hazardous materials (HazMat) endorsement? ",
+    "turn_id": 1
+  },
+  {
+    "id": "7563ad4581dc677087edf1f716bfa32c_9",
+    "grounding": "you will need to provide information about your legal parent on the application. A legal parent is your biological or adoptive parent, or your legal parent as determined by the state for example, if the parent is listed on your birth certificate.",
+    "utterance": "you will need to provide information about your legal parent on the application. A legal parent is your biological or adoptive parent, or your legal parent as determined by the state for example, if the parent is listed on your birth certificate.",
+    "turn_id": 9
+  },
+  {
+    "id": "7ed1c34cfecf8946b73dad34fd188efb_13",
+    "grounding": "include an additional note and clearly print the alternate address. Don t write the alternate address on form MV-44. The mailing address you write on form MV-44 must be the address that is listed on your photo document and your DMV record.",
+    "utterance": "include an additional note and clearly print the alternate address. Don t write the alternate address on form MV-44. The mailing address you write on form MV-44 must be the address that is listed on your photo document and your DMV record.",
+    "turn_id": 13
+  },
+  {
+    "id": "6a53d32979534c26b56948c498908f0d_9",
+    "grounding": "In certain cases , you may receive dental care as part of your VA health benefits. Find out if you can get dental care through VA",
+    "utterance": "In certain cases , you may receive dental care as part of your VA health benefits. Find out if you can get dental care through VA",
+    "turn_id": 9
+  },
+  {
+    "id": "7eb2cb3361df7c9cd78d4771dcec1d02_1",
+    "grounding": "Learn about ways you can make GI Bill changes. Find out when and how to request changes to your GI Bill school, program, or other VA education benefits so you can keep getting funding to help pay for your education or training.",
+    "utterance": "Learn about ways you can make GI Bill changes. Find out when and how to request changes to your GI Bill school, program, or other VA education benefits so you can keep getting funding to help pay for your education or training.",
+    "turn_id": 1
+  },
+  {
+    "id": "15be46affd3947fb98ff82d9f126b60d_3",
+    "grounding": "As the Notice of Registration Suspension indicates ,",
+    "utterance": "As the Notice of Registration Suspension indicates ,",
+    "turn_id": 3
+  },
+  {
+    "id": "d0f2a9786a9b2ce7881f640c84f844f4_1",
+    "grounding": "When you qualify for Social Security disability benefits ,",
+    "utterance": "When you qualify for Social Security disability benefits ,",
+    "turn_id": 1
+  },
+  {
+    "id": "8fb9e526dd4b0f6a742808a3b7d40ad9_1",
+    "grounding": "Federal Student Aid FSA routinely conducts program reviews to confirm that a school meets FSA requirements for institutional eligibility, financial responsibility, and administrative capability.",
+    "utterance": "Federal Student Aid FSA routinely conducts program reviews to confirm that a school meets FSA requirements for institutional eligibility, financial responsibility, and administrative capability.",
+    "turn_id": 1
+  },
+  {
+    "id": "e8151c2e3cff38cdc9753ea106eb50cc_7",
+    "grounding": "you may still continue forward by clicking next. Despite being unable to find your school , the information you type in will still be captured and recorded, so be sure the spelling is correct.",
+    "utterance": "you may still continue forward by clicking next. Despite being unable to find your school , the information you type in will still be captured and recorded, so be sure the spelling is correct.",
+    "turn_id": 7
+  },
+  {
+    "id": "fe0183d4e10bee48f6135cfad04e6085_5",
+    "grounding": "you may not be eligible for VA benefits.",
+    "utterance": "you may not be eligible for VA benefits.",
+    "turn_id": 5
+  },
+  {
+    "id": "bea012ceb29d68ca434d2b2ed1b653c4_1",
+    "grounding": "Learn about the eligibility requirements for discharge and how you can apply.",
+    "utterance": "Learn about the eligibility requirements for discharge and how you can apply.",
+    "turn_id": 1
+  },
+  {
+    "id": "84440787944cb0dc3e894543cbe998ff_1",
+    "grounding": "You must earn at least 40 Social Security credits to qualify for Social Security benefits. You earn Social Security credits when you work and pay Social Security taxes.",
+    "utterance": "You must earn at least 40 Social Security credits to qualify for Social Security benefits. You earn Social Security credits when you work and pay Social Security taxes.",
+    "turn_id": 1
+  },
+  {
+    "id": "ab193731fafa07def9d36e9f24f16105_9",
+    "grounding": "your new license will show :' NOT FOR FEDERAL PURPOSES'.",
+    "utterance": "your new license will show :' NOT FOR FEDERAL PURPOSES'.",
+    "turn_id": 9
+  },
+  {
+    "id": "e35d07e95438ecb565929b7188f6db3b_5",
+    "grounding": "The header is followed by a \" Summary \" section that includes license class / privilege document status including commercial and 19A",
+    "utterance": "The header is followed by a \" Summary \" section that includes license class / privilege document status including commercial and 19A",
+    "turn_id": 5
+  },
+  {
+    "id": "438267cd2c6889fcaaa36953ae269483_5",
+    "grounding": "The 2011 Gainful Employment Downloadable Spreadsheet provides the public with information about educational programs that prepare students for gainful employment in a recognized occupation GE Program. Under the regulations that go into effect on July 1 , 2012, the US Department of Education calculates metrics for GE Programs each year.",
+    "utterance": "The 2011 Gainful Employment Downloadable Spreadsheet provides the public with information about educational programs that prepare students for gainful employment in a recognized occupation GE Program. Under the regulations that go into effect on July 1 , 2012, the US Department of Education calculates metrics for GE Programs each year.",
+    "turn_id": 5
+  },
+  {
+    "id": "3befe2418d8b328ff9b0d2b4965abca3_13",
+    "grounding": "you can choose to start receiving benefits before the month you apply. However , we cannot pay retroactive benefits for any month before you reached full retirement age or more than 6 months in the past.",
+    "utterance": "you can choose to start receiving benefits before the month you apply. However , we cannot pay retroactive benefits for any month before you reached full retirement age or more than 6 months in the past.",
+    "turn_id": 13
+  },
+  {
+    "id": "e7e99b96746357386b4d89c331c026e0_11",
+    "grounding": "You may be able to get disability benefits if the below descriptions are true for you.",
+    "utterance": "You may be able to get disability benefits if the below descriptions are true for you.",
+    "turn_id": 11
+  },
+  {
+    "id": "09afcf88f5d377c8834d265fe6abdcbb_15",
+    "grounding": "We recommend you come to the DMV now to get an Enhanced or REAL ID, and avoid a second office visit later. 1 Learn about Enhanced, REAL ID and Standard documents [1].",
+    "utterance": "We recommend you come to the DMV now to get an Enhanced or REAL ID, and avoid a second office visit later. 1 Learn about Enhanced, REAL ID and Standard documents [1].",
+    "turn_id": 15
+  },
+  {
+    "id": "18293c6f633a2627c3f45d2854e7c6c5_13",
+    "grounding": "the doctor will write up a report and send it to a VA claims processor to be added to your claim file.",
+    "utterance": "the doctor will write up a report and send it to a VA claims processor to be added to your claim file.",
+    "turn_id": 13
+  },
+  {
+    "id": "b5e566395d370674286b360395b17272_3",
+    "grounding": "\n\nGet online through MyDMV ",
+    "utterance": "\n\nGet online through MyDMV ",
+    "turn_id": 3
+  },
+  {
+    "id": "e81b7195954cde9804867ceda50c0f29_10",
+    "grounding": "Time to go to school! Your financial aid office will apply your aid to the amount you owe your school and send you the remaining balance to spend on other college costs.",
+    "utterance": "Time to go to school! Your financial aid office will apply your aid to the amount you owe your school and send you the remaining balance to spend on other college costs.",
+    "turn_id": 10
+  },
+  {
+    "id": "5739237b45a59e99f4282413adb58c89_13",
+    "grounding": "The office is open from 8:00am to 3:45pm, Monday through Friday, except state holidays",
+    "utterance": "The office is open from 8:00am to 3:45pm, Monday through Friday, except state holidays",
+    "turn_id": 13
+  },
+  {
+    "id": "3727fab5e9c5b7f9a6e1cbe7935d51bb_7",
+    "grounding": "we will send you a letter telling you your new benefit amount. You can apply for just Medicare at age 65 and start receiving retirement benefits later.",
+    "utterance": "we will send you a letter telling you your new benefit amount. You can apply for just Medicare at age 65 and start receiving retirement benefits later.",
+    "turn_id": 7
+  },
+  {
+    "id": "f68205dc0ff38902596298b88c7f776f_4",
+    "grounding": "you will be sent a temporary password by email. You must use the temporary password to complete the on - line registration process.",
+    "utterance": "you will be sent a temporary password by email. You must use the temporary password to complete the on - line registration process.",
+    "turn_id": 4
+  },
+  {
+    "id": "a25ef343b21cdce21657728e45597f26_11",
+    "grounding": "you must also : Choose a company from the list of companies that take part in this program. View the companies you can choose from",
+    "utterance": "you must also : Choose a company from the list of companies that take part in this program. View the companies you can choose from",
+    "turn_id": 11
+  },
+  {
+    "id": "8bca43946f837e7946e38b2ea1bd55a1_6",
+    "grounding": "Medical reasons , you can complete and submit the required Appeal Request and Appeal Disability Report online. The disability report asks you for updated information about your medical condition and any treatment, tests or doctor visits since we made our decision.",
+    "utterance": "Medical reasons , you can complete and submit the required Appeal Request and Appeal Disability Report online. The disability report asks you for updated information about your medical condition and any treatment, tests or doctor visits since we made our decision.",
+    "turn_id": 6
+  },
+  {
+    "id": "1ee8393062df2294121fb356d5926429_5",
+    "grounding": "you may be eligible for this benefit.",
+    "utterance": "you may be eligible for this benefit.",
+    "turn_id": 5
+  },
+  {
+    "id": "3bfcf7a0b2920a2f13e3cd76aba027cf_9",
+    "grounding": "What is the maximum Social Security retirement benefit payable?",
+    "utterance": "What is the maximum Social Security retirement benefit payable?",
+    "turn_id": 9
+  },
+  {
+    "id": "17a7ac5e3926bdf5bffe8fb7db868278_9",
+    "grounding": "the date you are considered to have received the discharge is different depending on how you qualified for the discharge.",
+    "utterance": "the date you are considered to have received the discharge is different depending on how you qualified for the discharge.",
+    "turn_id": 9
+  },
+  {
+    "id": "1bcbd13ca9ab2cda505ccccf25d05102_7",
+    "grounding": "you must have had no outstanding balance on a Direct Loan as of October 7 , 1998, or on the date you obtained a Direct Loan after October 7 , 1998 , and you must have more than $30,000 in outstanding Direct Loans.",
+    "utterance": "you must have had no outstanding balance on a Direct Loan as of October 7 , 1998, or on the date you obtained a Direct Loan after October 7 , 1998 , and you must have more than $30,000 in outstanding Direct Loans.",
+    "turn_id": 7
+  },
+  {
+    "id": "e6e0acece5b228db1fff666f8895834b_5",
+    "grounding": "\n\nOnce I m enrolled, do I need to update my income information every year? ",
+    "utterance": "\n\nOnce I m enrolled, do I need to update my income information every year? ",
+    "turn_id": 5
+  },
+  {
+    "id": "ea5987b8b60371478b07ecfd24af03c1_5",
+    "grounding": "starting or changing Direct Deposit online Social Security benefits only ,",
+    "utterance": "starting or changing Direct Deposit online Social Security benefits only ,",
+    "turn_id": 5
+  },
+  {
+    "id": "4ab0397b13920abc3c4140470f3db12a_6",
+    "grounding": "You can request a Board Appeal after an initial claim, Supplemental Claim, or Higher - Level Review decision. You can t request 2 Board Appeals in a row.",
+    "utterance": "You can request a Board Appeal after an initial claim, Supplemental Claim, or Higher - Level Review decision. You can t request 2 Board Appeals in a row.",
+    "turn_id": 6
+  },
+  {
+    "id": "1cfbd7ca8fa073e5589434a4d6f58eb1_1",
+    "grounding": "A stepchild, grandchild, step grandchild, or adopted child ;",
+    "utterance": "A stepchild, grandchild, step grandchild, or adopted child ;",
+    "turn_id": 1
+  },
+  {
+    "id": "71b7fa6c2ebf4d2df64de74aec1984ce_7",
+    "grounding": "If you ve seen a non - VA health care provider for diagnosis or treatment ,",
+    "utterance": "If you ve seen a non - VA health care provider for diagnosis or treatment ,",
+    "turn_id": 7
+  },
+  {
+    "id": "b3c5d441bfed9b85c3f9ea4bd652a3bc_16",
+    "grounding": "connect with our caring, qualified Veterans Crisis Line responders for confidential help. Many of them are Veterans themselves. This service is private, free, and available 24/7.",
+    "utterance": "connect with our caring, qualified Veterans Crisis Line responders for confidential help. Many of them are Veterans themselves. This service is private, free, and available 24/7.",
+    "turn_id": 16
+  },
+  {
+    "id": "6051c869888c57bb63e1db93fa8dd300_1",
+    "grounding": "We want you to know what Social Security can mean for you and your family s financial future. In this section , you can learn how Social Security works, who s eligible for retirement benefits, and what to consider before applying. Read on to understand how Social Security fits into your retirement plan.",
+    "utterance": "We want you to know what Social Security can mean for you and your family s financial future. In this section , you can learn how Social Security works, who s eligible for retirement benefits, and what to consider before applying. Read on to understand how Social Security fits into your retirement plan.",
+    "turn_id": 1
+  },
+  {
+    "id": "f466ecfe105557043d5a8989c3d985a2_1",
+    "grounding": "\n\n\nDelayed Retirement Credits ",
+    "utterance": "\n\n\nDelayed Retirement Credits ",
+    "turn_id": 1
+  },
+  {
+    "id": "6b43077cc6feb1d93e534996afe52a11_11",
+    "grounding": "You ll need to file a claim for disability compensation. When you file , you ll have to show that the added disability happened because of VA medical care or a VA program designed to help you find, get, or keep a job. Find out how to file a claim for disability compensation",
+    "utterance": "You ll need to file a claim for disability compensation. When you file , you ll have to show that the added disability happened because of VA medical care or a VA program designed to help you find, get, or keep a job. Find out how to file a claim for disability compensation",
+    "turn_id": 11
+  },
+  {
+    "id": "83a9c965426a10dbe91fa9a609572d48_11",
+    "grounding": "you must have a television and a DVD player. The sponsors must provide any additional technology required to deliver the course. The sponsor must inform you of these requirements when you register for the course.",
+    "utterance": "you must have a television and a DVD player. The sponsors must provide any additional technology required to deliver the course. The sponsor must inform you of these requirements when you register for the course.",
+    "turn_id": 11
+  },
+  {
+    "id": "191b65e9fd604d4fa06ff81b901e6fde_10",
+    "grounding": "NYS Department of Motor Vehicles207 Genesee Street, Suite 6Utica, NY 13501 - 2874",
+    "utterance": "NYS Department of Motor Vehicles207 Genesee Street, Suite 6Utica, NY 13501 - 2874",
+    "turn_id": 10
+  },
+  {
+    "id": "98cc1b2601f92d9323b503581cd0dbd4_14",
+    "grounding": "Return to DMV Publications [10 ]",
+    "utterance": "Return to DMV Publications [10 ]",
+    "turn_id": 14
+  },
+  {
+    "id": "3381814395a4e956efc40109b8bccf3c_10",
+    "grounding": "visit Treasury s Go Direct website or call the helpline at 1 - 800 - 333 - 1795.",
+    "utterance": "visit Treasury s Go Direct website or call the helpline at 1 - 800 - 333 - 1795.",
+    "turn_id": 10
+  },
+  {
+    "id": "252af484a022f3c3a46437bfa11ebc71_5",
+    "grounding": "Get answers to frequently asked questions about decision reviews. Go to FAQs",
+    "utterance": "Get answers to frequently asked questions about decision reviews. Go to FAQs",
+    "turn_id": 5
+  },
+  {
+    "id": "db24af7fe35304299573e34cc59db674_7",
+    "grounding": "You may be able to receive retirement benefits on your spouse or former spouse s record. Likewise , your spouse or family member may be able to receive benefits on your record if they qualify.",
+    "utterance": "You may be able to receive retirement benefits on your spouse or former spouse s record. Likewise , your spouse or family member may be able to receive benefits on your record if they qualify.",
+    "turn_id": 7
+  },
+  {
+    "id": "1aa7a20ae4e91bfcd64f82876d9b2b6d_16",
+    "grounding": "How VA assigns disability ratingsLearn how we assign severity ratings and how they affect your disability payments.",
+    "utterance": "How VA assigns disability ratingsLearn how we assign severity ratings and how they affect your disability payments.",
+    "turn_id": 16
+  },
+  {
+    "id": "9375bdb41515a22c666f7845552a261b_10",
+    "grounding": "your license can be renewed. \n\nAm I required to notify DMV of my entry into the military? \nWhile not required , it is suggested that military personnel file a Notification of Military Service pdf [1] MV -75 to ensure that the license record is not purged once the expiration date has passed.",
+    "utterance": "your license can be renewed. \n\nAm I required to notify DMV of my entry into the military? \nWhile not required , it is suggested that military personnel file a Notification of Military Service pdf [1] MV -75 to ensure that the license record is not purged once the expiration date has passed.",
+    "turn_id": 10
+  },
+  {
+    "id": "3aac8ab5a0acd3a45eff60b01978e374_5",
+    "grounding": "If you are under age 18 ,",
+    "utterance": "If you are under age 18 ,",
+    "turn_id": 5
+  },
+  {
+    "id": "a72db1dbee23aa6bd41d9a53d5cf0fd5_10",
+    "grounding": "we may ask you for information about the schools you attended or we may ask you to provide copies of tax records that would show you were never assigned a Social Security number.",
+    "utterance": "we may ask you for information about the schools you attended or we may ask you to provide copies of tax records that would show you were never assigned a Social Security number.",
+    "turn_id": 10
+  },
+  {
+    "id": "3cec2468de7a4e5ca091029c3dba2afe_5",
+    "grounding": "Served on active duty, active duty for training, or inactive duty training, and",
+    "utterance": "Served on active duty, active duty for training, or inactive duty training, and",
+    "turn_id": 5
+  },
+  {
+    "id": "99fee8eee8bdce66a4a6cdc86132c878_7",
+    "grounding": "You may be able to get disability benefits if you didn t receive a dishonorable discharge and you meet the requirements listed below.",
+    "utterance": "You may be able to get disability benefits if you didn t receive a dishonorable discharge and you meet the requirements listed below.",
+    "turn_id": 7
+  },
+  {
+    "id": "6edbaa894c0968d2e3ab9bbfcbd7df0a_7",
+    "grounding": "Update your beneficiariesKeep the information up to date about who you want to receive your insurance proceeds. This will make it easier for your family members to file a claim in their time of need.",
+    "utterance": "Update your beneficiariesKeep the information up to date about who you want to receive your insurance proceeds. This will make it easier for your family members to file a claim in their time of need.",
+    "turn_id": 7
+  },
+  {
+    "id": "a6027228008726464d773f653b3e960a_4",
+    "grounding": "we ll remove your claim from the FDC program and process it as a standard claim.",
+    "utterance": "we ll remove your claim from the FDC program and process it as a standard claim.",
+    "turn_id": 4
+  },
+  {
+    "id": "6d6c267dc4cbb6f414790d6c55b9e0fe_7",
+    "grounding": "You can drive in New York State with a valid driver license from another country. You do not need to apply for a New York State driver license unless you become a New York State resident.",
+    "utterance": "You can drive in New York State with a valid driver license from another country. You do not need to apply for a New York State driver license unless you become a New York State resident.",
+    "turn_id": 7
+  },
+  {
+    "id": "9793f56a9b354831e5b90c98736466d4_9",
+    "grounding": "Yes. Read the instructions for how to register a vehicle for someone [6] else to learn how to do this. We recommend sending any original documents by insured or priority mail.",
+    "utterance": "Yes. Read the instructions for how to register a vehicle for someone [6] else to learn how to do this. We recommend sending any original documents by insured or priority mail.",
+    "turn_id": 9
+  },
+  {
+    "id": "23b8f1145ace9e97dc3f990b97339ed3_5",
+    "grounding": "we won t factor your OEF / OIF / OND combat Veteran status into our decision on your enrollment. Instead , we ll base your eligibility on factors such as your income and VA disability rating.",
+    "utterance": "we won t factor your OEF / OIF / OND combat Veteran status into our decision on your enrollment. Instead , we ll base your eligibility on factors such as your income and VA disability rating.",
+    "turn_id": 5
+  },
+  {
+    "id": "8be21beb237a791a922de98850a5fc88_4",
+    "grounding": "MyDMV [4]",
+    "utterance": "MyDMV [4]",
+    "turn_id": 4
+  },
+  {
+    "id": "400c973271300314bdc8fc64dfc69ee6_11",
+    "grounding": "Disability Benefits Benefits For Children What You Need To Know When You Get Social Security Disability Benefits Information for Government Employees Benefits For Children With Disabilities",
+    "utterance": "Disability Benefits Benefits For Children What You Need To Know When You Get Social Security Disability Benefits Information for Government Employees Benefits For Children With Disabilities",
+    "turn_id": 11
+  },
+  {
+    "id": "fab2ad3656abf172da00cf90ee744b44_13",
+    "grounding": "You must present original documents or copies certified by the agency that issued them. We cannot accept photocopies or notarized copies. All documents must be current not expired.",
+    "utterance": "You must present original documents or copies certified by the agency that issued them. We cannot accept photocopies or notarized copies. All documents must be current not expired.",
+    "turn_id": 13
+  },
+  {
+    "id": "73112e61edd9974297f0de1370ddbf1d_1",
+    "grounding": "If you meet the eligibility requirements for a mandatory forbearance ,",
+    "utterance": "If you meet the eligibility requirements for a mandatory forbearance ,",
+    "turn_id": 1
+  },
+  {
+    "id": "948ecabfcc4a3da88029250c20264695_3",
+    "grounding": "\n\nI have registered to vote in the past but do I need to update my voter registration information? ",
+    "utterance": "\n\nI have registered to vote in the past but do I need to update my voter registration information? ",
+    "turn_id": 3
+  },
+  {
+    "id": "6eced3e1b6d3723bef1b3e46def63377_11",
+    "grounding": "you must renew your non - drivers ID card through the mail.",
+    "utterance": "you must renew your non - drivers ID card through the mail.",
+    "turn_id": 11
+  },
+  {
+    "id": "d0dcb5d2fc4ff267c06002cdec8fc00a_1",
+    "grounding": "Active - duty service members and VA health careLearn about your health care options after separation or retirement and how to apply for VA health care when you receive your separation or retirement orders.",
+    "utterance": "Active - duty service members and VA health careLearn about your health care options after separation or retirement and how to apply for VA health care when you receive your separation or retirement orders.",
+    "turn_id": 1
+  },
+  {
+    "id": "99fde7e8b712d1c8f9d683f23f84083c_12",
+    "grounding": "to qualify for this plan you must have had no outstanding balance on a FFEL Program loan as of October 7 , 1998, or on the date you obtained a FFEL Program loan after October 7 , 1998 , and you must have more than $30,000 in outstanding FFEL Program loans.",
+    "utterance": "to qualify for this plan you must have had no outstanding balance on a FFEL Program loan as of October 7 , 1998, or on the date you obtained a FFEL Program loan after October 7 , 1998 , and you must have more than $30,000 in outstanding FFEL Program loans.",
+    "turn_id": 12
+  },
+  {
+    "id": "4417d675bf76bbc04ad7756cb052e345_5",
+    "grounding": "To get a reduced fee or' No Fee' replacement ,",
+    "utterance": "To get a reduced fee or' No Fee' replacement ,",
+    "turn_id": 5
+  },
+  {
+    "id": "a0fce082ed2fa1765ec9042b75a1f02d_1",
+    "grounding": "Citizenship",
+    "utterance": "Citizenship",
+    "turn_id": 1
+  },
+  {
+    "id": "53a51ec0c6288e4178f3228936a9ffa4_1",
+    "grounding": "Disability compensation pay Learn how to file a claim for disability compensation and manage your disability benefits.",
+    "utterance": "Disability compensation pay Learn how to file a claim for disability compensation and manage your disability benefits.",
+    "turn_id": 1
+  },
+  {
+    "id": "f414e20792dd0319ae89b032d49ce2e6_7",
+    "grounding": "we will create an account for you. We will send you your account number and password. Your seven - digit account number will never change.",
+    "utterance": "we will create an account for you. We will send you your account number and password. Your seven - digit account number will never change.",
+    "turn_id": 7
+  },
+  {
+    "id": "8b23000a51b5cd80d384907ed204ff15_11",
+    "grounding": "Common reasons for revocations are you operated or permitted operation of a vehicle without insurance you were involved in an uninsured motor vehicle accident",
+    "utterance": "Common reasons for revocations are you operated or permitted operation of a vehicle without insurance you were involved in an uninsured motor vehicle accident",
+    "turn_id": 11
+  },
+  {
+    "id": "209dd0a7cf5eb8e0b79d99cf5ffbe40d_3",
+    "grounding": "See an explanation of CDL driving record abstracts [7]. You can order them online or have your employer order them through the License Event Notification Service LENS [8].",
+    "utterance": "See an explanation of CDL driving record abstracts [7]. You can order them online or have your employer order them through the License Event Notification Service LENS [8].",
+    "turn_id": 3
+  },
+  {
+    "id": "faa8e598c7d999d54f6b1fdec25ee8e2_3",
+    "grounding": "REVIEW the Child Disability Starter Kit. This kit answers common questions about applying for Supplemental Security Income SSI benefits for children, and includes a worksheet that will help you gather the information you need.",
+    "utterance": "REVIEW the Child Disability Starter Kit. This kit answers common questions about applying for Supplemental Security Income SSI benefits for children, and includes a worksheet that will help you gather the information you need.",
+    "turn_id": 3
+  },
+  {
+    "id": "20857beefef3264d6cc89b5b67fa1dea_7",
+    "grounding": "Non - Excepted Interstate NI : Commercial driving operation is permitted across state lines , and you are required to meet the Federal medical requirements",
+    "utterance": "Non - Excepted Interstate NI : Commercial driving operation is permitted across state lines , and you are required to meet the Federal medical requirements",
+    "turn_id": 7
+  },
+  {
+    "id": "4bb3c796946e27d32794f57599feb7ed_1",
+    "grounding": "While completing the FAFSA form , you must list at least one school to receive your information. The schools you list will use your FAFSA information to determine the types and amounts of aid you may receive. Use the Federal School Code Search to find the colleges you re interested in including on your FAFSA form.",
+    "utterance": "While completing the FAFSA form , you must list at least one school to receive your information. The schools you list will use your FAFSA information to determine the types and amounts of aid you may receive. Use the Federal School Code Search to find the colleges you re interested in including on your FAFSA form.",
+    "turn_id": 1
+  },
+  {
+    "id": "0480099d35079b7ab2fdbe367bdf85bc_3",
+    "grounding": "you may qualify for Chapter 35 benefits or job training through a GI Bill program.",
+    "utterance": "you may qualify for Chapter 35 benefits or job training through a GI Bill program.",
+    "turn_id": 3
+  },
+  {
+    "id": "cb99796de1c9de0721d1bed7de6d8d27_3",
+    "grounding": "an Expected Family Contribution EFC will display in the upper right - hand corner of your SAR.",
+    "utterance": "an Expected Family Contribution EFC will display in the upper right - hand corner of your SAR.",
+    "turn_id": 3
+  },
+  {
+    "id": "7b223f97ce0d0e00cba1317ad62201a9_9",
+    "grounding": "You may use OSCAR [3] to make some of these the changes online.",
+    "utterance": "You may use OSCAR [3] to make some of these the changes online.",
+    "turn_id": 9
+  }
+]
