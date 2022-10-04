@@ -177,8 +177,10 @@ class DrFudRetriever(DrTeitRetriever):
         super().__init__()
         self.tokenizer_fudnet = self.tokenizer_labse
         self.model_fudnet = AutoModelForSequenceClassification.from_pretrained(self.fudnet_model_name)
+        device = torch.device("cuda:0")
+        self.model_fudnet.to(device)
 
-    def combine_and_tokenize(self, prev_question, current_question, prediction=False, cuda=False):
+    def combine_and_tokenize(self, prev_question, current_question, prediction=False, cuda=True):
         combined = f"{prev_question}{self.separation_token}{current_question}"
         if prediction:
             tokenized = self.tokenizer_fudnet(combined, max_length=128, padding="max_length", truncation=True, return_tensors='pt')
@@ -200,7 +202,7 @@ class DrFudRetriever(DrTeitRetriever):
             titles = [title for title in self.title_to_embeddings.keys()]
         title_embeddings = [self.title_to_embeddings[title] for title in titles]
 
-        if len(queries) > 1:
+        if len(queries) == 1:
             prev_question, current_question = "", queries[0]
         else:
             prev_question, current_question = queries[2], queries[0]
