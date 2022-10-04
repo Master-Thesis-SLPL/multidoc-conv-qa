@@ -212,11 +212,9 @@ class DrFudRetriever(DrTeitRetriever):
         is_followup = bool(torch.argmax(outputs.logits))
         
         if is_followup:
-            dr_scores, dr_predictions = self.predict_dr_teit(queries[:3], title_embeddings, k, coef_reverse_power=False)
-            return dr_predictions
+            acc, best_k_idx = self.predict_dr_teit(queries[:3], title_embeddings, k, coef_reverse_power=False)
         else:
-            dr_scores, dr_predictions = self.predict_dr_teit([queries[0]], title_embeddings, k, coef_reverse_power=False)
-            return dr_predictions
+            acc, best_k_idx = self.predict_dr_teit([queries[0]], title_embeddings, k, coef_reverse_power=False)
         
         if domain:
             return [titles[i] for i in best_k_idx]
