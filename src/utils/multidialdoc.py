@@ -971,20 +971,20 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                         # queries = list(reversed(all_user_utterances))
                         if turn["turn_id"] == int(dial["id"].split('_')[-1]):
                             queries = list(reversed(all_prev_utterances))
-                            doc_ids = self.retriever.get_documents(None, queries, k=3)
+                            doc_ids = self.retriever.get_documents(None, queries, k=5)
                             
                             question_str = " ".join(list(reversed(all_prev_utterances))).strip()
                             question = " ".join(question_str.split()[:MAX_Q_LEN])
-                            id_ = "{}_0".format(dial["id"], doc_rank) # For subtask1, the id should be this format.
+                            id_ = "{}_0".format(dial["id"]) # For subtask1, the id should be this format.
                             # id_ = "{}_{}".format(dial["id"], turn["turn_id"]) # For subtask1, the id should be this format.
                             qa = {
                                 "id": id_, # For subtask1, the id should be this format.
-                                "title": doc_id,
+                                "title": doc_ids[0],
                                 "context": "\n".join([docs[doc_domain][doc_id]["doc_text"] for doc_domain,doc_id in doc_ids]),
                                 "only-question": turn["utterance"],    
                                 "question": question,    
                                 "domain": doc_ids[0][0],
-                                "doc-rank": doc_rank,
+                                "doc-rank": 0,
                                 "questions": list(reversed(all_utterances)),
                             }
                             yield id_, qa
