@@ -3,14 +3,16 @@ Python module presenting all diferent retrievers implemented
  in jupyter notebooks in a modular manner.
 """
 
-import json, os, pickle
+import json
+import os
+import pickle
 from typing import List, Tuple
 
 import numpy as np
-from tqdm import tqdm
-from sklearn.feature_extraction.text import TfidfVectorizer
 import torch
-from transformers import AutoTokenizer, AutoModel, AutoConfig
+from sklearn.feature_extraction.text import TfidfVectorizer
+from tqdm import tqdm
+from transformers import AutoConfig, AutoModel, AutoTokenizer
 
 
 class DrTeitRetriever:
