@@ -1,0 +1,12 @@
+// 20221004210832
+// https://evalai.s3.amazonaws.com/media/submission_files/submission_227253/3c116152-1960-4d23-b141-25d54bf3606e.json
+
+{
+    "F1_U": 36.60981199954079,
+    "SacreBLEU": 22.137367870026758,
+    "METEOR": 36.4118,
+    "RougeL": 34.7816,
+    "F1_G": 48.63808334491504,
+    "EM_G": 34.67336683417086,
+    "Total": 129.94057986956756
+  }
