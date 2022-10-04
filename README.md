@@ -1,117 +1,41 @@
-# CAiRE in DialDoc21
-<img src="plot/pytorch-logo-dark.png" width="10%"> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+# Docalog-2022
 
-<img align="right" src="plot/HKUST.jpeg" width="12%">
+## Retriever
 
-This repository contains the code of CAiRE submissions for DialDoc21 shared task:
-**CAiRE in DialDoc21: Data Augmentation for Information-Seeking Dialogue System**. [**Yan Xu**](https://yana-xuyan.github.io), **Etsuko Ishii**, [Genta Indra Winata](https://gentawinata.com/), [Zhaojiang Lin](https://zlinao.github.io/), [Andrea Madotto](https://andreamad8.github.io), [Zihan Liu](https://zliucr.github.io/), Peng Xu, Pascale Fung **DialDoc Shared Task@ACL2021** [[PDF]](TBC)
 
-The implementation is mainly based on Huggingface package and Shared DDP is leveraged in the trainig process. If you use any source codes included in this toolkit in your work, please cite the following paper. The bibtex is listed below:
-<pre>
-TBD
-<!-- @article{madotto2020learning,
-  title={Learning Knowledge Bases with Parameters for Task-Oriented Dialogue Systems},
-  author={Madotto, Andrea and Cahyawijaya, Samuel and Winata, Genta Indra and Xu, Yan and Liu, Zihan and Lin, Zhaojiang and Fung, Pascale},
-  journal={arXiv preprint arXiv:2009.13656},
-  year={2020}
-} -->
-</pre>
+Docalog: Multi-document Dialogue System using Transformer-based Span Retrieval - MultiDoc2dia 2022 Challenge.
 
-## Install environment
-```
-pip install -r requirements.txt
-python -m spacy download en_core_web_sm
-```
+This repository contains notebooks which are used during this challenge. They're showing our efforts to making the best predictions on document retriever part so they would be useful as a practice pattern.
 
-## load dialdoc dataset
-```
-datasets = load_dataset("utils/dialdoc.py", "doc2dial_rc")
-```
 
-## Task 1 
+### IR_PLDA
 
-```console
-cd task1
-```
+This file contains our first efforts for making the document retriever which starts with using PLDA method. If you're looking for our last (best efforts) you can see the `DR_TEIT.ipynb` file
 
-### Model training
-- Train the model on MRQA dataset
+### DR_TEIT
 
-```console
-sh run_mrqa.sh
-```
+This file contains some tested methods for document retriever which you can see them in below table. We called our best model "Document Retrival with Title Embedding and IDF on Texts (DR.TEIT)". In this method we used two scoring measure and aggregate them by a convex combination  (λ * Similiarity_{Title Embedding} + (1 - λ) * Similiarity_{TextIDF}).
 
-- Train the model on CQA dataset and DialDoc dataset
+We used LaBSE model for out embeddings. For computing title embedding similarities we used cosine similarity between query embeddings and each document's title embedding. For the second part we used character-level (2gram to 8gram). We also trained our TF-IDF transformation matrix on the Multidoc2dial2022 documnets.
 
-```console
-sh run_qa_extra.sh
-```
-For RoBERTa_{all} model, please add `../utils/mrqa.py` and `mrqa_rc_small` under `extra_dataset_name` and `extra_dataset_config_name` arguments, respectively.
 
-- Finetune the model on DialDoc dataset
+<div align="center">
+  
+| Method | @1 | @5 | @10 | @50 | @100 | MRR (mean, var) |
+|:------:|:------:|:------:|:-------:|:-------:|:--------:|:---:|
+| IDF - vanilla | 13% | 30% | 39% | 64% | 83% | (0.22, 0.11) |
+| IDF - power-order | 15% | 31% | 41% | 65% | 83% | (0.23, 0.12) |
+| IDF - power-order (softmax) | 10.7% | 23% | 31% | 57.6% | 78% | (0.18, 0.09) |
+| IDF - self-attention | 13.9% | 29% | 38% | 62% | 82% | (0.22, 0.11) |
+| **DR. TEIT** | **61.6%** | **86%** | **91%** | **96%** | **98%** | **(0.72, 0.13)** |
 
-```console
-sh run_qa.sh
-```
+</div>
 
-- Evaluate the model
+## Span Prediction
 
-```console
-sh eval_qa.sh
-```
+The main model which stack the **document retriever** and **span predictor** part is in this repository ([CAiRE](https://github.com/sharif-multidoc2dial/CAiRE)).
 
-### Data postprocessing
-- Post-processing on the predicted spans.
+## Span Picker
 
-If calculating the metrics is needed, add `--do_eval`. This argument only could be applied on validation set.
-```console
-python postprocess_prediction.py --task split --prediction_file [PATH TO THE POSITION FILE(appear as positions.json)] --output_file [PATH OF OUTPUT FILE] --split [validation/devtest/test] --threshold 0.1 --save_span
-```
+## Generation
 
-### Ensemble
-- Build an ensemble of the existing models.
-
-Before building the ensemble, please put all the post-processed `positions.json` file into the same specific folder, e.g. `test_sp`.
-
-```console
-python ensemble test_sp
-sh do_ensemble.sh
-```
-
-## Task 2
-
-```console
-cd task2
-```
-
-### Model Pre-training
-- Pre-train BART model on WoW dataset.
-
-```console
-TBC
-```
-
-### Model Fine-tuning
-- Further finetune BART model on dialdoc dataset
-
-```console
-sh run_seq2seq_ddp.sh
-```
-
-- Evaluate the model
-
-```console
-sh eval_seq2seq_ddp.sh
-```
-
-- Get the model generations
-
-```console
-sh run_predict.sh
-```
-
-### Post-processing
-- Post-processing is only applied to final test set.
-```console
-python merge.py --gen_preds [PATH TO BART GENERATIONS] --raw_preds [PATH TO THE PREDICTIONS FROM TASK1] --domain_file cache/test_domain.json --output_file [PATH TO OUTPUT FILE]
-```

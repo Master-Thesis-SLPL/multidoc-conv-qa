@@ -13,13 +13,10 @@ import torch
 from transformers import AutoTokenizer, AutoModel, AutoConfig
 
 
-
-
-
 class DrTeitRetriever:
-    file_title_embeddings = os.path.join('..', '..', 'retriever', 'doc_title_LaBSE_Embedding.npy')
-    file_title_to_embeddings = os.path.join('..', '..', 'retriever', 'title_to_embeddings.pkl')
-    file_words2IDF = os.path.join('..', '..', 'retriever', 'words_to_IDF.pkl')
+    file_title_embeddings = os.path.join('..', '..', 'retriever', 'cache', 'doc_title_LaBSE_Embedding.npy')
+    file_title_to_embeddings = os.path.join('..', '..', 'retriever', 'cache', 'title_to_embeddings.pkl')
+    file_words2IDF = os.path.join('..', '..', 'retriever', 'cache', 'words_to_IDF.pkl')
 
     def __init__(self):    
         self.tokenizer_labse = AutoTokenizer.from_pretrained("setu4993/LaBSE")
