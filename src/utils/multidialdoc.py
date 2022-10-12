@@ -545,7 +545,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     },
                 )
             ]
-        elif self.config.name == ["multidoc2dial_rc_mddunseen_dev", "multidoc2dial_rc_mddunseen_dev_concat"]:
+        elif self.config.name in ["multidoc2dial_rc_mddunseen_dev", "multidoc2dial_rc_mddunseen_dev_concat"]:
             return [
                 datasets.SplitGenerator(
                     name=datasets.Split.VALIDATION,
@@ -556,7 +556,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     },
                 )
             ]
-        elif self.config.name == ["multidoc2dial_rc_mddunseen_test", "multidoc2dial_rc_mddunseen_test_concat"]:
+        elif self.config.name in ["multidoc2dial_rc_mddunseen_test", "multidoc2dial_rc_mddunseen_test_concat"]:
             return [
                 datasets.SplitGenerator(
                     name=datasets.Split.VALIDATION,
