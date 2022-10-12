@@ -134,6 +134,26 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
             version=VERSION,
             description="Load MultiDoc2Dial dataset for machine reading comprehension tasks for test",
         ),
+        datasets.BuilderConfig(
+            name="multidoc2dial_rc_mddseen_dev_concat",
+            version=VERSION,
+            description="Load MultiDoc2Dial dataset for MRC task, concat selected documents by doc retriever.",
+        ),
+        datasets.BuilderConfig(
+            name="multidoc2dial_rc_mddseen_test_concat",
+            version=VERSION,
+            description="Load MultiDoc2Dial dataset for MRC task, concat selected documents by doc retriever.",
+        ),
+        datasets.BuilderConfig(
+            name="multidoc2dial_rc_mddunseen_dev_concat",
+            version=VERSION,
+            description="Load MultiDoc2Dial dataset for MRC task, concat selected documents by doc retriever.",
+        ),
+        datasets.BuilderConfig(
+            name="multidoc2dial_rc_mddunseen_test_concat",
+            version=VERSION,
+            description="Load MultiDoc2Dial dataset for MRC task, concat selected documents by doc retriever.",
+        ),
     ]
 
     DEFAULT_CONFIG_NAME = "dialogue_domain"
@@ -319,6 +339,26 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     ]
                 }
             )
+        elif self.config.name in [
+            "multidoc2dial_rc_mddseen_dev_concat", 
+            "multidoc2dial_rc_mddseen_test_concat", 
+            "multidoc2dial_rc_mddunseen_dev_concat", 
+            "multidoc2dial_rc_mddunseen_test_concat"
+        ]:
+            features = datasets.Features(
+                {
+                    "id": datasets.Value("string"),
+                    "title": datasets.Value("string"),
+                    "context": datasets.Value("string"),
+                    "only-question": datasets.Value("string"),
+                    "question": datasets.Value("string"),
+                    "domain": datasets.Value("string"),
+                    "doc-rank": datasets.Value("int32"),
+                    "questions": [
+                        datasets.Value("string"),
+                    ]
+                }
+            )
 
         return datasets.DatasetInfo(
             description=_DESCRIPTION,
@@ -483,7 +523,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     },
                 )
             ]
-        elif self.config.name == "multidoc2dial_rc_mddseen_dev":
+        elif self.config.name in ["multidoc2dial_rc_mddseen_dev", "multidoc2dial_rc_mddseen_dev_concat"] :
             return [
                 datasets.SplitGenerator(
                     name=datasets.Split.VALIDATION,
@@ -494,7 +534,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     },
                 )
             ]
-        elif self.config.name == "multidoc2dial_rc_mddseen_test":
+        elif self.config.name in ["multidoc2dial_rc_mddseen_test", "multidoc2dial_rc_mddseen_test_concat"]:
             return [
                 datasets.SplitGenerator(
                     name=datasets.Split.VALIDATION,
@@ -505,7 +545,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     },
                 )
             ]
-        elif self.config.name == "multidoc2dial_rc_mddunseen_dev":
+        elif self.config.name == ["multidoc2dial_rc_mddunseen_dev", "multidoc2dial_rc_mddunseen_dev_concat"]:
             return [
                 datasets.SplitGenerator(
                     name=datasets.Split.VALIDATION,
@@ -516,7 +556,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     },
                 )
             ]
-        elif self.config.name == "multidoc2dial_rc_mddunseen_test":
+        elif self.config.name == ["multidoc2dial_rc_mddunseen_test", "multidoc2dial_rc_mddunseen_test_concat"]:
             return [
                 datasets.SplitGenerator(
                     name=datasets.Split.VALIDATION,
@@ -971,6 +1011,55 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                         # queries = list(reversed(all_user_utterances))
                         if turn["turn_id"] == int(dial["id"].split('_')[-1]):
                             queries = list(reversed(all_prev_utterances))
+                            doc_ids = self.retriever.get_documents(None, queries)
+                            for doc_rank, (doc_domain, doc_id) in enumerate(doc_ids):
+                                question_str = " ".join(list(reversed(all_prev_utterances))).strip()
+                                question = " ".join(question_str.split()[:MAX_Q_LEN])
+                                id_ = "{}_{}".format(dial["id"], doc_rank) # For subtask1, the id should be this format.
+                                # id_ = "{}_{}".format(dial["id"], turn["turn_id"]) # For subtask1, the id should be this format.
+                                qa = {
+                                    "id": id_, # For subtask1, the id should be this format.
+                                    "title": doc_id,
+                                    "context": docs[doc_domain][doc_id]["doc_text"],
+                                    "only-question": turn["utterance"],    
+                                    "question": question,    
+                                    "domain": doc_domain,
+                                    "doc-rank": doc_rank,
+                                    "questions": list(reversed(all_utterances)),
+                                }
+                                yield id_, qa
+
+        elif self.config.name in [
+            "multidoc2dial_rc_mddseen_dev_concat", 
+            "multidoc2dial_rc_mddseen_test_concat", 
+            "multidoc2dial_rc_mddunseen_dev_concat", 
+            "multidoc2dial_rc_mddunseen_test_concat"
+        ]:
+            """Load dialog data in the reading comprehension task setup, where context is the grounding document,
+            this config concats selected documents and sends them to span prediction.
+            input query is dialog history in reversed order, and output to predict is the next agent turn.
+            for each question we will return multiple instances with id_x where x is the ranking of the N-best document."""
+
+            logging.info("generating examples from = %s", filepath)
+            doc_data = self._load_doc_data_rc_extra(filepath)
+            with open(filepath, encoding="utf-8") as f:
+                dial_data = json.load(f)
+                docs = doc_data
+                for dial in dial_data:
+                    all_prev_utterances = []
+                    all_user_utterances = []
+                    all_utterances = []
+                    for idx, turn in enumerate(dial["dial"]):
+                        all_prev_utterances.append(turn["utterance"])
+                        if turn["role"] == "agent":
+                            all_utterances[-1] = all_utterances[-1] + turn["utterance"]
+                            continue
+                        else:
+                            all_utterances.append(turn["utterance"])
+                            all_user_utterances.append(turn["utterance"])
+
+                        if turn["turn_id"] == int(dial["id"].split('_')[-1]):
+                            queries = list(reversed(all_prev_utterances))
                             doc_ids = self.retriever.get_documents(None, queries, k=5)
                             
                             question_str = " ".join(list(reversed(all_prev_utterances))).strip()
@@ -988,20 +1077,3 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                                 "questions": list(reversed(all_utterances)),
                             }
                             yield id_, qa
-                            
-                            # for doc_rank, (doc_domain, doc_id) in enumerate(doc_ids):
-                            #     question_str = " ".join(list(reversed(all_prev_utterances))).strip()
-                            #     question = " ".join(question_str.split()[:MAX_Q_LEN])
-                            #     id_ = "{}_{}".format(dial["id"], doc_rank) # For subtask1, the id should be this format.
-                            #     # id_ = "{}_{}".format(dial["id"], turn["turn_id"]) # For subtask1, the id should be this format.
-                            #     qa = {
-                            #         "id": id_, # For subtask1, the id should be this format.
-                            #         "title": doc_id,
-                            #         "context": docs[doc_domain][doc_id]["doc_text"],
-                            #         "only-question": turn["utterance"],    
-                            #         "question": question,    
-                            #         "domain": doc_domain,
-                            #         "doc-rank": doc_rank,
-                            #         "questions": list(reversed(all_utterances)),
-                            #     }
-                            #     yield id_, qa
