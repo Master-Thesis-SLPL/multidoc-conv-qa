@@ -53,12 +53,13 @@ python ../finetune_trainer.py \
 --val_max_target_length 50 \
 --test_max_target_length 50 \
 --task translation \
---warmup_steps 500 \
---evaluation_strategy steps \
+--warmup_steps 50 \
+--evaluation_strategy epoch \
 --load_best_model_at_end \
 --predict_with_generate \
 --save_total_limit 5 \
+--save_strategy epoch \
 --metric_for_best_model eval_bleu \
 --greater_is_better True \
---logging_steps 500 \
+--logging_steps 1000 \
 # --sharded_ddp 
