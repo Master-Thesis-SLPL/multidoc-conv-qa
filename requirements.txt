@@ -13,3 +13,7 @@ fairscale
 ipykernel
 python-dotenv
 colab_ssh
+datasets 
+transformers
+sklearn
+accelerate
