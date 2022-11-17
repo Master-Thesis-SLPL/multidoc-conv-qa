@@ -101,7 +101,8 @@
                 "--overwrite_output_dir", "true",
                 "--per_device_eval_batch_size", "2",
                 "--gradient_accumulation_steps", "15",
-                "--fp16"
+                "--fp16",
+                "--use_retriever", "true"
             ]
         },
         {
@@ -128,7 +129,8 @@
                 "--overwrite_output_dir", "true",
                 "--per_device_eval_batch_size", "2",
                 "--gradient_accumulation_steps", "15",
-                "--fp16"
+                "--fp16",
+                "--use_retriever", "true"
             ]
         },
         {
@@ -165,7 +167,7 @@
             "program": "../run_qa.py",
             "console": "integratedTerminal",
             "justMyCode": true,
-            "cwd": "/content/drive/MyDrive/multidoc-conv-qa/src/span/runners",
+            "cwd": "/data1/alistvt/tes/multidoc-conv-qa/src/span/runners",
             "args": [
                 "--dataset_name", "../../utils/multidialdoc.py",
                 "--dataset_config_name", "multidoc2dial_rc_nohistory",
@@ -177,8 +179,8 @@
                 "--max_seq_length", "512",
                 "--max_answer_length", "100",
                 "--doc_stride", "128",
-                "--cache_dir", "/content/drive/MyDrive/experiments/01-dialdoc/cache",
-                "--output_dir", "/content/drive/MyDrive/experiments/01-dialdoc/save",
+                "--cache_dir", "cache",
+                "--output_dir", "save",
                 "--overwrite_output_dir", "true",
                 "--per_device_eval_batch_size", "2",
                 "--gradient_accumulation_steps", "15",
@@ -212,7 +214,8 @@
                 "--overwrite_output_dir", "true",
                 "--per_device_eval_batch_size", "2",
                 "--gradient_accumulation_steps", "15",
-                "--fp16"
+                "--fp16",
+                "--use_retriever", "true"
             ]
         },
     ]
