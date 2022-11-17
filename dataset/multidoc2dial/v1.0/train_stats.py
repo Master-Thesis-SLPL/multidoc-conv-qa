@@ -2,8 +2,15 @@ import json
 from tqdm import tqdm
 import numpy as np
 
-with open("multidoc2dial_dial_train.json", 'r') as f:
-    docs = json.load(f)
+# with open("multidoc2dial_dial_train.json", 'r') as f:
+with open("multidoc2dial_dial_validation.json", 'r') as f:
+    # docs = json.load(f)
+    doc_str = f.read()
+
+
+print("UNK: ", doc_str.count("no relevant information is found."))
+exit()
+
 
 docs = docs["dial_data"]
 

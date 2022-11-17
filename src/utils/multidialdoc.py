@@ -89,6 +89,11 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
             description="Load MultiDoc2Dial dataset for machine reading comprehension tasks",
         ),
         datasets.BuilderConfig(
+            name="multidoc2dial_rc_nohistory",
+            version=VERSION,
+            description="Load MultiDoc2Dial dataset for machine reading comprehension tasks",
+        ),
+        datasets.BuilderConfig(
             name="multidoc2dial_rc_small",
             version=VERSION,
             description="Load MultiDoc2Dial dataset for machine reading comprehension tasks",
@@ -263,7 +268,11 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     "doc_html_raw": datasets.Value("string"),
                 }
             )
-        elif self.config.name == "multidoc2dial_rc" or self.config.name == "multidoc2dial_rc_small":
+        elif self.config.name in [
+            "multidoc2dial_rc", 
+            "multidoc2dial_rc_small", 
+            "multidoc2dial_rc_nohistory"
+        ]:
             features = datasets.Features(
                 {
                     "id": datasets.Value("string"),
@@ -300,7 +309,10 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     "domain": datasets.Value("string"),
                 }
             )
-        elif self.config.name in ["multidoc2dial_rc_retriever_testdev", "multidoc2dial_rc_retriever_testdev_small"]:
+        elif self.config.name in [
+            "multidoc2dial_rc_retriever_testdev", 
+            "multidoc2dial_rc_retriever_testdev_small"
+        ]:
             features = datasets.Features(
                 {
                     "id": datasets.Value("string"),
@@ -439,7 +451,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     },
                 )
             ]
-        elif self.config.name == "multidoc2dial_rc":
+        elif self.config.name in ["multidoc2dial_rc", "multidoc2dial_rc_nohistory"]:
             return [
                 datasets.SplitGenerator(
                     name=datasets.Split.VALIDATION,
@@ -457,7 +469,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                         ),
                     },
                 ),
-            ]        
+            ]     
         elif self.config.name == "multidoc2dial_rc_small":
             return [
                 datasets.SplitGenerator(
@@ -792,7 +804,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                                 ],
                             }
 
-        elif self.config.name == "multidoc2dial_rc" or self.config.name == "multidoc2dial_rc_small":
+        elif self.config.name in ["multidoc2dial_rc", "multidoc2dial_rc_small", "multidoc2dial_rc_nohistory"]:
             """Load dialog data in the reading comprehension task setup, where context is the grounding document,
             input query is dialog history in reversed order, and output to predict is the next agent turn."""
 
@@ -825,7 +837,12 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                             question_str = " ".join(
                                 list(reversed(all_prev_utterances))
                             ).strip()
-                            question = " ".join(question_str.split()[:MAX_Q_LEN])
+
+                            if self.config.name == "multidoc2dial_rc_nohistory":
+                                question = list(reversed(all_prev_utterances))[0]
+                            else:
+                                question = " ".join(question_str.split()[:MAX_Q_LEN])
+                            
                             id_ = "{}_{}".format(dial["dial_id"], turn["turn_id"]) # For subtask1, the id should be this format.
                             qa = {
                                 "id": id_, # For subtask1, the id should be this format.
