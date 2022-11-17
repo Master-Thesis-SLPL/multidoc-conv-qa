@@ -183,7 +183,10 @@
                 "--per_device_eval_batch_size", "2",
                 "--gradient_accumulation_steps", "15",
                 "--fp16"
-            ]
+            ],
+            "env": {
+                "CUDA_AVAILABLE_DEVICES": "2"
+            }
         },
         {
             "name": "prediction-complete-retrieved-mddseen-dev", 
