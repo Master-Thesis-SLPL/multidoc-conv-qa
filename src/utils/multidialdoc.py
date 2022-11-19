@@ -94,6 +94,11 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
             description="Load MultiDoc2Dial dataset for machine reading comprehension tasks",
         ),
         datasets.BuilderConfig(
+            name="multidoc2dial_rc_relevant_history",
+            version=VERSION,
+            description="Load MultiDoc2Dial dataset with only relevant history",
+        ),
+        datasets.BuilderConfig(
             name="multidoc2dial_rc_small",
             version=VERSION,
             description="Load MultiDoc2Dial dataset for machine reading comprehension tasks",
@@ -271,7 +276,8 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
         elif self.config.name in [
             "multidoc2dial_rc", 
             "multidoc2dial_rc_small", 
-            "multidoc2dial_rc_nohistory"
+            "multidoc2dial_rc_nohistory",
+            "multidoc2dial_rc_relevant_history"
         ]:
             features = datasets.Features(
                 {
@@ -451,7 +457,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     },
                 )
             ]
-        elif self.config.name in ["multidoc2dial_rc", "multidoc2dial_rc_nohistory"]:
+        elif self.config.name in ["multidoc2dial_rc", "multidoc2dial_rc_nohistory", "multidoc2dial_rc_relevant_history"]:
             return [
                 datasets.SplitGenerator(
                     name=datasets.Split.VALIDATION,
@@ -804,7 +810,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                                 ],
                             }
 
-        elif self.config.name in ["multidoc2dial_rc", "multidoc2dial_rc_small", "multidoc2dial_rc_nohistory"]:
+        elif self.config.name in ["multidoc2dial_rc", "multidoc2dial_rc_small", "multidoc2dial_rc_nohistory", "multidoc2dial_rc_relevant_history"]:
             """Load dialog data in the reading comprehension task setup, where context is the grounding document,
             input query is dialog history in reversed order, and output to predict is the next agent turn."""
 
@@ -816,6 +822,7 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                     docs = doc_data[domain]
                     for dial in domain_dials:
                         all_prev_utterances = []
+                        prev_doc_id = ""
                         for idx, turn in enumerate(dial["turns"]):
                             all_prev_utterances.append(
                                 "\t{}: {}".format(turn["role"], turn["utterance"])
@@ -825,6 +832,12 @@ class MultiDoc2dial(datasets.GeneratorBasedBuilder):
                                     turn["references"],
                                     docs
                                 )
+                            
+                            if self.config.name == "multidoc2dial_rc_relevant_history ":
+                                if doc_id != prev_doc_id:
+                                    all_prev_utterances = [all_prev_utterances[-1]]
+                            prev_doc_id = doc_id
+
                             if turn["role"] == "agent":
                                 continue
                             if idx + 1 < len(dial["turns"]):
