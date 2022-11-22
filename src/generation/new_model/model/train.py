@@ -5,6 +5,14 @@ import logging
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from simpletransformers.seq2seq import Seq2SeqModel, Seq2SeqArgs
+import torch
+
+CUDA_VISIBLE_DEVICES=0
+cuda_available = torch.cuda.is_available()
+torch.multiprocessing.set_sharing_strategy('file_system')
+if not cuda_available:
+    assert 'cuda not available'
+
 
 from utils import load_data, clean_unnecessary_spaces
 
@@ -105,17 +113,17 @@ eval_df["target_text"] = eval_df["target_text"].apply(clean_unnecessary_spaces)
 print(train_df)
 
 model_args = Seq2SeqArgs()
-model_args.eval_batch_size = 64
+model_args.eval_batch_size = 8
 model_args.evaluate_during_training = True
 model_args.evaluate_during_training_steps = 2500
 model_args.evaluate_during_training_verbose = True
-model_args.fp16 = False
+model_args.fp16 = True
 model_args.learning_rate = 5e-5
 model_args.max_seq_length = 128
-model_args.num_train_epochs = 2
+model_args.num_train_epochs = 50
 model_args.overwrite_output_dir = True
 model_args.reprocess_input_data = True
-model_args.save_eval_checkpoints = True
+model_args.save_eval_checkpoints = False
 model_args.save_steps = -1
 model_args.train_batch_size = 8
 model_args.use_multiprocessing = False
@@ -132,7 +140,7 @@ model_args.wandb_project = "Paraphrasing with BART"
 
 model = Seq2SeqModel(
     encoder_decoder_type="bart",
-    encoder_decoder_name="facebook/bart-large",
+    encoder_decoder_name="facebook/bart-large-cnn",
     args=model_args,
 )
 

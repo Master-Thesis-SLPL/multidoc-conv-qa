@@ -1,10 +1,10 @@
-python -m torch.distributed.launch --nproc_per_node=1 --master_port=10002 finetune_trainer.py \
+python3 ../finetune_trainer.py \
 --cache_dir cache \
 --ids_path cache/test_ids.txt \
---preds_path ../results/[PATH TO TASK1 PREDICTIONS] \
---output_dir [PATH TO YOUR MODEL]/test \
+--preds_path ../../../results/predictions_dr_teit.json \
+--output_dir save/bart-large-hist3-sp/checkpoint-30800/test \
 --doc_mode sp \
---model_name_or_path [PATH TO YOUR MODEL] \
+--model_name_or_path save/bart-large-hist3-sp/checkpoint-30800 \
 --stage test \
 --do_predict \
 --per_device_eval_batch_size 5 \
