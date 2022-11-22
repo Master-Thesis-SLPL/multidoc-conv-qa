@@ -203,8 +203,8 @@ class ExtraArguments:
     generative: Optional[bool] = field(
         default=False, metadata={"help": "The path to the prediction file."}
     )
-    use_retriever: Optional[bool] = field(
-        default=False, metadata={"help": "Load and use retriever or not."}
+    use_retriever: Optional[str] = field(
+        default=None, metadata={"help": "Name of retriever to use."}
     )
 
 
@@ -301,11 +301,17 @@ def main():
             UserWarning
         )
 
-    if extra_args.use_retriever:
-        retriever = DrFudRetriever()
-        datasets, extra_datasets = load_datasets(data_args, model_args, retriever=retriever)
-    else:
+    if not extra_args.use_retriever:
         datasets, extra_datasets = load_datasets(data_args, model_args, retriever=None)
+    else:
+        if extra_args.use_retriever == "DrTeit":
+            retriever = DrTeitRetriever()
+            datasets, extra_datasets = load_datasets(data_args, model_args, retriever=retriever)
+        elif extra_args.use_retriever == "DrFud":
+            retriever = DrFudRetriever()
+            datasets, extra_datasets = load_datasets(data_args, model_args, retriever=retriever)
+        else:
+            raise KeyError(f"retriever {extra_args.use_retriever} does not exist.")
 
     train_dataset, validation_dataset, question_column_name, context_column_name, answer_column_name = proc_dataset(training_args, data_args, datasets, tokenizer, extra_datasets=extra_datasets)
 
