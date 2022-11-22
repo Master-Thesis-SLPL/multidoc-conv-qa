@@ -353,7 +353,11 @@
                 "--per_device_eval_batch_size", "2",
                 "--gradient_accumulation_steps", "15",
                 "--fp16",
+<<<<<<< HEAD
                 "--use_retriever", "DrFud"
+=======
+                "--use_retriever", "true"
+>>>>>>> 234c33e2f2200ea7a943b91941ad9f93e945e8dc
             ]
         },
     ]
