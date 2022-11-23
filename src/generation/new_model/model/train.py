@@ -130,7 +130,7 @@ model_args.use_multiprocessing = False
 
 model_args.do_sample = True
 model_args.num_beams = None
-model_args.num_return_sequences = 3
+model_args.num_return_sequences = 1
 model_args.max_length = 128
 model_args.top_k = 50
 model_args.top_p = 0.95
