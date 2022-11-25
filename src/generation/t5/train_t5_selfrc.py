@@ -18,9 +18,9 @@ def read_dataset(path_in):
     df = pd.read_csv(path_in, sep='\t')
     questions, answers, contexts = [], [], []
     for i in range(len(df)):
-        questions.append(df['questions'][i])
-        answers.append(df['answers'][i])
-        contexts.append(df['contexts'][i])
+        questions.append(f"{df['questions'][i]}")
+        answers.append(f"{df['answers'][i]}")
+        contexts.append(f"{df['contexts'][i]}")
     return contexts, questions, answers
 
 
@@ -187,19 +187,19 @@ if __name__ == '__main__':
     dataset = {}
     dataset['train'] = {'question':train_questions, 'answers': train_answers, 'context': train_contexts}
     dataset['validation'] = {'question':val_questions, 'answers': val_answers, 'context': val_contexts}
+    df_train = pd.DataFrame(dataset['train'])
+    df_eval = pd.DataFrame(dataset['validation'])
+
 
     # _data = load_dataset("duorc", "SelfRC")
-    _data = dataset
 
     model = T5ForConditionalGeneration.from_pretrained(args.t5_model)
     tokenizer = T5Tokenizer.from_pretrained(args.t5_model)
     # creating the optimizer
     optimizer = torch.optim.AdamW(model.parameters(), lr=args.lr)
 
-    train_set = Dataset(_data["train"], tokenizer,
-                        parser=MyDataset.DatasetMap.squad)
-    validation_set = Dataset(
-        _data["validation"], tokenizer, parser=MyDataset.DatasetMap.squad)
+    train_set = Dataset(df_train, tokenizer)
+    validation_set = Dataset(df_eval, tokenizer)
 
     train(model=model,
           tokenizer=tokenizer,

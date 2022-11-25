@@ -33,12 +33,14 @@ class Dataset(torch.utils.data.Dataset):
         self.answers: List[str] = []
         self.contexts: List[str] = []
 
-        for row in tqdm(hf_dataset):
-            _contexts, _questions, _answers = parser(row)
+        for idx, row in tqdm(hf_dataset.iterrows()):
+            _contexts = row['context']
+            _questions = row['question']
+            _answers = row['answers']
 
-            self.contexts += _contexts
-            self.questions += _questions
-            self.answers += _answers
+            self.contexts.append(_contexts)
+            self.questions.append(_questions)
+            self.answers.append(_answers)
 
         if len(self.questions) != len(self.answers) or len(self.questions) != len(self.contexts):
             raise Exception(
