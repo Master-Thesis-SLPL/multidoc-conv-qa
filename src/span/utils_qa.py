@@ -274,7 +274,7 @@ def postprocess_qa_predictions(
                 score_diff = null_score - best_non_null_pred["start_logit"] - best_non_null_pred["end_logit"]
                 scores_diff_json[example["id"]] = float(score_diff)  # To be JSON-serializable.
                 if score_diff > null_score_diff_threshold:
-                    all_predictions[example["id"]] = ""
+                    all_predictions[example["id"]] = "Unfortunately, no relevant information is found."
                     all_positions[example["id"]] = (0,0)
                 else:
                     all_predictions[example["id"]] = best_non_null_pred["text"]

@@ -1,0 +1,10 @@
+eval_HasAns_exact = 60.85385136661396
+eval_HasAns_f1 = 71.27549297142734
+eval_HasAns_total = 4427
+eval_best_exact = 60.85385136661396
+eval_best_exact_thresh = 0.0
+eval_best_f1 = 71.27549297142734
+eval_best_f1_thresh = 0.0
+eval_exact = 60.85385136661396
+eval_f1 = 71.27549297142734
+eval_total = 4427
