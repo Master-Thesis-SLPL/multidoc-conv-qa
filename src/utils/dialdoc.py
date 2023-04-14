@@ -89,6 +89,11 @@ class Doc2dial(datasets.GeneratorBasedBuilder):
             description="Load Doc2Dial dataset for machine reading comprehension tasks",
         ),
         datasets.BuilderConfig(
+            name="doc2dial_rc_small",
+            version=VERSION,
+            description="Load Doc2Dial dataset for machine reading comprehension tasks",
+        ),
+        datasets.BuilderConfig(
             name="doc2dial_rc_small_validation",
             version=VERSION,
             description="Load Doc2Dial dataset for machine reading comprehension tasks",
@@ -214,6 +219,29 @@ class Doc2dial(datasets.GeneratorBasedBuilder):
                 }
             )
         elif self.config.name == "doc2dial_rc":
+            features = datasets.Features(
+                {
+                    "id": datasets.Value("string"),
+                    "title": datasets.Value("string"),
+                    "context": datasets.Value("string"),
+                    "question": datasets.Value("string"),
+                    "answers": datasets.features.Sequence(
+                        {
+                            "text": datasets.Value("string"),
+                            "answer_start": datasets.Value("int32"),
+                            # "spans": datasets.features.Sequence(datasets.Value("string"))
+                        }
+                    ),
+                    "spans": datasets.features.Sequence(
+                        {
+                            "start": datasets.Value("int32"),
+                            "end": datasets.Value("int32"),
+                        }
+                    ),
+                    "domain": datasets.Value("string"),
+                }
+            )
+        elif self.config.name == "doc2dial_rc_small":
             features = datasets.Features(
                 {
                     "id": datasets.Value("string"),
@@ -372,6 +400,25 @@ class Doc2dial(datasets.GeneratorBasedBuilder):
                     gen_kwargs={
                         "filepath": os.path.join(
                             data_dir, "doc2dial/v1.0.1/doc2dial_dial_train.json"
+                        ),
+                    },
+                ),
+            ]
+        elif self.config.name == "doc2dial_rc_small":
+            return [
+                datasets.SplitGenerator(
+                    name=datasets.Split.VALIDATION,
+                    gen_kwargs={
+                        "filepath": os.path.join(
+                            data_dir, "doc2dial/v1.0.1/doc2dial_dial_small_validation.json"
+                        ),
+                    },
+                ),
+                datasets.SplitGenerator(
+                    name=datasets.Split.TRAIN,
+                    gen_kwargs={
+                        "filepath": os.path.join(
+                            data_dir, "doc2dial/v1.0.1/doc2dial_dial_small_train.json"
                         ),
                     },
                 ),
@@ -632,7 +679,7 @@ class Doc2dial(datasets.GeneratorBasedBuilder):
                                 ],
                             }
 
-        elif self.config.name == "doc2dial_rc" or self.config.name == "doc2dial_rc_small_validation":
+        elif self.config.name in ["doc2dial_rc", "doc2dial_rc_small", "doc2dial_rc_small_validation"]:
             """Load dialog data in the reading comprehension task setup, where context is the grounding document,
             input query is dialog history in reversed order, and output to predict is the next agent turn."""
 
