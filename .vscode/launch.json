@@ -175,7 +175,6 @@
                 "--dataset_name", "../../utils/dialdoc.py",
                 "--cache_dir", "cache",
                 "--output_dir", "save",
-                // "--hub_model_id", "alistvt/01-tinybert-local",
                 "--dataset_config_name", "doc2dial_rc_small",
                 "--model_name_or_path", "prajjwal1/bert-tiny",
                 "--do_train",
@@ -203,10 +202,11 @@
                 "--metric_for_best_model", "exact",
                 "--save_total_limit", "3",
                 "--warmup_steps", "10",
-                "--weight_decay", "0.01"
-                // "--push_to_hub", "true",
-                // "--hub_strategy", "every_save",
-                // "--hub_token", "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"
+                "--weight_decay", "0.01",
+                "--hub_model_id", "alistvt/01-tinybert-local",
+                "--push_to_hub", "true",
+                "--hub_strategy", "every_save",
+                "--hub_token", "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"
             ]
         },
         {
