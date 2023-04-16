@@ -12,5 +12,5 @@ python-dotenv
 colab_ssh
 datasets 
 transformers
-sklearn
+scikit-learn
 accelerate

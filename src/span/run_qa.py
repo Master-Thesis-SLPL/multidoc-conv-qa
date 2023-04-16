@@ -286,7 +286,7 @@ def main():
             use_fast=False,
             revision=model_args.model_revision,
             use_auth_token=True if model_args.use_auth_token else None,
-            )
+        )
         training_args.use_fast = False
         warnings.warn(
             "This example script only works for models that have a fast tokenizer. Checkout the big table of models \

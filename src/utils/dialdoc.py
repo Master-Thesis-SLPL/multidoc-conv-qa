@@ -25,7 +25,7 @@ import os
 import datasets
 
 MAX_Q_LEN = 100  # Max length of question
-YOUR_LOCAL_DOWNLOAD = "../../dataset"
+YOUR_LOCAL_DOWNLOAD = "../../../dataset"
 
 _CITATION = """\
 @inproceedings{feng-etal-2020-doc2dial,

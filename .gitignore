@@ -2,3 +2,4 @@ env
 *cloudflared.log
 *cloudflared
 *.pyc
+draft
