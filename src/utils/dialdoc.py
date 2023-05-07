@@ -107,6 +107,16 @@ class Doc2dial(datasets.GeneratorBasedBuilder):
             name="doc2dial_rc_test",
             version=VERSION,
             description="Load Doc2Dial dataset for machine reading comprehension tasks for test",
+        ),
+        datasets.BuilderConfig(
+            name="doc2dial_rc_dual",
+            version=VERSION,
+            description="for each instance we yield 2 instances. one for single turn history and the other with no history.",
+        ),
+        datasets.BuilderConfig(
+            name="doc2dial_rc_small_dual",
+            version=VERSION,
+            description="for each instance we yield 2 instances. one for single turn history and the other with no history.",
         )
     ]
 
@@ -218,30 +228,7 @@ class Doc2dial(datasets.GeneratorBasedBuilder):
                     "doc_html_raw": datasets.Value("string"),
                 }
             )
-        elif self.config.name == "doc2dial_rc":
-            features = datasets.Features(
-                {
-                    "id": datasets.Value("string"),
-                    "title": datasets.Value("string"),
-                    "context": datasets.Value("string"),
-                    "question": datasets.Value("string"),
-                    "answers": datasets.features.Sequence(
-                        {
-                            "text": datasets.Value("string"),
-                            "answer_start": datasets.Value("int32"),
-                            # "spans": datasets.features.Sequence(datasets.Value("string"))
-                        }
-                    ),
-                    "spans": datasets.features.Sequence(
-                        {
-                            "start": datasets.Value("int32"),
-                            "end": datasets.Value("int32"),
-                        }
-                    ),
-                    "domain": datasets.Value("string"),
-                }
-            )
-        elif self.config.name == "doc2dial_rc_small":
+        elif self.config.name in ["doc2dial_rc", "doc2dial_rc_dual", "doc2dial_rc_small", "doc2dial_rc_small_dual"]:
             features = datasets.Features(
                 {
                     "id": datasets.Value("string"),
@@ -385,7 +372,7 @@ class Doc2dial(datasets.GeneratorBasedBuilder):
                     },
                 )
             ]
-        elif self.config.name == "doc2dial_rc":
+        elif self.config.name in ["doc2dial_rc", "doc2dial_rc_dual"]:
             return [
                 datasets.SplitGenerator(
                     name=datasets.Split.VALIDATION,
@@ -404,7 +391,7 @@ class Doc2dial(datasets.GeneratorBasedBuilder):
                     },
                 ),
             ]
-        elif self.config.name == "doc2dial_rc_small":
+        elif self.config.name in ["doc2dial_rc_small", "doc2dial_rc_small_dual"]:
             return [
                 datasets.SplitGenerator(
                     name=datasets.Split.VALIDATION,
@@ -717,6 +704,88 @@ class Doc2dial(datasets.GeneratorBasedBuilder):
                                 ).strip()
                                 question = " ".join(question_str.split()[:MAX_Q_LEN])
                                 id_ = "{}_{}".format(dial["dial_id"], turn["turn_id"]) # For subtask1, the id should be this format.
+                                qa = {
+                                    "id": id_, # For subtask1, the id should be this format.
+                                    "title": doc_id,
+                                    "context": doc["doc_text"],
+                                    "question": question,
+                                    "answers": [],  # For subtask1, "answers" contains the grounding annotations for evaluation.
+                                    "domain": domain,
+                                }
+                                if "answers" not in turn_to_predict:
+                                    turn_to_predict["answers"] = self._get_answers_rc(
+                                        turn_to_predict["references"],
+                                        doc["spans"],
+                                        doc["doc_text"],
+                                    )
+                                if turn_to_predict["answers"]:
+                                    qa["answers"] = turn_to_predict["answers"]
+                                qa["spans"] = doc_spans
+                                yield id_, qa
+
+        elif self.config.name in ["doc2dial_rc_dual", "doc2dial_rc_small_dual", "doc2dial_rc_small_validation_dual"]:
+            """Load dialog data in the reading comprehension task setup, where context is the grounding document,
+            input query is dialog history in reversed order, and output to predict is the next agent turn."""
+
+            logging.info("generating examples from = %s", filepath)
+            doc_data = self._load_doc_data_rc(filepath)
+            with open(filepath, encoding="utf-8") as f:
+                dial_data = json.load(f)["dial_data"]
+                for domain, d_doc_dials in dial_data.items():
+                    for doc_id, dials in d_doc_dials.items():
+                        doc = doc_data[domain][doc_id]
+                        doc_spans = [{"start": span["start_sp"], "end": span["end_sp"]} for _, span in doc["spans"].items()]
+                        for dial in dials:
+                            all_prev_utterances = []
+                            for idx, turn in enumerate(dial["turns"]):
+                                all_prev_utterances.append(
+                                    "\t{}: {}".format(turn["role"], turn["utterance"])
+                                )
+                                if "answers" not in turn:
+                                    turn["answers"] = self._get_answers_rc(
+                                        turn["references"],
+                                        doc["spans"],
+                                        doc["doc_text"],
+                                    )
+                                if turn["role"] == "agent":
+                                    continue
+                                if idx + 1 < len(dial["turns"]):
+                                    if dial["turns"][idx + 1]["role"] == "agent":
+                                        turn_to_predict = dial["turns"][idx + 1]
+                                    else:
+                                        continue
+                                else:
+                                    continue
+                                
+                                # ZERO TURN
+                                question_str = all_prev_utterances[-1]
+                                question = question_str
+                                id_ = "ZERO{}_{}".format(dial["dial_id"], turn["turn_id"]) # For subtask1, the id should be this format.
+                                qa = {
+                                    "id": id_, # For subtask1, the id should be this format.
+                                    "title": doc_id,
+                                    "context": doc["doc_text"],
+                                    "question": question,
+                                    "answers": [],  # For subtask1, "answers" contains the grounding annotations for evaluation.
+                                    "domain": domain,
+                                }
+                                if "answers" not in turn_to_predict:
+                                    turn_to_predict["answers"] = self._get_answers_rc(
+                                        turn_to_predict["references"],
+                                        doc["spans"],
+                                        doc["doc_text"],
+                                    )
+                                if turn_to_predict["answers"]:
+                                    qa["answers"] = turn_to_predict["answers"]
+                                qa["spans"] = doc_spans
+                                yield id_, qa
+
+                                # SINGLE TURN
+                                question_str = " ".join(
+                                    list(reversed(all_prev_utterances[:3]))
+                                ).strip()
+                                question = question_str
+                                id_ = "SINGLE{}_{}".format(dial["dial_id"], turn["turn_id"]) # For subtask1, the id should be this format.
                                 qa = {
                                     "id": id_, # For subtask1, the id should be this format.
                                     "title": doc_id,
