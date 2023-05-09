@@ -807,7 +807,7 @@ class Doc2dial(datasets.GeneratorBasedBuilder):
 
                                 # SINGLE TURN
                                 question_str = " ".join(
-                                    list(reversed(all_prev_utterances[:3]))
+                                    list(reversed(all_prev_utterances))[:3]
                                 ).strip()
                                 question = question_str
                                 id_ = "SINGLE{}_{}".format(dial["dial_id"], turn["turn_id"]) # For subtask1, the id should be this format.
