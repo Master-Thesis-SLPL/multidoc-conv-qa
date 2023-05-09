@@ -91,15 +91,15 @@
             "justMyCode": true,
             "cwd": "/content/drive/MyDrive/multidoc-conv-qa/src/span/runners",
             "env":{
-                "CUDA_VISIBLE_DEVICES": "1"
+                // "CUDA_VISIBLE_DEVICES": "1"
             },
             "args": [
                 "--dataset_name", "../../utils/dialdoc.py",
                 "--cache_dir", "cache",
                 "--output_dir", "save",
-                // "--hub_model_id", "alistvt/02-roberta-docalog",
+                "--hub_model_id", "alistvt/x-roberta-docalog-last-turns",
                 "--dataset_config_name", "doc2dial_rc",
-                "--model_name_or_path", "alistvt/docalog",
+                "--model_name_or_path", "roberta-large",
                 "--do_train",
                 "--do_eval",
                 "--early_stop",
@@ -118,18 +118,18 @@
                 "--gradient_accumulation_steps", "30 ",
                 "--evaluation_strategy", "steps",
                 "--eval_steps", "1000",
-                "--cache_dir", "/content/drive/MyDrive/experiments/00-multidoc/cache",
-                "--output_dir", "/content/drive/MyDrive/experiments/00-multidoc/save",
+                "--cache_dir", "/content/drive/MyDrive/experiments/01-doc2dial/cache",
+                "--output_dir", "/content/drive/MyDrive/experiments/01-doc2dial/save",
                 "--load_best_model_at_end",
                 "--early_stopping_patience", "3",
                 "--metric_for_best_model", "exact",
                 "--save_total_limit", "3",
                 "--warmup_steps", "10",
                 "--weight_decay", "0.01",
-                "--fp16"
-                // "--push_to_hub", "true",
-                // "--hub_strategy", "every_save",
-                // "--hub_token", "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"
+                "--fp16",
+                "--push_to_hub", "true",
+                "--hub_strategy", "every_save",
+                "--hub_token", "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"
             ]
         },
         {
@@ -175,7 +175,8 @@
                 "--dataset_name", "../../utils/dialdoc.py",
                 "--cache_dir", "cache",
                 "--output_dir", "save",
-                "--dataset_config_name", "doc2dial_rc_small",
+                "--dataset_config_name", "doc2dial_rc_small_dual",
+                // "--dataset_config_name", "doc2dial_rc_small",
                 "--model_name_or_path", "prajjwal1/bert-tiny",
                 "--do_train",
                 "--do_eval",
@@ -195,15 +196,15 @@
                 "--gradient_accumulation_steps", "30 ",
                 "--evaluation_strategy", "steps",
                 "--eval_steps", "1000",
-                "--cache_dir", "E:\\Projects\\nlp\\multidoc-conv-qa\\draft\\cache",
-                "--output_dir", "E:\\Projects\\nlp\\multidoc-conv-qa\\draft\\save",
+                "--cache_dir", "E:\\Projects\\nlp\\multidoc-conv-qa\\draft\\cache03",
+                "--output_dir", "E:\\Projects\\nlp\\multidoc-conv-qa\\draft\\save03",
                 "--load_best_model_at_end",
                 "--early_stopping_patience", "3",
                 "--metric_for_best_model", "exact",
                 "--save_total_limit", "3",
                 "--warmup_steps", "10",
                 "--weight_decay", "0.01",
-                "--hub_model_id", "alistvt/01-tinybert-local",
+                "--hub_model_id", "alistvt/03-tinybert-local",
                 "--push_to_hub", "true",
                 "--hub_strategy", "every_save",
                 "--hub_token", "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"
@@ -295,7 +296,7 @@
             "cwd": "E:\\Projects\\nlp\\multidoc-conv-qa\\src\\span\\runners",
             "args": [
                 "--dataset_name", "../../utils/dialdoc.py",
-                "--dataset_config_name", "doc2dial_rc",
+                "--dataset_config_name", "doc2dial_rc_dual",
                 "--model_name_or_path", "prajjwal1/bert-tiny",
                 // "--model_name_or_path", "save/checkpoint-2000",
                 "--do_eval", "true",
