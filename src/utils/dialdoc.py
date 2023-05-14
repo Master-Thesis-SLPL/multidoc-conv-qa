@@ -799,34 +799,9 @@ class Doc2dial(datasets.GeneratorBasedBuilder):
                                 # yield id_, qa
                                 
                                 # ZERO TURN
-                                question_str = all_prev_utterances[-1]
-                                question = question_str
-                                id_ = "ZERO{}_{}".format(dial["dial_id"], turn["turn_id"]) # For subtask1, the id should be this format.
-                                qa = {
-                                    "id": id_, # For subtask1, the id should be this format.
-                                    "title": doc_id,
-                                    "context": doc["doc_text"],
-                                    "question": question,
-                                    "answers": [],  # For subtask1, "answers" contains the grounding annotations for evaluation.
-                                    "domain": domain,
-                                }
-                                if "answers" not in turn_to_predict:
-                                    turn_to_predict["answers"] = self._get_answers_rc(
-                                        turn_to_predict["references"],
-                                        doc["spans"],
-                                        doc["doc_text"],
-                                    )
-                                if turn_to_predict["answers"]:
-                                    qa["answers"] = turn_to_predict["answers"]
-                                qa["spans"] = doc_spans
-                                yield id_, qa
-
-                                # SINGLE TURN
-                                # question_str = " ".join(
-                                #     list(reversed(all_prev_utterances))[:3]
-                                # ).strip()
-                                # question = " ".join(question_str.split()[:MAX_Q_LEN])
-                                # id_ = "SINGLE{}_{}".format(dial["dial_id"], turn["turn_id"]) # For subtask1, the id should be this format.
+                                # question_str = all_prev_utterances[-1]
+                                # question = question_str
+                                # id_ = "ZERO{}_{}".format(dial["dial_id"], turn["turn_id"]) # For subtask1, the id should be this format.
                                 # qa = {
                                 #     "id": id_, # For subtask1, the id should be this format.
                                 #     "title": doc_id,
@@ -845,6 +820,31 @@ class Doc2dial(datasets.GeneratorBasedBuilder):
                                 #     qa["answers"] = turn_to_predict["answers"]
                                 # qa["spans"] = doc_spans
                                 # yield id_, qa
+
+                                # SINGLE TURN
+                                question_str = " ".join(
+                                    list(reversed(all_prev_utterances))[:3]
+                                ).strip()
+                                question = " ".join(question_str.split()[:MAX_Q_LEN])
+                                id_ = "SINGLE{}_{}".format(dial["dial_id"], turn["turn_id"]) # For subtask1, the id should be this format.
+                                qa = {
+                                    "id": id_, # For subtask1, the id should be this format.
+                                    "title": doc_id,
+                                    "context": doc["doc_text"],
+                                    "question": question,
+                                    "answers": [],  # For subtask1, "answers" contains the grounding annotations for evaluation.
+                                    "domain": domain,
+                                }
+                                if "answers" not in turn_to_predict:
+                                    turn_to_predict["answers"] = self._get_answers_rc(
+                                        turn_to_predict["references"],
+                                        doc["spans"],
+                                        doc["doc_text"],
+                                    )
+                                if turn_to_predict["answers"]:
+                                    qa["answers"] = turn_to_predict["answers"]
+                                qa["spans"] = doc_spans
+                                yield id_, qa
 
         elif self.config.name == "doc2dial_rc_testdev":
             """Load dialog data in the reading comprehension task setup, where context is the grounding document,
