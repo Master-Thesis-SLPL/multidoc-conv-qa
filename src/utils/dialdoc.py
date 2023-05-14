@@ -114,6 +114,11 @@ class Doc2dial(datasets.GeneratorBasedBuilder):
             description="for each instance we yield 2 instances. one for single turn history and the other with no history.",
         ),
         datasets.BuilderConfig(
+            name="doc2dial_rc_dual_train_validation",
+            version=VERSION,
+            description="for each instance we yield 2 instances. one for single turn history and the other with no history. validation is done on train set",
+        ),
+        datasets.BuilderConfig(
             name="doc2dial_rc_small_dual",
             version=VERSION,
             description="for each instance we yield 2 instances. one for single turn history and the other with no history.",
@@ -228,7 +233,7 @@ class Doc2dial(datasets.GeneratorBasedBuilder):
                     "doc_html_raw": datasets.Value("string"),
                 }
             )
-        elif self.config.name in ["doc2dial_rc", "doc2dial_rc_dual", "doc2dial_rc_small", "doc2dial_rc_small_dual"]:
+        elif self.config.name in ["doc2dial_rc", "doc2dial_rc_dual", "doc2dial_rc_small", "doc2dial_rc_small_dual", "doc2dial_rc_dual_train_validation"]:
             features = datasets.Features(
                 {
                     "id": datasets.Value("string"),
@@ -384,6 +389,17 @@ class Doc2dial(datasets.GeneratorBasedBuilder):
                 ),
                 datasets.SplitGenerator(
                     name=datasets.Split.TRAIN,
+                    gen_kwargs={
+                        "filepath": os.path.join(
+                            data_dir, "doc2dial/v1.0.1/doc2dial_dial_train.json"
+                        ),
+                    },
+                ),
+            ]
+        elif self.config.name in ["doc2dial_rc_dual_train_validation"]:
+            return [
+                datasets.SplitGenerator(
+                    name=datasets.Split.VALIDATION,
                     gen_kwargs={
                         "filepath": os.path.join(
                             data_dir, "doc2dial/v1.0.1/doc2dial_dial_train.json"
@@ -723,7 +739,7 @@ class Doc2dial(datasets.GeneratorBasedBuilder):
                                 qa["spans"] = doc_spans
                                 yield id_, qa
 
-        elif self.config.name in ["doc2dial_rc_dual", "doc2dial_rc_small_dual", "doc2dial_rc_small_validation_dual"]:
+        elif self.config.name in ["doc2dial_rc_dual", "doc2dial_rc_small_dual", "doc2dial_rc_small_validation_dual", "doc2dial_rc_dual_train_validation"]:
             """Load dialog data in the reading comprehension task setup, where context is the grounding document,
             input query is dialog history in reversed order, and output to predict is the next agent turn."""
 
